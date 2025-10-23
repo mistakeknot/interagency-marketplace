@@ -29,122 +29,309 @@ Get expert technical feedback from OpenAI Codex CLI and collaboratively review i
 - "I want a second opinion on this architecture"
 - After completing a design: proactively offer "Would you like me to get Codex feedback on this design?"
 
+## TL;DR
+
+**The entire workflow in 30 seconds:**
+
+1. **Install**: Ensure [OpenAI Codex CLI](https://github.com/openai/codex-cli) is installed
+2. **Run**: `codex exec --sandbox read-only "Review FILE focusing on X, Y, Z. START NOW."`
+3. **Discuss**: Present Codex's feedback to user, analyze together, make informed decisions
+
+**Time**: 1-3 minutes for most reviews
+**Timeout**: Optional safety feature - add if you have it, skip if you don't
+**Key principle**: Codex is an expert consultant, not an authority. You and the user make final decisions.
+
+## Quick Start
+
+**Simplest review (1-2 minutes):**
+
+```bash
+codex exec --sandbox read-only "Review the file: path/to/file.md
+
+Focus on: architecture, performance, security
+
+Provide:
+- Top 3 strengths
+- Top 3 concerns
+- Top 3 recommendations
+
+TIME BUDGET: 2 minutes maximum
+START RESPONSE NOW."
+```
+
+**That's it!** Codex will:
+1. Read the file you specified
+2. Analyze it based on your focus areas
+3. Return structured feedback in ~1-2 minutes
+
+The `TIME BUDGET` in the prompt is usually enough to keep reviews fast.
+
+**Want extra safety?** Add a timeout command to force-kill if Codex runs too long:
+
+```bash
+# If you have 'timeout' installed (Linux, most systems):
+timeout 180 codex exec --sandbox read-only "..."
+
+# If you have 'gtimeout' installed (macOS with Homebrew coreutils):
+gtimeout 180 codex exec --sandbox read-only "..."
+```
+
+This is **optional** - skip it if you don't have timeout installed. See [Advanced: Installing Timeout](#installing-timeout) if you want to add this extra safety layer.
+
+### Note for Claude Code Agents
+
+When using this skill, auto-detect the timeout command once at the start:
+
+```bash
+# Detect timeout (run once per session)
+if command -v gtimeout >/dev/null 2>&1; then
+    TIMEOUT_CMD="gtimeout 180"
+elif command -v timeout >/dev/null 2>&1; then
+    TIMEOUT_CMD="timeout 180"
+else
+    TIMEOUT_CMD=""  # No timeout available, rely on TIME BUDGET in prompt
+fi
+```
+
+Then use `$TIMEOUT_CMD` in your commands:
+
+```bash
+$TIMEOUT_CMD codex exec --sandbox read-only "Review FILE..."
+```
+
+If `TIMEOUT_CMD` is empty, the command still works - you're just relying on the TIME BUDGET prompt constraint instead of a hard timeout.
+
+## Choosing Your Review Mode
+
+**Decision tree for picking the right approach:**
+
+```
+What are you reviewing?
+│
+├─ Single file, obvious focus (e.g., "review for security")
+│  → Use: Quick Command (30 seconds)
+│  → Skip: AskUserQuestion phase
+│  → Example: codex exec "Review FILE focusing on security..."
+│
+├─ Single file, need to ask user what to focus on
+│  → Use: Interactive Workflow (3-5 minutes)
+│  → Include: Phase 1 (AskUserQuestion) for focus areas
+│  → Then: Run Codex with selected focus
+│
+├─ Multiple related files (2-5 files)
+│  → Use: Multi-file command
+│  → Example: codex exec "Review files: file1.ts, file2.ts, file3.ts..."
+│
+├─ Abstract concept (no file exists)
+│  → Use: Concept review (see Advanced)
+│  → Need to embed description in prompt
+│
+└─ Complex project (>5 files, unclear scope)
+   → Use: Comprehensive mode (see Advanced)
+   → May need multiple focused review calls
+```
+
+**Default: Start with Quick Command.** Only use full workflow when you need user interaction to determine focus.
+
 ## Workflow
 
-### Phase 1: Prepare for Review
+### Phase 1: Prepare for Review (Optional - skip if focus is clear)
 
 **1. Identify the Review Target**
 
 Determine what needs review:
-- Specific file path (e.g., `docs/technical/agent-daily-life-system.md`)
-- Code implementation (e.g., `packages/core/src/domains/agent/DailyLife.ts`)
-- Design approach (abstract concept, not a file)
+- Specific file path (e.g., `docs/technical/design.md`)
+- Code implementation (e.g., `src/auth/handler.ts`)
+- Multiple related files
+- Abstract concept (no file)
 
-**2. Ask User for Review Scope**
+**2. Ask User for Review Scope (when focus is unclear)**
 
+**Note for manual users:** If you're running `codex exec` commands yourself (not using Claude Code), just decide on your focus areas (e.g., "security, performance") and skip to Phase 2. This step is for Claude Code agents.
+
+**If you're Claude Code using this skill:** Use the AskUserQuestion tool to let users select focus areas:
+
+```json
+{
+  "questions": [{
+    "question": "What aspects should Codex review?",
+    "header": "Review Focus",
+    "multiSelect": true,
+    "options": [
+      {
+        "label": "Architecture & Design",
+        "description": "Component structure, design patterns, separation of concerns"
+      },
+      {
+        "label": "Performance",
+        "description": "Bottlenecks, optimization opportunities, scalability"
+      },
+      {
+        "label": "Security",
+        "description": "Vulnerabilities, input validation, authentication/authorization"
+      },
+      {
+        "label": "Best Practices",
+        "description": "Code quality, maintainability, language-specific patterns"
+      }
+    ]
+  }]
+}
 ```
-I can get Codex feedback on this [design/code/approach]. What specific aspects should I ask about?
 
-Options:
-- Overall architecture and design quality
-- Performance implications and bottlenecks
-- Missing edge cases or potential issues
-- Best practices and code quality
-- Alternative approaches or improvements
-- All of the above (comprehensive review)
-```
+**When to skip this phase:**
+- User already specified focus ("review this for security")
+- Obvious focus based on context (e.g., performance optimization PR)
+- Quick validation where general feedback is fine
+- Running commands manually (just pick your own focus areas)
 
 ### Phase 2: Call Codex CLI
 
-**For File Review:**
+**Default: Single File Review**
 
 ```bash
-# Full file review - pipe file content to codex exec
-cat <file-path> | codex exec --sandbox read-only "Please review this file. Provide feedback organized by: Strengths, Critical Concerns, Important Concerns, and Recommendations."
+codex exec --sandbox read-only "Review the file: path/to/file.md
 
-# Focused aspect review - specify focus areas in the prompt
-cat <file-path> | codex exec --sandbox read-only "Please review this file focusing on:
-1. Performance implications
-2. Missing edge cases
-3. Architectural patterns
+TIME BUDGET: 2 minutes maximum
+OUTPUT REQUIRED: Start response immediately
 
-Provide feedback organized by: Strengths, Critical Concerns, Important Concerns, and Recommendations."
+Focus on: [aspects from Phase 1 or user request]
 
-# Save output to file (optional)
-cat <file-path> | codex exec --sandbox read-only --output-last-message output.md "Review prompt here"
+Provide:
+## Strengths
+- [strength 1]
+- [strength 2]
+
+## Critical Concerns
+- [concern 1] - Severity: [High/Medium/Low]
+- [concern 2] - Severity: [High/Medium/Low]
+
+## Recommendations
+1. [recommendation 1]
+2. [recommendation 2]
+
+START RESPONSE NOW."
 ```
 
-**For Approach/Concept Review:**
+**Multi-File Review (2-5 files)**
 
 ```bash
-# Create temp file with approach description
-cat > /tmp/codex-review-input.md << 'EOF'
-# Technical Approach
+codex exec --sandbox read-only "Review these files:
+- path/to/file1.ts
+- path/to/file2.ts
+- path/to/file3.ts
 
-[Describe the approach, architecture, or design decision]
+TIME BUDGET: 3 minutes maximum
+OUTPUT REQUIRED: Start response immediately
 
-## Context
-[Background and constraints]
+Focus on: [aspects]
 
-## Proposed Solution
-[Your approach]
+For each file, provide:
+- Key findings
+- Cross-file issues or inconsistencies
 
-## Alternatives Considered
-[Other options you evaluated]
-
-## Questions
-[Specific questions for review]
-EOF
-
-cat /tmp/codex-review-input.md | codex exec --sandbox read-only "Please review this technical approach. Focus on trade-offs, risks, and alternative considerations."
+START RESPONSE NOW."
 ```
 
-**For Code Review:**
+**Common Patterns**
+
+| Review Type | Command Template |
+|------------|------------------|
+| **Security Review** | `codex exec --sandbox read-only "Review FILE for security. Check: input validation, auth, injection risks. TIME BUDGET: 2 min. START NOW."` |
+| **Performance Review** | `codex exec --sandbox read-only "Review FILE for performance. Check: bottlenecks, N+1 queries, memory usage. TIME BUDGET: 2 min. START NOW."` |
+| **Code Quality** | `codex exec --sandbox read-only "Review FILE for best practices. Check: maintainability, error handling, patterns. TIME BUDGET: 2 min. START NOW."` |
+| **Architecture** | `codex exec --sandbox read-only "Review FILE for architecture. Check: separation of concerns, coupling, scalability. TIME BUDGET: 2 min. START NOW."` |
+
+**With Timeout (Optional)**
+
+For extra safety, prefix commands with your detected `$TIMEOUT_CMD`:
 
 ```bash
-# Review specific code file
-cat <code-file-path> | codex exec --sandbox read-only "Please review this code for: correctness, performance, maintainability, and best practices."
-
-# Compare implementations - create comparison file first
-cat > /tmp/comparison.md << 'EOF'
-# Approach Comparison
-
-## Approach 1
-[paste file1 content or describe]
-
-## Approach 2
-[paste file2 content or describe]
-
-## Question
-Which approach is better and why?
-EOF
-
-cat /tmp/comparison.md | codex exec --sandbox read-only "Please compare these approaches and recommend the best option with reasoning."
+$TIMEOUT_CMD codex exec --sandbox read-only "..."
 ```
+
+This force-kills Codex after 3 minutes if it runs too long. Skip if you don't have timeout installed.
 
 ### Phase 3: Present Feedback to User
 
-**Structure the presentation:**
+**Use this template for presenting feedback:**
 
-1. **Executive Summary**
-   ```
-   Codex provided feedback on [file/approach]. Here are the key findings:
+```markdown
+# Interpeer Review: [File/Project Name]
 
-   ✅ Strengths:
-   - [List positive aspects]
+## Executive Summary
 
-   ⚠️ Concerns:
-   - [List issues or risks]
+[Codex's 2-3 sentence overall assessment]
 
-   💡 Suggestions:
-   - [List recommendations]
-   ```
+## Strengths ✅
 
-2. **Detailed Feedback**
-   Present Codex's full response organized by category
+- [Strength 1 with file:line reference if available]
+- [Strength 2]
+- [Strength 3]
 
-3. **Critical Issues First**
-   Highlight any blocking issues or major concerns at the top
+## Concerns ⚠️
+
+### Critical
+[Issues that must be addressed - bugs, security, performance blockers]
+
+- **[Finding name]** ([file:line])
+  - [Description]
+  - Impact: [explain severity]
+
+### Important
+[Should be addressed - architecture, maintainability, scalability]
+
+- **[Finding name]** ([file:line])
+  - [Description]
+
+### Minor
+[Nice-to-have improvements]
+
+- [Suggestion 1]
+
+## Recommendations 💡
+
+### 1. [Top Priority Recommendation]
+
+**Codex's recommendation:** "[Direct quote from Codex]"
+
+**My analysis:** [Your interpretation with project context]
+
+**Impact if addressed:** [What improves]
+
+**Your take?** [Question to user]
+
+### 2. [Second Priority]
+
+**Codex's recommendation:** "[Quote]"
+
+**My analysis:** [Your take]
+
+**Trade-offs:** [Pros/cons of implementing]
+
+### 3. [Third Priority]
+
+**Codex's recommendation:** "[Quote]"
+
+**My analysis:** [Your take]
+
+## Discussion
+
+What do you think about these findings? Should we:
+- [Specific action 1 based on feedback]
+- [Specific action 2]
+- [Alternative approach 3]
+
+Which would you like to tackle first?
+```
+
+**Key principles:**
+- Start with Codex's executive summary verbatim
+- Organize concerns by severity (Critical/Important/Minor)
+- For each recommendation, provide BOTH Codex's view AND your analysis
+- Always include file:line references when available
+- Ask specific questions to guide discussion
+- Propose concrete next steps
 
 ### Phase 4: Collaborative Review
 
@@ -199,62 +386,109 @@ Would you like me to:
 - Implement the critical changes now?
 ```
 
-## Codex CLI Commands Reference
+## Advanced Scenarios
 
-**Basic Review:**
+### Conceptual/Abstract Reviews (No File)
+
+When reviewing an approach or concept that doesn't exist as a file:
+
 ```bash
-# Review entire file - output to stdout
-cat <file> | codex exec --sandbox read-only "Review this file"
+cat <<'EOF' | codex exec --sandbox read-only -
+Review this technical approach:
 
-# Save feedback to file
-cat <file> | codex exec --sandbox read-only --output-last-message feedback.md "Review this file"
+## Context
+[Background and constraints]
 
-# Use different model
-cat <file> | codex exec --sandbox read-only --model gpt-4 "Review this file"
+## Proposed Solution
+[Your approach]
 
-# Get JSON output for programmatic processing
-cat <file> | codex exec --sandbox read-only --json "Review this file"
+## Alternatives Considered
+[Other options]
+
+## Questions
+[Specific questions for review]
+
+TIME BUDGET: 2 minutes
+OUTPUT REQUIRED: Start immediately with trade-offs and recommendations
+START RESPONSE NOW.
+EOF
 ```
 
-**Focused Review:**
+### Complex Projects (>5 files)
+
+For large reviews, use focused multiple calls rather than one comprehensive call:
+
+**Phase 1: Architecture Overview (2 min)**
 ```bash
-# Specify focus areas in the prompt
-cat <file> | codex exec --sandbox read-only "Review this file focusing on:
-- Performance and scalability
-- Security vulnerabilities
-- Best practices and code quality"
+codex exec --sandbox read-only "Quick architecture scan of:
+- src/main.rs
+- src/lib.rs
+- src/config.rs
 
-# Multiple aspects with detailed prompt
-cat <file> | codex exec --sandbox read-only "Please review focusing on:
-1. Architecture & design quality
-2. Performance implications
-3. Missing edge cases
-4. Best practices
-
-Provide feedback organized by: Strengths, Critical Concerns, Important Concerns, Recommendations."
+TIME BUDGET: 2 minutes
+Provide: Top 3 architectural strengths, top 3 concerns
+START NOW."
 ```
 
-**Context-Aware Review:**
+**Phase 2: Deep Dive on Concerns (3 min, only if Phase 1 found issues)**
 ```bash
-# Include project context in the prompt
-cat <file> | codex exec --sandbox read-only "Review this file.
+codex exec --sandbox read-only "Deep dive on [specific concern from Phase 1].
 
-Context: TypeScript + React project with focus on performance.
+Focus on file: [file identified in Phase 1]
 
-Provide feedback on architecture, performance, and React best practices."
-
-# Performance-critical code review
-cat <file> | codex exec --sandbox read-only "Review this WASM/TypeScript integration.
-
-Context: Game simulation with 4,500 entities, 20ms performance budget.
-
-Focus on: serialization overhead, threading, memory management."
+TIME BUDGET: 3 minutes
+Provide: Root cause, location, fix recommendation
+START NOW."
 ```
 
-**Available Sandbox Modes:**
-- `read-only` - Safe for reviews (recommended)
-- `workspace-write` - Allow file modifications (use with caution)
-- `danger-full-access` - Full system access (not recommended for reviews)
+### Installing Timeout
+
+**Linux/WSL:**
+```bash
+# Ubuntu/Debian
+sudo apt-get install coreutils
+
+# Already included in most distributions
+timeout --version  # Check if already installed
+```
+
+**macOS:**
+```bash
+# Install Homebrew if needed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install coreutils for gtimeout
+brew install coreutils
+
+# Verify
+gtimeout --version
+```
+
+**Windows:**
+- Use WSL (Windows Subsystem for Linux) and follow Linux instructions
+- Or use Git Bash with timeout binary
+- Or skip timeout (Codex will still work, just no time limit)
+
+### Monitoring for Analysis Loops
+
+**Signs Codex is stuck (rare with simple commands):**
+- No output after 2-3 minutes
+- Multiple "thinking" blocks without findings
+- Repeated file reads (if visible in stderr)
+
+**Recovery:**
+```bash
+# Kill the process
+pkill -f "codex exec"
+
+# Or Ctrl+C if running in foreground
+
+# Restart with narrower scope
+codex exec --sandbox read-only "Quick review of FILE.
+Focus only on: [one specific aspect]
+TIME: 1 minute
+START NOW."
+```
 
 ## Critical Review Principles
 
@@ -279,8 +513,8 @@ What do you think?
 ### 2. Balance Feedback with Project Constraints
 
 **Consider:**
-- Performance requirements (20ms budget)
-- Existing architecture decisions (WASM/TypeScript split)
+- Performance requirements
+- Existing architecture decisions
 - Project scope (YAGNI vs future-proofing)
 - Team expertise and maintainability
 
@@ -315,163 +549,62 @@ I suggest [modified approach] instead because [reasoning].
 - Future optimizations
 - Documentation improvements
 
-### 4. Ask Clarifying Questions
-
-If Codex feedback is unclear:
-
-```bash
-# Follow-up review with specific question
-cat > /tmp/codex-followup.md << 'EOF'
-Codex previously suggested: "[feedback quote]"
-
-Can you clarify:
-- What specific problem does this address?
-- How would you recommend implementing this?
-- What are the trade-offs?
-EOF
-
-cat /tmp/codex-followup.md | codex exec --sandbox read-only "Please clarify this feedback and provide implementation recommendations."
-```
-
 ## Example Usage Patterns
 
-### Pattern 1: Design Document Review
+### Pattern 1: Quick File Review
 
 ```
-User: "Can you get Codex feedback on the Agent Daily Life design?"
+User: "Can you get Codex feedback on the auth handler?"
 
 You:
-1. Read the design document
-2. Call: cat docs/technical/agent-daily-life-system.md | codex exec --sandbox read-only "Please review this design focusing on architecture and scalability. Provide feedback organized by: Strengths, Critical Concerns, Important Concerns, Recommendations."
-3. Present feedback organized by category
-4. Discuss each point with user
-5. Update document based on agreed changes
+1. codex exec --sandbox read-only "Review src/auth/handler.ts
+   Focus: security, error handling
+   TIME BUDGET: 2 min
+   START NOW."
+2. Present feedback using template
+3. Discuss findings with user
+4. Update code if needed
 ```
 
-### Pattern 2: Pre-Implementation Validation
+### Pattern 2: Design Document with User Input
+
+```
+User: "Review the agent system design"
+
+You:
+1. Use AskUserQuestion to get focus areas
+2. codex exec with selected focus areas
+3. Present organized feedback
+4. Discuss each recommendation
+5. Update design document with agreed changes
+```
+
+### Pattern 3: Pre-Implementation Validation
 
 ```
 After completing design:
 
-You: "I've completed the Agent Daily Life System design. Would you like me to get Codex feedback before we move to implementation?"
+You: "I've completed the design. Would you like me to get Codex feedback before implementation?"
 
 User: "Yes"
 
 You:
-1. Call: cat docs/technical/agent-daily-life-system.md | codex exec --sandbox read-only "Please provide comprehensive review of this design. Focus on: architecture, performance, edge cases, best practices. Organize by: Strengths, Critical Concerns, Important Concerns, Recommendations."
-2. Present feedback
+1. Quick review: codex exec with architecture/performance focus
+2. Present findings
 3. Discuss and resolve concerns
 4. Update design if needed
 5. Proceed to implementation with validated design
 ```
 
-### Pattern 3: Code Review
-
-```
-User: "Review this implementation with Codex"
-
-You:
-1. Call: cat packages/core/src/domains/agent/DailyLife.ts | codex exec --sandbox read-only "Review this code for: performance, best practices, correctness, and maintainability."
-2. Present code quality feedback
-3. Discuss suggested improvements
-4. Optionally refactor based on feedback
-```
-
-### Pattern 4: Architecture Decision Validation
-
-```
-You: "I'm considering two approaches for [X]. Let me get Codex's analysis."
-
-1. Create comparison document with both approaches
-2. Call: cat /tmp/approach-comparison.md | codex exec --sandbox read-only "Compare these approaches and suggest alternatives. Focus on: trade-offs, risks, implementation complexity, maintainability."
-3. Present Codex's analysis of trade-offs
-4. Discuss with user
-5. Make informed decision together
-```
-
-## Integration with Other Skills
-
-**Combine with brainstorming skill:**
-```
-1. Use brainstorming to create design
-2. Use interpeer to validate design
-3. Use writing-plans to create implementation plan
-```
-
-**Combine with code-review-expert:**
-```
-1. Use interpeer for external perspective
-2. Use code-review-expert for project-specific review
-3. Synthesize both sets of feedback
-```
-
-## Output Format
-
-**Standard Review Output:**
-
-```markdown
-# Interpeer Review: [File/Approach Name]
-
-## Executive Summary
-[High-level findings]
-
-## Strengths ✅
-- [Positive aspect 1]
-- [Positive aspect 2]
-
-## Concerns ⚠️
-### Critical
-- [Critical issue 1]
-
-### Important
-- [Important issue 1]
-
-### Minor
-- [Minor suggestion 1]
-
-## Recommendations 💡
-1. [Recommendation 1]
-2. [Recommendation 2]
-
-## Alternative Approaches
-[If requested]
-
-## Discussion
-[Your analysis of the feedback]
-
-## Action Items
-- [ ] [Action based on feedback 1]
-- [ ] [Action based on feedback 2]
-```
-
-## Error Handling
-
-**If Codex CLI fails:**
-```bash
-# Check Codex CLI is available
-which codex || echo "Codex CLI not installed"
-
-# Check file exists
-test -f <file> || echo "File not found"
-
-# Check for API errors
-# Codex may fail due to API limits, network issues, or unsupported file types
-```
-
-**Fallback:**
-If Codex unavailable:
-1. Inform user
-2. Offer to review manually using your knowledge
-3. Suggest alternative review methods
-
 ## Best Practices
 
 **DO:**
+- Start with simple commands, add complexity only when needed
 - Always provide your own analysis alongside Codex feedback
-- Ask user which aspects to focus on
 - Organize feedback by priority/severity
 - Discuss trade-offs for each suggestion
 - Make final decisions collaboratively
+- Use timeout when available for safety
 
 **DON'T:**
 - Blindly implement all Codex suggestions without discussion
@@ -479,37 +612,28 @@ If Codex unavailable:
 - Skip discussing feedback that seems wrong
 - Assume Codex knows your project constraints
 - Use Codex as the sole decision-maker
+- Over-complicate the review process
 
 ## Quick Reference
 
 ```bash
-# Standard design review
-cat docs/technical/<design>.md | codex exec --sandbox read-only "Review this design"
+# Standard file review
+codex exec --sandbox read-only "Review FILE focusing on ASPECTS. TIME: 2 min. START NOW."
 
-# Performance-focused review
-cat <file> | codex exec --sandbox read-only "Review focusing on performance and scalability"
+# With timeout (optional - use $TIMEOUT_CMD from detection)
+$TIMEOUT_CMD codex exec --sandbox read-only "..."
 
-# Code quality review
-cat packages/core/src/<file>.ts | codex exec --sandbox read-only "Review for best practices and code quality"
+# Multi-file
+codex exec --sandbox read-only "Review files: FILE1, FILE2, FILE3 focusing on ASPECTS. TIME: 3 min. START NOW."
 
-# Comprehensive review with structure
-cat <file> | codex exec --sandbox read-only "Review focusing on:
-1. Architecture
-2. Performance
-3. Edge cases
-4. Best practices
+# Security focused
+codex exec --sandbox read-only "Review FILE for security vulnerabilities. Check: injection, auth, validation. TIME: 2 min. START NOW."
 
-Organize by: Strengths, Critical Concerns, Important Concerns, Recommendations."
+# Performance focused
+codex exec --sandbox read-only "Review FILE for performance issues. Check: bottlenecks, memory, algorithms. TIME: 2 min. START NOW."
 
-# With project context
-cat <file> | codex exec --sandbox read-only "Review this file.
-
-Context: TypeScript game simulation, 4500 agents, 20ms budget.
-
-Focus on: serialization overhead, threading, memory management."
-
-# Save output to file
-cat <file> | codex exec --sandbox read-only --output-last-message feedback.md "Review this file"
+# Architecture focused
+codex exec --sandbox read-only "Review FILE for architecture. Check: coupling, patterns, scalability. TIME: 2 min. START NOW."
 ```
 
 ## Remember

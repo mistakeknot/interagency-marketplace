@@ -119,6 +119,21 @@ Cross-AI peer review plugin that integrates OpenAI Codex CLI for design/code fee
 - Implements 5-phase workflow: prepare, call Codex, present feedback, discuss, plan actions
 - Emphasizes collaborative review (not automated acceptance of suggestions)
 
+**Critical constraints (v1.1.0+):**
+- **Always use `timeout`**: All Codex calls must use `timeout 180` (3 min max) to prevent runaway processes
+- **Always include constraints in prompts**: TIME BUDGET, FILE LIMIT, OUTPUT REQUIRED
+- **Phased reviews for complex projects**: Break into architecture → security → performance phases
+- **Force early output**: Prompts must require "START RESPONSE NOW" to prevent analysis loops
+- **Monitor for loops**: Watch for repeated file reads (>3 times) or lack of output after 2-3 minutes
+- **Curated file lists**: Provide specific files to review instead of open exploration
+
+**Lessons learned:**
+- Without constraints, Codex can loop indefinitely re-reading files without producing output
+- Open-ended prompts like "comprehensive review" encourage exhaustive exploration mode
+- Must explicitly force synthesis with "OUTPUT REQUIRED: Respond immediately"
+- Complex projects need phased approach: quick scan → targeted deep dive
+- Recovery from loops: kill process, restart with narrower scope asking "what did you find so far?"
+
 ## Plugin Source Options
 
 The `source` field in marketplace.json supports:
