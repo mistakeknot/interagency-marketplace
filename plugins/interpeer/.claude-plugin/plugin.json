@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Get expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user",
   "author": {
-    "name": "Your Name",
-    "email": "[email protected]"
+    "name": "MK",
+    "email": "mistakeknot@vibeguider.org"
   },
   "skills": [
     "skills/interpeer"
