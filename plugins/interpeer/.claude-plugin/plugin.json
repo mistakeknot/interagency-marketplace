@@ -7,6 +7,6 @@
     "email": "mistakeknot@vibeguider.org"
   },
   "skills": [
-    "skills/interpeer"
+    "./skills/interpeer"
   ]
 }
