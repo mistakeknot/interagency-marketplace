@@ -1,0 +1,14 @@
+{
+  "name": "interagency-marketplace",
+  "owner": {
+    "name": "Your Name",
+    "email": "[email protected]"
+  },
+  "plugins": [
+    {
+      "name": "interpeer",
+      "source": "./plugins/interpeer",
+      "description": "Get expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user"
+    }
+  ]
+}
