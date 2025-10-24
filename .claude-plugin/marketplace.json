@@ -7,8 +7,8 @@
   "plugins": [
     {
       "name": "interpeer",
-      "source": "./plugins/interpeer",
-      "description": "Get expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user"
+      "source": "mistakeknot/interpeer",
+      "description": "Get a second opinion in the form of expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user"
     }
   ]
 }
