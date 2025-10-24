@@ -134,6 +134,73 @@ Cross-AI peer review plugin that integrates OpenAI Codex CLI for design/code fee
 - Complex projects need phased approach: quick scan → targeted deep dive
 - Recovery from loops: kill process, restart with narrower scope asking "what did you find so far?"
 
+### Interdoc
+Automatic CLAUDE.md maintenance plugin that keeps documentation current.
+
+**Key implementation notes:**
+- Dual detection system: SessionStart (3+ commits) and PostToolUse (10+ commits during session)
+- Uses prompt injection hooks to automatically trigger documentation reviews
+- Generates AGENTS.md redirects for Codex CLI compatibility
+- Supports mono-repos with multiple CLAUDE.md files
+- User approves all suggestions - fully ambient but human-controlled
+
+**Version**: 2.1.0
+
+## Plugin Distribution Strategy
+
+The marketplace follows a **dual plugin model**:
+
+1. **Interpeer**: External review and collaboration
+   - Integrates OpenAI Codex CLI
+   - Cross-AI peer review
+   - Published at: `mistakeknot/interpeer`
+
+2. **Interdoc**: Internal documentation maintenance
+   - CLAUDE.md automation
+   - Ambient operation via hooks
+   - Published at: `mistakeknot/interdoc`
+
+Both plugins use `source.source: "url"` format and are hosted in separate GitHub repositories referenced by the marketplace.
+
+## Plugin Marketplace Schema
+
+The marketplace.json schema has specific requirements that must be followed:
+
+**Required top-level fields**:
+```json
+{
+  "name": "marketplace-name",
+  "owner": { "name": "...", "email": "..." },
+  "metadata": {
+    "description": "...",
+    "version": "..."
+  },
+  "plugins": [...]
+}
+```
+
+**Required plugin fields**:
+```json
+{
+  "name": "plugin-name",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/owner/repo.git"
+  },
+  "description": "...",
+  "version": "x.y.z",
+  "keywords": ["tag1", "tag2"],
+  "strict": true
+}
+```
+
+**Critical lessons learned**:
+- Source must be an object with `source: "url"` and `url` fields, not a simple string
+- Cannot use shorthand like `"owner/repo"` - must use full git URL with `.git` extension
+- All plugin fields (name, source, description, version, keywords, strict) are required for validation
+- Metadata object is required at marketplace level
+- Schema validation is strict - missing or incorrectly formatted fields will cause marketplace loading to fail
+
 ## Plugin Source Options
 
 The `source` field in marketplace.json supports:
