@@ -36,7 +36,7 @@ Get a second opinion in the form of expert feedback from OpenAI Codex CLI on des
 /plugin install interpeer
 ```
 
-**Learn more:** [Interpeer Plugin Documentation](plugins/interpeer/README.md)
+**Learn more:** [Interpeer Plugin Documentation](https://github.com/mistakeknot/interpeer)
 
 ### Interdoc
 
