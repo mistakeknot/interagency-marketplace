@@ -40,12 +40,13 @@ Get a second opinion in the form of expert feedback from OpenAI Codex CLI on des
 
 ### Interdoc
 
-Keep CLAUDE.md documentation up-to-date automatically by detecting significant code changes and suggesting relevant updates.
+Automatic, ambient CLAUDE.md maintenance - detects changes when you start a session and proactively suggests documentation updates without manual invocation.
 
 **Features:**
-- Automatic detection via post-commit hook
+- Fully automatic activation on session start
+- Ambient operation - analyzes and suggests without manual invocation
 - Smart categorization (Architecture, Implementation, Dependencies, Conventions)
-- Non-intrusive batched workflow
+- Adaptive to your existing CLAUDE.md structure
 - Mono-repo support with multiple CLAUDE.md files
 - AGENTS.md redirect generation for Codex CLI compatibility
 

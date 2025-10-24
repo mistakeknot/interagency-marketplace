@@ -26,9 +26,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
-      "description": "Keep CLAUDE.md documentation up-to-date automatically by detecting significant code changes and suggesting relevant updates",
-      "version": "1.0.0",
-      "keywords": ["documentation", "automation", "git", "maintenance"],
+      "description": "Automatic, ambient CLAUDE.md maintenance - detects changes when you start a session and proactively suggests documentation updates without manual invocation",
+      "version": "2.0.0",
+      "keywords": ["documentation", "automation", "git", "maintenance", "ambient"],
       "strict": true
     }
   ]
