@@ -9,6 +9,11 @@
       "name": "interpeer",
       "source": "mistakeknot/interpeer",
       "description": "Get a second opinion in the form of expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user"
+    },
+    {
+      "name": "interdoc",
+      "source": "mistakeknot/interdoc",
+      "description": "Keep CLAUDE.md documentation up-to-date automatically by detecting significant code changes and suggesting relevant updates"
     }
   ]
 }
