@@ -38,6 +38,24 @@ Get a second opinion in the form of expert feedback from OpenAI Codex CLI on des
 
 **Learn more:** [Interpeer Plugin Documentation](plugins/interpeer/README.md)
 
+### Interdoc
+
+Keep CLAUDE.md documentation up-to-date automatically by detecting significant code changes and suggesting relevant updates.
+
+**Features:**
+- Automatic detection via post-commit hook
+- Smart categorization (Architecture, Implementation, Dependencies, Conventions)
+- Non-intrusive batched workflow
+- Mono-repo support with multiple CLAUDE.md files
+- AGENTS.md redirect generation for Codex CLI compatibility
+
+**Installation:**
+```bash
+/plugin install interdoc
+```
+
+**Learn more:** [Interdoc Plugin Repository](https://github.com/mistakeknot/interdoc)
+
 ---
 
 See [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json) for the complete catalog.
