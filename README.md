@@ -1,6 +1,6 @@
 # Interagency Marketplace
 
-A Claude Code plugin marketplace for discovering and installing plugins.
+A Claude Code plugin marketplace for discovering and installing plugins that help with interoperability between different coding agents like Claude Code and Codex CLI.
 
 ## What is this?
 
@@ -20,7 +20,7 @@ Once added, you can browse and install plugins from this marketplace using Claud
 
 ### Interpeer
 
-Get expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user.
+Get a second opinion in the form of expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user.
 
 **Features:**
 - Design document review and validation
