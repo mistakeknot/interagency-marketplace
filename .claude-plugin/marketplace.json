@@ -4,6 +4,10 @@
     "name": "MK",
     "email": "mistakeknot@vibeguider.org"
   },
+  "metadata": {
+    "description": "Claude Code plugins for interoperability between coding agents like Claude Code and Codex CLI",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "interpeer",
