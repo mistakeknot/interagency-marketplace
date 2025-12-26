@@ -110,29 +110,27 @@ The marketplace pulls from the GitHub repository at `https://github.com/mistakek
 
 ## Current Plugins
 
-### Interpeer
-Cross-AI peer review plugin that integrates OpenAI Codex CLI for design/code feedback.
+### Interpeer (v3.0.0)
+Cross-AI peer review plugin with three focused skills:
+
+| Skill | Tool | Use Case |
+|-------|------|----------|
+| `/qinterpeer` | Codex CLI | Quick reviews, fast feedback |
+| `/interpeer` | Oracle (ChatGPT 5.2 Pro) | Deep reasoning, large context |
+| `/winterpeer` | LLM Council | Multi-model consensus for critical decisions |
+
+**External dependencies:**
+- **Codex CLI** (`npm install -g @openai/codex`): Required for `/qinterpeer`
+- **Oracle** (`npm install -g @steipete/oracle`): Required for `/interpeer` and `/winterpeer`
 
 **Key implementation notes:**
-- Skill requires external dependency: OpenAI Codex CLI must be installed
-- Uses bash tool to pipe content to `codex exec --sandbox read-only`
-- Implements 5-phase workflow: prepare, call Codex, present feedback, discuss, plan actions
-- Emphasizes collaborative review (not automated acceptance of suggestions)
+- Each skill has dedicated SKILL.md with tool-specific workflows
+- Uses `--wait` and `--write-output` flags for reliable response capture
+- Codex uses `-q` (quiet) mode and `--output-last-message` for clean output
+- Oracle supports `--models` flag for multi-model council reviews
+- All skills emphasize collaborative review (Claude analyzes feedback with user)
 
-**Critical constraints (v1.1.0+):**
-- **Always use `timeout`**: All Codex calls must use `timeout 180` (3 min max) to prevent runaway processes
-- **Always include constraints in prompts**: TIME BUDGET, FILE LIMIT, OUTPUT REQUIRED
-- **Phased reviews for complex projects**: Break into architecture → security → performance phases
-- **Force early output**: Prompts must require "START RESPONSE NOW" to prevent analysis loops
-- **Monitor for loops**: Watch for repeated file reads (>3 times) or lack of output after 2-3 minutes
-- **Curated file lists**: Provide specific files to review instead of open exploration
-
-**Lessons learned:**
-- Without constraints, Codex can loop indefinitely re-reading files without producing output
-- Open-ended prompts like "comprehensive review" encourage exhaustive exploration mode
-- Must explicitly force synthesis with "OUTPUT REQUIRED: Respond immediately"
-- Complex projects need phased approach: quick scan → targeted deep dive
-- Recovery from loops: kill process, restart with narrower scope asking "what did you find so far?"
+**Repository:** `mistakeknot/interpeer`
 
 ### Interdoc
 Automatic CLAUDE.md maintenance plugin that keeps documentation current.
@@ -150,12 +148,12 @@ Automatic CLAUDE.md maintenance plugin that keeps documentation current.
 
 The marketplace follows a **dual plugin model**:
 
-1. **Interpeer**: External review and collaboration
-   - Integrates OpenAI Codex CLI
-   - Cross-AI peer review
+1. **Interpeer** (v3.0.0): External review and collaboration
+   - Three skills: `/qinterpeer` (Codex CLI), `/interpeer` (Oracle), `/winterpeer` (LLM Council)
+   - Cross-AI peer review with multiple external tools
    - Published at: `mistakeknot/interpeer`
 
-2. **Interdoc**: Internal documentation maintenance
+2. **Interdoc** (v2.1.0): Internal documentation maintenance
    - CLAUDE.md automation
    - Ambient operation via hooks
    - Published at: `mistakeknot/interdoc`
