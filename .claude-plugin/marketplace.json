@@ -15,9 +15,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interpeer.git"
       },
-      "description": "Cross-AI peer review with Codex CLI and Oracle (ChatGPT 5.2 Pro) - get expert feedback on designs, implementations, or approaches",
-      "version": "2.0.0",
-      "keywords": ["codex", "review", "feedback", "collaboration"],
+      "description": "Cross-AI peer review: /qinterpeer (Codex CLI), /interpeer (Oracle), /winterpeer (LLM Council multi-model consensus)",
+      "version": "3.0.0",
+      "keywords": ["codex", "oracle", "review", "feedback", "collaboration", "council"],
       "strict": true
     },
     {
