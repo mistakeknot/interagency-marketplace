@@ -20,16 +20,21 @@ Once added, you can browse and install plugins from this marketplace using Claud
 
 ### Interpeer
 
-Get a second opinion in the form of expert feedback from OpenAI Codex CLI on designs, implementations, or approaches, then review and discuss that feedback with the user.
+Cross-AI peer review with multiple modes for different use cases.
+
+**Skills:**
+- `qinterpeer` - Quick peer review using Codex CLI for fast feedback
+- `interpeer` - Deep peer review using Oracle (ChatGPT 5.2 Pro) with large context
+- `winterpeer` - LLM Council review for critical decisions (GPT + Claude consensus)
+- `splinterpeer` - Extract disagreements and convert into actionable artifacts
 
 **Features:**
-- Design document review and validation
-- Code quality and architecture feedback
-- Cross-AI peer review workflow
-- Collaborative discussion of feedback
+- Auto-detects available AI tools (Codex CLI, Oracle)
+- Large context support (~200k tokens with Oracle)
+- Disagreement-driven development workflow
 - Multi-perspective technical analysis
 
-**Prerequisites:** Requires [OpenAI Codex CLI](https://github.com/openai/codex-cli) installed and configured.
+**Prerequisites:** Requires [Codex CLI](https://github.com/openai/codex) or [Oracle CLI](https://github.com/anthropics/oracle) installed.
 
 **Installation:**
 ```bash
@@ -40,15 +45,18 @@ Get a second opinion in the form of expert feedback from OpenAI Codex CLI on des
 
 ### Interdoc
 
-Automatic, ambient CLAUDE.md maintenance - detects changes when you start a session and proactively suggests documentation updates without manual invocation.
+Recursive AGENTS.md generator using parallel subagents. Generates cross-AI compatible documentation that works with Claude Code, Codex CLI, and other AI tools.
 
 **Features:**
-- Fully automatic activation on session start
-- Ambient operation - analyzes and suggests without manual invocation
-- Smart categorization (Architecture, Implementation, Dependencies, Conventions)
-- Adaptive to your existing CLAUDE.md structure
-- Mono-repo support with multiple CLAUDE.md files
-- AGENTS.md redirect generation for Codex CLI compatibility
+- Parallel subagents for fast analysis across directories
+- CLAUDE.md harmonization - migrates docs to AGENTS.md, slims CLAUDE.md to settings only
+- Incremental updates - appends new content, preserves existing documentation
+- Unified diff previews with individual file review option
+- Smart monorepo scoping for large projects
+- Git-aware updates using commit history and diffs
+- Subagent verification before committing
+
+**Skill:** `interdoc` - Triggered by natural language ("generate documentation", "update AGENTS.md") or automatically via hooks.
 
 **Installation:**
 ```bash
