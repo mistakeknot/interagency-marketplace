@@ -26,9 +26,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
-      "description": "Automatic, ambient CLAUDE.md maintenance - dual detection at session start and during commits, proactively suggests documentation updates without manual invocation",
-      "version": "2.1.0",
-      "keywords": ["documentation", "automation", "git", "maintenance", "ambient"],
+      "description": "Recursive CLAUDE.md generator using parallel subagents - analyzes project structure, spawns agents per directory, consolidates into coherent documentation",
+      "version": "3.0.0",
+      "keywords": ["documentation", "automation", "subagents", "CLAUDE.md", "AGENTS.md"],
       "strict": true
     }
   ]
