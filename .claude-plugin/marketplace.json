@@ -15,8 +15,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interpeer.git"
       },
-      "description": "Cross-AI peer review: /qinterpeer (Codex CLI), /interpeer (Oracle), /winterpeer (LLM Council multi-model consensus)",
-      "version": "3.2.0",
+      "description": "Cross-AI peer review: qinterpeer (Codex CLI), interpeer (Oracle), winterpeer (LLM Council), splinterpeer (disagreement-driven development)",
+      "version": "3.2.1",
       "keywords": ["codex", "oracle", "review", "feedback", "collaboration", "council"],
       "strict": true
     },
