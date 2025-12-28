@@ -15,8 +15,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interpeer.git"
       },
-      "description": "Cross-AI peer review: qinterpeer (Codex CLI), interpeer (Oracle), winterpeer (LLM Council), splinterpeer (disagreement-driven development)",
-      "version": "3.2.1",
+      "description": "Cross-AI peer review: interpeer (Claude↔Codex auto-detect), prompterpeer (Oracle with prompt review), winterpeer (LLM Council), splinterpeer (disagreement-driven development)",
+      "version": "4.0.0",
       "keywords": ["codex", "oracle", "review", "feedback", "collaboration", "council"],
       "strict": true
     },
@@ -26,9 +26,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
-      "description": "Recursive AGENTS.md generator with incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
-      "version": "4.1.0",
-      "keywords": ["documentation", "automation", "subagents", "AGENTS.md", "cross-AI", "incremental", "diff-preview", "verification"],
+      "description": "Recursive AGENTS.md generator with CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
+      "version": "4.2.0",
+      "keywords": ["documentation", "automation", "subagents", "AGENTS.md", "CLAUDE.md", "cross-AI", "incremental", "diff-preview", "harmonization"],
       "strict": true
     }
   ]
