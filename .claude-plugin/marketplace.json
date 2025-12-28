@@ -26,9 +26,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
-      "description": "Recursive CLAUDE.md generator using parallel subagents - analyzes project structure, spawns agents per directory, consolidates into coherent documentation",
-      "version": "3.0.0",
-      "keywords": ["documentation", "automation", "subagents", "CLAUDE.md", "AGENTS.md"],
+      "description": "Recursive AGENTS.md generator with incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
+      "version": "4.1.0",
+      "keywords": ["documentation", "automation", "subagents", "AGENTS.md", "cross-AI", "incremental", "diff-preview", "verification"],
       "strict": true
     }
   ]
