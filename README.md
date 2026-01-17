@@ -65,6 +65,52 @@ Recursive AGENTS.md generator using parallel subagents. Generates cross-AI compa
 
 **Learn more:** [Interdoc Plugin Repository](https://github.com/mistakeknot/interdoc)
 
+### tldrs
+
+Token-efficient code reconnaissance using tldr-swinton.
+
+**Skills / Use cases:**
+- Diff-first context for recent changes
+- Symbol context (call-graph slices with budgets)
+- Structure discovery (signatures, languages)
+- Semantic search (index + find)
+
+**Prerequisites:** Requires the `tldrs` CLI installed in the environment.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/mistakeknot/tldr-swinton/main/scripts/install.sh | bash
+```
+
+**Installation:**
+```bash
+/plugin install tldrs
+```
+
+**Learn more:** [tldr-swinton](https://github.com/mistakeknot/tldr-swinton) · [tldrs-vhs](https://github.com/mistakeknot/tldrs-vhs)
+
+### tldrs
+
+Token-efficient code reconnaissance using tldr-swinton.
+
+**Skills / Use cases:**
+- Diff-first context for recent changes
+- Symbol context (call-graph slices with budgets)
+- Structure discovery (signatures, languages)
+- Semantic search (index + find)
+
+**Prerequisites:** Requires the `tldrs` CLI installed in the environment.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/mistakeknot/tldr-swinton/main/scripts/install.sh | bash
+```
+
+**Installation:**
+```bash
+/plugin install tldrs
+```
+
+**Learn more:** [tldr-swinton](https://github.com/mistakeknot/tldr-swinton) · [tldrs-vhs](https://github.com/mistakeknot/tldrs-vhs)
+
 ---
 
 See [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json) for the complete catalog.
