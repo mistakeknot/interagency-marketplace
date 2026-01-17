@@ -30,6 +30,17 @@
       "version": "4.3.0",
       "keywords": ["documentation", "automation", "subagents", "AGENTS.md", "CLAUDE.md", "cross-AI", "incremental", "diff-preview", "harmonization", "robustness"],
       "strict": true
+    },
+    {
+      "name": "tldrs",
+      "source": {
+        "source": "path",
+        "path": "./plugins/tldrs"
+      },
+      "description": "Token-efficient code reconnaissance using tldr-swinton (diff-context, symbol context, budgets, VHS refs).",
+      "version": "0.1.0",
+      "keywords": ["tldrs", "tldr-swinton", "context", "diff-context", "symbol", "tokens", "vhs"],
+      "strict": true
     }
   ]
 }
