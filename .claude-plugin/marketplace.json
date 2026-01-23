@@ -37,9 +37,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/tldr-swinton.git"
       },
-      "description": "Token-efficient code reconnaissance using tldr-swinton (diff-context, symbol context, budgets, VHS refs).",
-      "version": "0.1.0",
-      "keywords": ["tldrs", "tldr-swinton", "context", "diff-context", "symbol", "tokens", "vhs"],
+      "description": "Token-efficient code reconnaissance for LLMs. 85%+ token savings with semantic search, diff-context, symbol analysis, and delta mode for multi-turn conversations.",
+      "version": "0.3.0",
+      "keywords": ["tldrs", "tldr-swinton", "context", "diff-context", "semantic-search", "tokens", "vhs", "code-analysis", "embeddings"],
       "strict": true
     }
   ]

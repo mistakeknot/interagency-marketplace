@@ -67,36 +67,20 @@ Recursive AGENTS.md generator using parallel subagents. Generates cross-AI compa
 
 ### tldrs
 
-Token-efficient code reconnaissance using tldr-swinton.
+Token-efficient code reconnaissance for LLMs with 85%+ token savings.
 
-**Skills / Use cases:**
-- Diff-first context for recent changes
-- Symbol context (call-graph slices with budgets)
-- Structure discovery (signatures, languages)
-- Semantic search (index + find)
+**Commands:**
+- `/tldrs-diff` - Diff-focused context for recent changes
+- `/tldrs-find <query>` - Semantic code search by concept
+- `/tldrs-context <symbol>` - Symbol-level context with call graph
+- `/tldrs-quickstart` - Quick reference guide
 
-**Prerequisites:** Requires the `tldrs` CLI installed in the environment.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/mistakeknot/tldr-swinton/main/scripts/install.sh | bash
-```
-
-**Installation:**
-```bash
-/plugin install tldrs
-```
-
-**Learn more:** [tldr-swinton](https://github.com/mistakeknot/tldr-swinton) · [tldrs-vhs](https://github.com/mistakeknot/tldrs-vhs)
-
-### tldrs
-
-Token-efficient code reconnaissance using tldr-swinton.
-
-**Skills / Use cases:**
-- Diff-first context for recent changes
-- Symbol context (call-graph slices with budgets)
-- Structure discovery (signatures, languages)
-- Semantic search (index + find)
+**Features:**
+- Diff-first workflow (prioritizes recent changes)
+- Semantic search using Ollama/sentence-transformers embeddings
+- Delta mode for multi-turn conversations (~60% additional savings)
+- Token budgets to prevent context blowup
+- VHS refs for large output storage
 
 **Prerequisites:** Requires the `tldrs` CLI installed in the environment.
 
