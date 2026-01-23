@@ -28,10 +28,90 @@ Two plugins distributed: Interpeer (v3.0.0), Interdoc (v2.1.0).
 
 ## Current Plugins
 
-| Plugin | Version | Purpose |
-|--------|---------|---------|
-| Interpeer | 3.0.0 | Cross-AI peer review (3 skills) |
-| Interdoc | 2.1.0 | Automatic CLAUDE.md maintenance |
+| Plugin | Version | Source Repo |
+|--------|---------|-------------|
+| interpeer | 4.0.4 | mistakeknot/interpeer |
+| interdoc | 4.4.3 | mistakeknot/interdoc |
+| tldrs | 0.3.1 | mistakeknot/tldr-swinton |
+
+## Plugin Publishing Runbook
+
+### Adding a New Plugin
+
+1. **Ensure plugin repo has `.claude-plugin/plugin.json`**:
+   ```json
+   {
+     "name": "my-plugin",
+     "version": "1.0.0",
+     "description": "What it does",
+     "author": { "name": "...", "email": "..." },
+     "repository": "https://github.com/owner/repo",
+     "license": "MIT",
+     "skills": ["./skills/my-skill"],
+     "commands": ["./commands/my-command.md"],
+     "hooks": "./hooks/hooks.json"
+   }
+   ```
+
+2. **Add entry to marketplace.json**:
+   ```json
+   {
+     "name": "my-plugin",
+     "source": {
+       "source": "url",
+       "url": "https://github.com/owner/repo.git"
+     },
+     "description": "Short description for marketplace listing",
+     "version": "1.0.0",
+     "keywords": ["relevant", "keywords"],
+     "strict": true
+   }
+   ```
+
+3. **Update README.md** with plugin documentation
+
+4. **Commit and push**:
+   ```bash
+   git add .claude-plugin/marketplace.json README.md
+   git commit -m "feat: add my-plugin to marketplace"
+   git push
+   ```
+
+### Updating an Existing Plugin
+
+```bash
+# 1. Plugin author bumps version in their repo
+#    (edit .claude-plugin/plugin.json, commit, push)
+
+# 2. Update marketplace to match
+edit .claude-plugin/marketplace.json  # bump version
+git add .claude-plugin/marketplace.json
+git commit -m "chore: bump my-plugin to vX.Y.Z"
+git push
+```
+
+### marketplace.json Schema
+
+```json
+{
+  "name": "interagency-marketplace",
+  "owner": { "name": "...", "email": "..." },
+  "metadata": { "description": "...", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "plugin-name",           // Required: matches plugin.json name
+      "source": {                      // Required: where to fetch
+        "source": "url",
+        "url": "https://github.com/owner/repo.git"
+      },
+      "description": "...",            // Required: marketplace listing
+      "version": "X.Y.Z",              // Required: must match plugin.json
+      "keywords": ["..."],             // Required: for search/discovery
+      "strict": true                   // Required: enables validation
+    }
+  ]
+}
+```
 
 ## Design Decisions (Do Not Re-Ask)
 
