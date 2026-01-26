@@ -32,7 +32,7 @@
       "strict": true
     },
     {
-      "name": "tldrs",
+      "name": "tldr-swinton",
       "source": {
         "source": "url",
         "url": "https://github.com/mistakeknot/tldr-swinton.git"
