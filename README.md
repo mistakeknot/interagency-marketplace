@@ -95,6 +95,36 @@ curl -fsSL https://raw.githubusercontent.com/mistakeknot/tldr-swinton/main/scrip
 
 **Learn more:** [tldr-swinton](https://github.com/mistakeknot/tldr-swinton) · [tldrs-vhs](https://github.com/mistakeknot/tldrs-vhs)
 
+### Tuivision
+
+TUI automation and visual testing - "Playwright for terminal applications".
+
+**MCP Tools:**
+- `spawn_tui` - Start a TUI app in a virtual terminal
+- `send_input` - Send keystrokes (text, arrows, ctrl+c, function keys)
+- `get_screen` - Get terminal state as text or structured data
+- `get_screenshot` - Render terminal to PNG or SVG image
+- `resize_session` - Change terminal dimensions
+- `list_sessions` / `close_session` - Session management
+
+**Skill:** `tui-test` - Guided workflow for TUI testing and automation.
+
+**Features:**
+- Virtual PTY management with xterm.js headless
+- PNG/SVG screenshot rendering via node-canvas
+- Full ANSI escape sequence support
+- Configurable terminal dimensions
+- Multiple concurrent sessions
+
+**Prerequisites:** Node.js 20+, Cairo/Pango for canvas rendering.
+
+**Installation:**
+```bash
+/plugin install tuivision
+```
+
+**Learn more:** [Tuivision Repository](https://github.com/mistakeknot/tuivision)
+
 ---
 
 See [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json) for the complete catalog.

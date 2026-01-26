@@ -41,6 +41,17 @@
       "version": "0.4.0",
       "keywords": ["tldrs", "tldr-swinton", "context", "diff-context", "semantic-search", "tokens", "vhs", "code-analysis", "embeddings"],
       "strict": true
+    },
+    {
+      "name": "tuivision",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/tuivision.git"
+      },
+      "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
+      "version": "0.1.0",
+      "keywords": ["tui", "terminal", "automation", "testing", "screenshot", "pty", "xterm", "mcp"],
+      "strict": true
     }
   ]
 }
