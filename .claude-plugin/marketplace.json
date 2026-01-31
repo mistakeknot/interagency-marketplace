@@ -60,8 +60,8 @@
         "url": "https://github.com/mistakeknot/tool-time.git"
       },
       "description": "Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hooks, detects inefficiencies, and offers opt-in community comparison with anonymized data.",
-      "version": "0.2.1",
-      "keywords": ["tools", "analytics", "community", "patterns", "usage", "hooks", "anonymized"],
+      "version": "0.3.0",
+      "keywords": ["tools", "analytics", "community", "patterns", "usage", "hooks", "anonymized", "skills", "playbooks"],
       "strict": true
     }
   ]
