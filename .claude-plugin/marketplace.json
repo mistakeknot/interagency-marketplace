@@ -70,9 +70,20 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/gurgeh-plugin.git"
       },
-      "description": "Flux Drive — intelligent plan deepening with codebase-aware agents. Triages relevant reviewers (5-20 instead of 40-100+) and creates project-specific specialists.",
+      "description": "Codebase-aware Tier 1 review agents for Autarch (Go/Bubble Tea). Specialists: architecture, UX, code quality, performance, security, Bubble Tea v1, Gurgeh specs.",
       "version": "0.1.0",
-      "keywords": ["plan", "review", "agents", "triage", "codebase-aware", "flux-drive"],
+      "keywords": ["review", "agents", "codebase-aware", "bubble-tea", "gurgeh", "autarch"],
+      "strict": true
+    },
+    {
+      "name": "clavain",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/Clavain.git"
+      },
+      "description": "General-purpose engineering discipline plugin. 23 agents, 22 commands, 31 skills, 2 MCP servers. Workflow discipline, review orchestration (flux-drive), TDD, debugging, planning.",
+      "version": "0.1.0",
+      "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose"],
       "strict": true
     },
     {
