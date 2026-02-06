@@ -74,6 +74,17 @@
       "version": "0.1.0",
       "keywords": ["plan", "review", "agents", "triage", "codebase-aware", "flux-drive"],
       "strict": true
+    },
+    {
+      "name": "interclode",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interclode.git"
+      },
+      "description": "Cross-AI delegation — dispatch Codex CLI agents from Claude Code for parallel autonomous work, then review and verify results.",
+      "version": "0.1.0",
+      "keywords": ["codex", "delegation", "cross-ai", "parallel", "orchestration", "dispatch"],
+      "strict": true
     }
   ]
 }
