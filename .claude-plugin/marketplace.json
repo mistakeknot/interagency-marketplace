@@ -63,6 +63,17 @@
       "version": "0.3.0",
       "keywords": ["tools", "analytics", "community", "patterns", "usage", "hooks", "anonymized", "skills", "playbooks"],
       "strict": true
+    },
+    {
+      "name": "gurgeh-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/gurgeh-plugin.git"
+      },
+      "description": "Flux Drive — intelligent plan deepening with codebase-aware agents. Triages relevant reviewers (5-20 instead of 40-100+) and creates project-specific specialists.",
+      "version": "0.1.0",
+      "keywords": ["plan", "review", "agents", "triage", "codebase-aware", "flux-drive"],
+      "strict": true
     }
   ]
 }
