@@ -10,17 +10,6 @@
   },
   "plugins": [
     {
-      "name": "interpeer",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpeer.git"
-      },
-      "description": "Cross-AI peer review: interpeer (Claude↔Codex auto-detect), prompterpeer (Oracle with prompt review), winterpeer (LLM Council), splinterpeer (disagreement-driven development)",
-      "version": "4.0.5",
-      "keywords": ["codex", "oracle", "review", "feedback", "collaboration", "council"],
-      "strict": true
-    },
-    {
       "name": "interdoc",
       "source": {
         "source": "url",
@@ -81,9 +70,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 23 agents, 25 commands, 31 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, structured debate, and codex-first mode.",
-      "version": "0.2.0",
-      "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose", "codex", "dispatch", "debate"],
+      "description": "General-purpose engineering discipline plugin. 23 agents, 25 commands, 35 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer, prompterpeer, winterpeer, splinterpeer), structured debate, and codex-first mode.",
+      "version": "0.3.0",
+      "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose", "codex", "dispatch", "debate", "cross-ai-review", "oracle", "council"],
       "strict": true
     },
     {
