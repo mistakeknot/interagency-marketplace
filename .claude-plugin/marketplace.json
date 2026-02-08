@@ -81,20 +81,9 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 23 agents, 24 commands, 32 skills, 2 MCP servers. Workflow discipline, review orchestration (flux-drive), Agent Mail auto-registration, dotfiles sync on SessionEnd, TDD, debugging, planning.",
-      "version": "0.1.2",
-      "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose"],
-      "strict": true
-    },
-    {
-      "name": "interclode",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interclode.git"
-      },
-      "description": "Cross-AI delegation — dispatch Codex CLI agents from Claude Code for parallel autonomous work, then review and verify results.",
-      "version": "0.1.0",
-      "keywords": ["codex", "delegation", "cross-ai", "parallel", "orchestration", "dispatch"],
+      "description": "General-purpose engineering discipline plugin. 23 agents, 25 commands, 31 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, structured debate, and codex-first mode.",
+      "version": "0.2.0",
+      "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose", "codex", "dispatch", "debate"],
       "strict": true
     },
     {
