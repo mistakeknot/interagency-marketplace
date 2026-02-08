@@ -54,17 +54,6 @@
       "strict": true
     },
     {
-      "name": "gurgeh-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/gurgeh-plugin.git"
-      },
-      "description": "Codebase-aware Tier 1 review agents for Autarch (Go/Bubble Tea). Specialists: architecture, UX, code quality, performance, security, Bubble Tea v1, Gurgeh specs.",
-      "version": "0.1.0",
-      "keywords": ["review", "agents", "codebase-aware", "bubble-tea", "gurgeh", "autarch"],
-      "strict": true
-    },
-    {
       "name": "clavain",
       "source": {
         "source": "url",
