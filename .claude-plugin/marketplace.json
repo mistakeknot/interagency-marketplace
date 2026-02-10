@@ -38,7 +38,7 @@
         "url": "https://github.com/mistakeknot/tuivision.git"
       },
       "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": ["tui", "terminal", "automation", "testing", "screenshot", "pty", "xterm", "mcp"],
       "strict": true
     },
@@ -82,7 +82,7 @@
         "url": "https://github.com/mistakeknot/interpub.git"
       },
       "description": "Safe plugin publishing — bumps all version locations, validates sync, commits and pushes with confirmation.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": ["publishing", "versioning", "marketplace", "plugin-dev", "release"],
       "strict": true
     }
