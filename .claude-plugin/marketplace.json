@@ -27,7 +27,7 @@
         "url": "https://github.com/mistakeknot/tldr-swinton.git"
       },
       "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis.",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "keywords": ["tldrs", "tldr-swinton", "context", "diff-context", "semantic-search", "structural-search", "tokens", "code-analysis", "embeddings", "llm-tools"],
       "strict": true
     },
