@@ -93,7 +93,7 @@
         "url": "https://github.com/mistakeknot/Interfluence.git"
       },
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": ["writing-style", "voice-profile", "documentation", "tone-adaptation", "mcp", "style-transfer", "corpus-analysis"],
       "strict": true
     }
