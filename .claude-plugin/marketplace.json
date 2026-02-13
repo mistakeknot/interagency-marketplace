@@ -115,8 +115,8 @@
         "url": "https://github.com/mistakeknot/interphase.git"
       },
       "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain — adds lifecycle state management on top of the core beads plugin.",
-      "version": "0.2.0",
-      "keywords": ["beads", "lifecycle", "phase-tracking", "gates", "discovery", "workflow", "issue-tracking", "interphase"],
+      "version": "0.3.0",
+      "keywords": ["beads", "lifecycle", "phase-tracking", "gates", "discovery", "workflow", "issue-tracking", "interphase", "enforcement"],
       "strict": true
     }
   ]
