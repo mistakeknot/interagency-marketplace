@@ -59,7 +59,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 17 agents, 37 commands, 29 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companion: beads-lifecycle.",
+      "description": "General-purpose engineering discipline plugin. 17 agents, 37 commands, 29 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companion: interphase.",
       "version": "0.5.0",
       "keywords": ["engineering", "discipline", "workflow", "review", "flux-drive", "tdd", "debugging", "planning", "agents", "general-purpose", "codex", "dispatch", "debate", "cross-ai-review", "oracle", "council"],
       "strict": true
@@ -98,14 +98,14 @@
       "strict": true
     },
     {
-      "name": "beads-lifecycle",
+      "name": "interphase",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/beads-lifecycle.git"
+        "url": "https://github.com/mistakeknot/interphase.git"
       },
       "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain — adds lifecycle state management on top of the core beads plugin.",
       "version": "0.1.0",
-      "keywords": ["beads", "lifecycle", "phase-tracking", "gates", "discovery", "workflow", "issue-tracking"],
+      "keywords": ["beads", "lifecycle", "phase-tracking", "gates", "discovery", "workflow", "issue-tracking", "interphase"],
       "strict": true
     }
   ]
