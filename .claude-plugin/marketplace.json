@@ -100,8 +100,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 17 agents, 37 commands, 29 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline.",
-      "version": "0.5.13",
+      "description": "General-purpose engineering discipline plugin. 17 agents, 38 commands, 29 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline.",
+      "version": "0.5.14",
       "keywords": [
         "engineering",
         "discipline",
