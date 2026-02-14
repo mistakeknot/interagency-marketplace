@@ -123,25 +123,6 @@
       "strict": true
     },
     {
-      "name": "auracoil",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/auracoil.git"
-      },
-      "description": "GPT 5.2 Pro reviewer for AGENTS.md — accretive cross-AI documentation enhancement via Oracle",
-      "version": "0.2.0",
-      "keywords": [
-        "agents-md",
-        "oracle",
-        "gpt",
-        "review",
-        "documentation",
-        "cross-AI",
-        "accretive"
-      ],
-      "strict": true
-    },
-    {
       "name": "interpub",
       "source": {
         "source": "url",
