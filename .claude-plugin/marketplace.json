@@ -100,7 +100,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 17 agents, 38 commands, 29 skills, 2 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline.",
+      "description": "General-purpose engineering discipline plugin. 10 agents, 36 commands, 27 skills, 1 MCP server — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux.",
       "version": "0.6.0",
       "keywords": [
         "engineering",
@@ -213,6 +213,26 @@
         "issue-tracking",
         "interphase",
         "enforcement"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interflux",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/Interflux.git"
+      },
+      "description": "Multi-agent document review engine — scored triage, domain detection, content slicing, and knowledge injection. 7 review agents, 2 commands, 1 skill, 1 MCP server. Companion plugin for Clavain.",
+      "version": "0.1.0",
+      "keywords": [
+        "review",
+        "multi-agent",
+        "flux-drive",
+        "domain-detection",
+        "triage",
+        "code-review",
+        "document-review",
+        "interflux"
       ],
       "strict": true
     }
