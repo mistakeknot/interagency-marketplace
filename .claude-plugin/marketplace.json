@@ -100,8 +100,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux, interpath, interwatch.",
-      "version": "0.6.10",
+      "description": "General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux, interpath, interwatch, interlock.",
+      "version": "0.6.12",
       "keywords": [
         "engineering",
         "discipline",
@@ -164,8 +164,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interline.git"
       },
-      "description": "Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, and Codex dispatch state. Integrates with Clavain, interphase, and beads.",
-      "version": "0.2.1",
+      "description": "Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
+      "version": "0.2.2",
       "keywords": [
         "statusline",
         "status",
@@ -254,6 +254,28 @@
         "auto-refresh",
         "monitoring",
         "interwatch"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interlock",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlock.git"
+      },
+      "description": "Multi-agent file coordination — reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
+      "version": "0.1.0",
+      "keywords": [
+        "coordination",
+        "multi-agent",
+        "file-reservation",
+        "conflict-detection",
+        "messaging",
+        "mcp",
+        "intermute",
+        "hooks",
+        "git-hooks",
+        "interlock"
       ],
       "strict": true
     },
