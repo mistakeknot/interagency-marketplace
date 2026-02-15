@@ -401,6 +401,24 @@
         "bidirectional"
       ],
       "strict": true
+    },
+    {
+      "name": "intercheck",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intercheck.git"
+      },
+      "description": "Code quality guards and session health monitoring — context pressure tracking with time-decay, syntax validation for 8 languages, and auto-formatting via ruff/shfmt/gofmt/jq/prettier.",
+      "version": "0.1.0",
+      "keywords": [
+        "quality",
+        "syntax",
+        "formatting",
+        "hooks",
+        "session-health",
+        "context-monitor"
+      ],
+      "strict": true
     }
   ]
 }
