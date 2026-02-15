@@ -287,7 +287,12 @@
       },
       "description": "Slack integration for Claude Code — send messages, read channels, test integrations.",
       "version": "0.1.0",
-      "keywords": ["slack", "messaging", "integration", "communication"],
+      "keywords": [
+        "slack",
+        "messaging",
+        "integration",
+        "communication"
+      ],
       "strict": true
     },
     {
@@ -298,7 +303,13 @@
       },
       "description": "Design patterns and visual quality for Claude Code — distinctive, production-grade interfaces.",
       "version": "0.1.0",
-      "keywords": ["design", "ui", "ux", "visual", "interface"],
+      "keywords": [
+        "design",
+        "ui",
+        "ux",
+        "visual",
+        "interface"
+      ],
       "strict": true
     },
     {
@@ -309,7 +320,13 @@
       },
       "description": "Agent-native architecture patterns — design, review, and audit for agent-first applications.",
       "version": "0.1.0",
-      "keywords": ["agent-native", "architecture", "mcp", "design-patterns", "agents"],
+      "keywords": [
+        "agent-native",
+        "architecture",
+        "mcp",
+        "design-patterns",
+        "agents"
+      ],
       "strict": true
     },
     {
@@ -320,7 +337,12 @@
       },
       "description": "Developer tooling for Claude Code — MCP CLI interaction and tool discovery.",
       "version": "0.1.0",
-      "keywords": ["mcp", "cli", "developer-tools", "tool-discovery"],
+      "keywords": [
+        "mcp",
+        "cli",
+        "developer-tools",
+        "tool-discovery"
+      ],
       "strict": true
     },
     {
@@ -330,7 +352,7 @@
         "url": "https://github.com/mistakeknot/interkasten.git"
       },
       "description": "Bidirectional Notion sync with adaptive AI documentation and pagent workflow automation. MCP server bridges local projects to Notion with key doc tracking, push sync, and project management tools.",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "keywords": [
         "notion",
         "sync",
