@@ -352,7 +352,7 @@
         "url": "https://github.com/mistakeknot/interkasten.git"
       },
       "description": "Bidirectional Notion sync with adaptive AI documentation and pagent workflow automation. MCP server bridges local projects to Notion with key doc tracking, push sync, and project management tools.",
-      "version": "0.3.7",
+      "version": "0.3.8",
       "keywords": [
         "notion",
         "sync",
