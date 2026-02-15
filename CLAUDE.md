@@ -8,7 +8,7 @@ Claude Code plugin marketplace - JSON-based catalog for distributing plugins. Ho
 
 ## Status: Production
 
-Two plugins distributed: Interpeer (v3.0.0), Interdoc (v2.1.0).
+Two plugins distributed: Interpeer (v3.0.0), interdoc (v2.1.0).
 
 ## Quick Commands
 

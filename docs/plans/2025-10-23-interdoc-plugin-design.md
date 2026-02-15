@@ -1,4 +1,4 @@
-# Interdoc Plugin Design
+# interdoc Plugin Design
 
 **Date**: 2025-10-23
 **Status**: Design Complete
@@ -8,13 +8,13 @@
 
 **Purpose**: Claude Code plugin that keeps CLAUDE.md documentation up-to-date by detecting significant code changes and suggesting relevant documentation updates.
 
-**Key Insight**: CLAUDE.md files serve as crucial context for Claude Code sessions. Keeping them current is important but tedious. Interdoc automates detection and drafting while keeping humans in control.
+**Key Insight**: CLAUDE.md files serve as crucial context for Claude Code sessions. Keeping them current is important but tedious. interdoc automates detection and drafting while keeping humans in control.
 
 ## Requirements
 
 ### Tracked Change Categories
 
-Interdoc monitors and suggests documentation for:
+interdoc monitors and suggests documentation for:
 - **Architecture changes**: New patterns, structural changes, component additions/removals
 - **Critical implementation details**: Lessons learned, gotchas, non-obvious constraints
 - **Plugin/dependency changes**: New tools added, removed, or significantly changed
@@ -125,7 +125,7 @@ If CLAUDE.md doesn't have relevant sections, Claude suggests where to add them.
 
 ### Missing CLAUDE.md
 
-When Interdoc detects changes but no CLAUDE.md exists:
+When interdoc detects changes but no CLAUDE.md exists:
 
 ```
 I detected significant changes but CLAUDE.md doesn't exist.

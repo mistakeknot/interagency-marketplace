@@ -50,7 +50,7 @@ Cross-AI peer review plugin with three focused skills:
 
 **Repository:** `mistakeknot/interpeer`
 
-### Interdoc (v2.1.0)
+### interdoc (v2.1.0)
 Automatic CLAUDE.md maintenance plugin:
 - Dual detection: SessionStart (3+ commits), PostToolUse (10+ commits)
 - Uses prompt injection hooks for automatic documentation reviews

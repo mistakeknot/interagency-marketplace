@@ -43,7 +43,7 @@ Cross-AI peer review with multiple modes for different use cases.
 
 **Learn more:** [Interpeer Plugin Documentation](https://github.com/mistakeknot/interpeer)
 
-### Interdoc
+### interdoc
 
 Recursive AGENTS.md generator using parallel subagents. Generates cross-AI compatible documentation that works with Claude Code, Codex CLI, and other AI tools.
 
@@ -63,7 +63,7 @@ Recursive AGENTS.md generator using parallel subagents. Generates cross-AI compa
 /plugin install interdoc
 ```
 
-**Learn more:** [Interdoc Plugin Repository](https://github.com/mistakeknot/interdoc)
+**Learn more:** [interdoc Plugin Repository](https://github.com/mistakeknot/interdoc)
 
 ### tldrs
 
@@ -95,7 +95,7 @@ curl -fsSL https://raw.githubusercontent.com/mistakeknot/tldr-swinton/main/scrip
 
 **Learn more:** [tldr-swinton](https://github.com/mistakeknot/tldr-swinton) · [tldrs-vhs](https://github.com/mistakeknot/tldrs-vhs)
 
-### Tuivision
+### tuivision
 
 TUI automation and visual testing - "Playwright for terminal applications".
 
@@ -123,7 +123,7 @@ TUI automation and visual testing - "Playwright for terminal applications".
 /plugin install tuivision
 ```
 
-**Learn more:** [Tuivision Repository](https://github.com/mistakeknot/tuivision)
+**Learn more:** [tuivision Repository](https://github.com/mistakeknot/tuivision)
 
 ---
 
