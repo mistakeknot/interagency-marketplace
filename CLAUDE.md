@@ -8,7 +8,7 @@ Claude Code plugin marketplace - JSON-based catalog for distributing plugins. Ho
 
 ## Status: Production
 
-Two plugins distributed: Interpeer (v3.0.0), interdoc (v2.1.0).
+13 plugins distributed.
 
 ## Quick Commands
 
@@ -17,22 +17,13 @@ Two plugins distributed: Interpeer (v3.0.0), interdoc (v2.1.0).
 /plugin marketplace add mistakeknot/interagency-marketplace
 
 # Users install plugins
-/plugin install interpeer
+/plugin install clavain
 /plugin install interdoc
 ```
 
 ## Key Files
 
-- `.claude-plugin/marketplace.json` - Central registry
-- `plugins/*/` - Plugin directories (if locally hosted)
-
-## Current Plugins
-
-| Plugin | Version | Source Repo |
-|--------|---------|-------------|
-| interpeer | 4.0.4 | mistakeknot/interpeer |
-| interdoc | 4.4.3 | mistakeknot/interdoc |
-| tldrs | 0.3.1 | mistakeknot/tldr-swinton |
+- `.claude-plugin/marketplace.json` - Central registry (source of truth)
 
 ## Plugin Publishing Runbook
 
@@ -115,7 +106,7 @@ git push
 
 ## Design Decisions (Do Not Re-Ask)
 
-- **External repos**: Both plugins in separate GitHub repos (mistakeknot/interpeer, mistakeknot/interdoc)
+- **External repos**: All plugins in separate GitHub repos under mistakeknot/
 - **URL source format**: Must use `{ "source": "url", "url": "..." }` object, not shorthand
 - **All fields required**: name, source, description, version, keywords, strict for validation
 - **Git URLs with .git**: Full URLs like `https://github.com/owner/repo.git`
