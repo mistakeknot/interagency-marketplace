@@ -15,8 +15,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
-      "description": "Recursive AGENTS.md generator with CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
-      "version": "5.0.0",
+      "description": "Recursive AGENTS.md generator with structural auto-fix, CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
+      "version": "5.1.0",
       "keywords": [
         "documentation",
         "automation",
@@ -277,6 +277,50 @@
         "git-hooks",
         "interlock"
       ],
+      "strict": true
+    },
+    {
+      "name": "interslack",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interslack.git"
+      },
+      "description": "Slack integration for Claude Code — send messages, read channels, test integrations.",
+      "version": "0.1.0",
+      "keywords": ["slack", "messaging", "integration", "communication"],
+      "strict": true
+    },
+    {
+      "name": "interform",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interform.git"
+      },
+      "description": "Design patterns and visual quality for Claude Code — distinctive, production-grade interfaces.",
+      "version": "0.1.0",
+      "keywords": ["design", "ui", "ux", "visual", "interface"],
+      "strict": true
+    },
+    {
+      "name": "intercraft",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intercraft.git"
+      },
+      "description": "Agent-native architecture patterns — design, review, and audit for agent-first applications.",
+      "version": "0.1.0",
+      "keywords": ["agent-native", "architecture", "mcp", "design-patterns", "agents"],
+      "strict": true
+    },
+    {
+      "name": "interdev",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interdev.git"
+      },
+      "description": "Developer tooling for Claude Code — MCP CLI interaction and tool discovery.",
+      "version": "0.1.0",
+      "keywords": ["mcp", "cli", "developer-tools", "tool-discovery"],
       "strict": true
     },
     {
