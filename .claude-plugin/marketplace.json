@@ -363,6 +363,26 @@
       "strict": true
     },
     {
+      "name": "interject",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interject.git"
+      },
+      "description": "Ambient discovery and research engine — scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
+      "version": "0.1.0",
+      "keywords": [
+        "research",
+        "discovery",
+        "recommendation",
+        "ambient-scanning",
+        "arxiv",
+        "hackernews",
+        "mcp",
+        "embeddings"
+      ],
+      "strict": true
+    },
+    {
       "name": "interkasten",
       "source": {
         "source": "url",
