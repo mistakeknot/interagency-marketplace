@@ -369,7 +369,7 @@
         "url": "https://github.com/mistakeknot/interject.git"
       },
       "description": "Ambient discovery and research engine — scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "research",
         "discovery",
