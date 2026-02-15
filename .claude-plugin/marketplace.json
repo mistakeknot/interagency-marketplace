@@ -16,7 +16,7 @@
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
       "description": "Recursive AGENTS.md generator with CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
-      "version": "4.4.3",
+      "version": "5.0.0",
       "keywords": [
         "documentation",
         "automation",
