@@ -101,7 +101,7 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "description": "General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux, interpath, interwatch.",
-      "version": "0.6.9",
+      "version": "0.6.10",
       "keywords": [
         "engineering",
         "discipline",
@@ -143,7 +143,7 @@
       "name": "interfluence",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/Interfluence.git"
+        "url": "https://github.com/mistakeknot/interfluence.git"
       },
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
       "version": "0.1.1",
@@ -201,7 +201,7 @@
       "name": "interflux",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/Interflux.git"
+        "url": "https://github.com/mistakeknot/interflux.git"
       },
       "description": "Multi-agent document review engine — scored triage, domain detection, content slicing, and knowledge injection. 7 review agents, 2 commands, 1 skill, 1 MCP server. Companion plugin for Clavain.",
       "version": "0.1.0",
@@ -261,7 +261,7 @@
       "name": "interkasten",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/Interkasten.git"
+        "url": "https://github.com/mistakeknot/interkasten.git"
       },
       "description": "Bidirectional Notion sync with adaptive AI documentation and pagent workflow automation. MCP server bridges local projects to Notion with key doc tracking, push sync, and project management tools.",
       "version": "0.2.1",
