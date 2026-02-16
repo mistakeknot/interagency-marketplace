@@ -101,7 +101,7 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "description": "General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux, interpath, interwatch, interlock.",
-      "version": "0.6.29",
+      "version": "0.6.30",
       "keywords": [
         "engineering",
         "discipline",
@@ -471,6 +471,26 @@
         "mcp",
         "thinking-modes",
         "systems-thinking"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intermux",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intermux.git"
+      },
+      "description": "Agent activity visibility — tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
+      "version": "0.1.0",
+      "keywords": [
+        "tmux",
+        "monitoring",
+        "activity",
+        "health",
+        "mcp",
+        "intermute",
+        "multi-agent",
+        "observability"
       ],
       "strict": true
     },
