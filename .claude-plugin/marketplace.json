@@ -463,7 +463,7 @@
         "url": "https://github.com/mistakeknot/interlens.git"
       },
       "description": "288 FLUX cognitive lenses for structured thinking — MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
-      "version": "2.2.1",
+      "version": "2.2.2",
       "keywords": [
         "flux",
         "lenses",
