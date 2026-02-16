@@ -388,7 +388,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interkasten.git"
       },
-      "description": "Bidirectional Notion sync with adaptive AI documentation and pagent workflow automation. MCP server bridges local projects to Notion with key doc tracking, push sync, and project management tools.",
+      "description": "Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking, and 21 MCP tools for project lifecycle and sync control.",
       "version": "0.4.0",
       "keywords": [
         "notion",
