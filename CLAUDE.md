@@ -8,7 +8,7 @@ Claude Code plugin marketplace - JSON-based catalog for distributing plugins. Ho
 
 ## Status: Production
 
-13 plugins distributed.
+23 plugins distributed.
 
 ## Quick Commands
 
