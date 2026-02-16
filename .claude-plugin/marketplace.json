@@ -455,6 +455,41 @@
         "interserve"
       ],
       "strict": true
+    },
+    {
+      "name": "interlens",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlens.git"
+      },
+      "description": "288 FLUX cognitive lenses for structured thinking — MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
+      "version": "2.2.1",
+      "keywords": [
+        "flux",
+        "lenses",
+        "cognitive-augmentation",
+        "mcp",
+        "thinking-modes",
+        "systems-thinking"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intersearch",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intersearch.git"
+      },
+      "description": "Shared embedding and search infrastructure — sentence-transformer embeddings and Exa web search, used by interject and interflux.",
+      "version": "0.1.0",
+      "keywords": [
+        "embeddings",
+        "search",
+        "exa",
+        "sentence-transformers",
+        "shared-library"
+      ],
+      "strict": true
     }
   ]
 }
