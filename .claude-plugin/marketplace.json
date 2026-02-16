@@ -481,7 +481,7 @@
         "url": "https://github.com/mistakeknot/intersearch.git"
       },
       "description": "Shared embedding and search infrastructure — sentence-transformer embeddings and Exa web search, used by interject and interflux.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "embeddings",
         "search",
