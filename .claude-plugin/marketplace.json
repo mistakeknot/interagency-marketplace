@@ -165,7 +165,7 @@
         "url": "https://github.com/mistakeknot/interline.git"
       },
       "description": "Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "keywords": [
         "statusline",
         "status",
