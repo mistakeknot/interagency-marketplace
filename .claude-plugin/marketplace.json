@@ -335,13 +335,15 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdev.git"
       },
-      "description": "Developer tooling for Claude Code — MCP CLI interaction and tool discovery.",
-      "version": "0.1.0",
+      "description": "Developer tooling for Claude Code — MCP CLI interaction, skill authoring, plugin development, and Claude Code reference.",
+      "version": "0.2.0",
       "keywords": [
         "mcp",
         "cli",
         "developer-tools",
-        "tool-discovery"
+        "tool-discovery",
+        "skill-authoring",
+        "plugin-dev"
       ],
       "strict": true
     },
@@ -525,6 +527,59 @@
         "call-graph",
         "impact-analysis",
         "mcp"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interpeer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpeer.git"
+      },
+      "description": "Cross-AI peer review with 4 escalation modes — quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
+      "version": "0.1.0",
+      "keywords": [
+        "peer-review",
+        "cross-ai",
+        "oracle",
+        "codex",
+        "council",
+        "multi-model"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intersynth",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intersynth.git"
+      },
+      "description": "Multi-agent synthesis engine — collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
+      "version": "0.1.0",
+      "keywords": [
+        "synthesis",
+        "multi-agent",
+        "verdicts",
+        "aggregation",
+        "review"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intertest",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertest.git"
+      },
+      "description": "Engineering quality disciplines — systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
+      "version": "0.1.0",
+      "keywords": [
+        "testing",
+        "tdd",
+        "debugging",
+        "verification",
+        "quality",
+        "disciplines"
       ],
       "strict": true
     }
