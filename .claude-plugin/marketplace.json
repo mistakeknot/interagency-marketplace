@@ -352,7 +352,7 @@
         "url": "https://github.com/mistakeknot/internext.git"
       },
       "description": "Work prioritization and next-task analysis — tradeoff-aware recommendations from beads state and project context.",
-      "version": "0.3.3",
+      "version": "0.1.2",
       "keywords": [
         "prioritization",
         "planning",
