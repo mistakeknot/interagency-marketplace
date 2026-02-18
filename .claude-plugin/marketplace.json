@@ -429,7 +429,7 @@
         "url": "https://github.com/mistakeknot/interstat.git"
       },
       "description": "Token efficiency benchmarking for agent workflows — PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "keywords": [
         "tokens",
         "benchmarking",
