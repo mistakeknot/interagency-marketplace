@@ -572,7 +572,7 @@
         "url": "https://github.com/mistakeknot/intertest.git"
       },
       "description": "Engineering quality disciplines — systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "testing",
         "tdd",
@@ -599,6 +599,24 @@
         "pruning",
         "stability",
         "dedup"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interleave",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interleave.git"
+      },
+      "description": "Deterministic Skeleton with LLM Islands — token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
+      "version": "0.1.0",
+      "keywords": [
+        "interleave",
+        "token-efficiency",
+        "template",
+        "skeleton",
+        "deterministic",
+        "islands"
       ],
       "strict": true
     }
