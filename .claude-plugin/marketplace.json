@@ -483,7 +483,7 @@
         "url": "https://github.com/mistakeknot/intermux.git"
       },
       "description": "Agent activity visibility — tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "tmux",
         "monitoring",
