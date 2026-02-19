@@ -100,7 +100,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
-      "description": "General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP servers — combining workflow discipline with specialized execution agents. Includes Codex dispatch, cross-AI review (interpeer with quick/deep/council/mine modes), and structured debate. Companions: interphase, interline, interflux, interpath, interwatch, interlock.",
+      "description": "Opinionated agent rig — codifies product and engineering discipline into composable workflows from brainstorm to ship. Orchestrates Claude, Codex, and GPT-5.2 Pro through 15 skills, 4 agents, 52 commands, 12 hooks. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
       "version": "0.6.39",
       "keywords": [
         "engineering",
@@ -146,7 +146,7 @@
         "url": "https://github.com/mistakeknot/interfluence.git"
       },
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
-      "version": "0.1.4",
+      "version": "0.2.0",
       "keywords": [
         "writing-style",
         "voice-profile",
