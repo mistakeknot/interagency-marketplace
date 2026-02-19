@@ -204,7 +204,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "description": "Multi-agent document review engine \u2014 scored triage, domain detection, content slicing, and knowledge injection. 7 review agents, 2 commands, 1 skill, 1 MCP server. Companion plugin for Clavain.",
-      "version": "0.2.14",
+      "version": "0.2.15",
       "keywords": [
         "review",
         "multi-agent",
