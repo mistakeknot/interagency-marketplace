@@ -520,7 +520,7 @@
         "url": "https://github.com/mistakeknot/intermap.git"
       },
       "description": "Project-level code mapping MCP server: project registry, call graphs, impact analysis, agent overlay. Go + Python bridge.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "keywords": [
         "code-mapping",
         "project-registry",
