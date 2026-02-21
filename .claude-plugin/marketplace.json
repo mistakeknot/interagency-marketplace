@@ -411,7 +411,7 @@
         "url": "https://github.com/mistakeknot/intercheck.git"
       },
       "description": "Code quality guards and session health monitoring — context pressure tracking with time-decay, syntax validation for 8 languages, and auto-formatting via ruff/shfmt/gofmt/jq/prettier.",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "keywords": [
         "quality",
         "syntax",
@@ -429,7 +429,7 @@
         "url": "https://github.com/mistakeknot/interstat.git"
       },
       "description": "Token efficiency benchmarking for agent workflows — PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "keywords": [
         "tokens",
         "benchmarking",
