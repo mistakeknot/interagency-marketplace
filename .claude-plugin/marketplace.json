@@ -447,7 +447,7 @@
         "url": "https://github.com/mistakeknot/interserve.git"
       },
       "description": "Codex spark classifier and context compression — MCP server exposing classify_sections, extract_sections, and codex_query tools for token-efficient document review.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "keywords": [
         "codex",
         "classifier",
