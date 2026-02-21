@@ -391,7 +391,7 @@
         "url": "https://github.com/mistakeknot/interkasten.git"
       },
       "description": "Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking, and 21 MCP tools for project lifecycle and sync control.",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "keywords": [
         "notion",
         "sync",
