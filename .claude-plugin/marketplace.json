@@ -590,7 +590,7 @@
         "url": "https://github.com/mistakeknot/intermem.git"
       },
       "description": "Memory synthesis — graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "keywords": [
         "memory",
         "synthesis",
