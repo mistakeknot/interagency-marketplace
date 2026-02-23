@@ -60,7 +60,7 @@
         "url": "https://github.com/mistakeknot/tuivision.git"
       },
       "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "keywords": [
         "tui",
         "terminal",
@@ -204,7 +204,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "description": "Multi-agent document review engine — scored triage, domain detection, content slicing, and knowledge injection. 7 review agents, 2 commands, 1 skill, 1 MCP server. Companion plugin for Clavain.",
-      "version": "0.2.19",
+      "version": "0.2.20",
       "keywords": [
         "review",
         "multi-agent",
@@ -245,7 +245,7 @@
         "url": "https://github.com/mistakeknot/interwatch.git"
       },
       "description": "Doc freshness monitoring — drift detection, confidence scoring, and auto-refresh orchestration across product artifacts and code docs. Companion plugin for Clavain.",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "keywords": [
         "documentation",
         "drift-detection",
@@ -264,7 +264,7 @@
         "url": "https://github.com/mistakeknot/interlock.git"
       },
       "description": "Multi-agent file coordination — reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "keywords": [
         "coordination",
         "multi-agent",
