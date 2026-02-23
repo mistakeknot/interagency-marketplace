@@ -146,7 +146,7 @@
         "url": "https://github.com/mistakeknot/interfluence.git"
       },
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "keywords": [
         "writing-style",
         "voice-profile",
@@ -203,8 +203,8 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interflux.git"
       },
-      "description": "Multi-agent document review engine — scored triage, domain detection, content slicing, and knowledge injection. 7 review agents, 2 commands, 1 skill, 1 MCP server. Companion plugin for Clavain.",
-      "version": "0.2.20",
+      "description": "Multi-agent review and research with scored triage, domain detection, content slicing, intermediate finding sharing, and knowledge injection. 17 agents (12 review + 5 research), 4 commands, 2 skills, 2 MCP servers. Companion plugin for Clavain.",
+      "version": "0.2.21",
       "keywords": [
         "review",
         "multi-agent",
@@ -319,7 +319,7 @@
         "url": "https://github.com/mistakeknot/intercraft.git"
       },
       "description": "Agent-native architecture patterns — design, review, and audit for agent-first applications.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "agent-native",
         "architecture",
@@ -555,7 +555,7 @@
         "url": "https://github.com/mistakeknot/intersynth.git"
       },
       "description": "Multi-agent synthesis engine — collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "keywords": [
         "synthesis",
         "multi-agent",
