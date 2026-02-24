@@ -1,6 +1,6 @@
 # Interagency Marketplace
 
-A Claude Code plugin marketplace — 32 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+A Claude Code plugin marketplace: 32 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Once added, browse and install any plugin below:
 
 ### Clavain
 
-General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP server — the hub that ties together workflow discipline, Codex dispatch, cross-AI review, and structured debate. Most of the companion plugins below were extracted from Clavain as they grew complex enough to deserve their own repos.
+General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills, 1 MCP server: the hub that ties together workflow discipline, Codex dispatch, cross-AI review, and structured debate. Most of the companion plugins below were extracted from Clavain as they grew complex enough to deserve their own repos.
 
 ```bash
 /plugin install clavain
@@ -26,7 +26,7 @@ General-purpose engineering discipline plugin. 5 agents, 37 commands, 27 skills,
 
 ### interdoc
 
-Recursive AGENTS.md generator with parallel subagents. Point it at a project and it produces cross-AI compatible documentation — works with Claude Code, Codex CLI, whatever comes next. Handles CLAUDE.md harmonization (migrates content to AGENTS.md, slims CLAUDE.md to settings only), incremental updates, unified diff previews, and smart monorepo scoping.
+Recursive AGENTS.md generator with parallel subagents. Point it at a project and it produces cross-AI compatible documentation: works with Claude Code, Codex CLI, whatever comes next. Handles CLAUDE.md harmonization (migrates content to AGENTS.md, slims CLAUDE.md to settings only), incremental updates, unified diff previews, and smart monorepo scoping.
 
 ```bash
 /plugin install interdoc
@@ -42,7 +42,7 @@ Analyze your writing style and get Claude to actually sound like you. Ingest wri
 
 ### interflux
 
-Multi-agent document review engine — scored triage picks the right domain agents, content slicing keeps each agent focused, and knowledge injection gives them project context. 7 specialized review agents covering architecture, safety, correctness, performance, quality, game design, and user/product. Also powers the `flux-research` multi-agent research workflow.
+Multi-agent document review engine: scored triage picks the right domain agents, content slicing keeps each agent focused, and knowledge injection gives them project context. 7 specialized review agents covering architecture, safety, correctness, performance, quality, game design, and user/product. Also powers the `flux-research` multi-agent research workflow.
 
 ```bash
 /plugin install interflux
@@ -58,7 +58,7 @@ The synthesis layer for multi-agent workflows. When interflux (or any parallel a
 
 ### interpeer
 
-Cross-AI peer review with 4 escalation modes: quick (Claude/Codex for fast feedback), deep (Oracle/GPT for large context), council (multi-model consensus for critical decisions), and mine (extract disagreements between models and convert them into tests and specs). The disagreement-driven development workflow is genuinely useful — models disagree about interesting things.
+Cross-AI peer review with 4 escalation modes: quick (Claude/Codex for fast feedback), deep (Oracle/GPT for large context), council (multi-model consensus for critical decisions), and mine (extract disagreements between models and convert them into tests and specs). The disagreement-driven development workflow is genuinely useful: models disagree about interesting things.
 
 ```bash
 /plugin install interpeer
@@ -66,7 +66,7 @@ Cross-AI peer review with 4 escalation modes: quick (Claude/Codex for fast feedb
 
 ### intertest
 
-Engineering quality disciplines — three skills that enforce process when it matters most. Systematic debugging (4-phase root-cause investigation, no guessing), test-driven development (strict RED-GREEN-REFACTOR, no skipping), and verification gates (evidence-based checks before claiming something works).
+Engineering quality disciplines: three skills that enforce process when it matters most. Systematic debugging (4-phase root-cause investigation, no guessing), test-driven development (strict RED-GREEN-REFACTOR, no skipping), and verification gates (evidence-based checks before claiming something works).
 
 ```bash
 /plugin install intertest
@@ -74,7 +74,7 @@ Engineering quality disciplines — three skills that enforce process when it ma
 
 ### interphase
 
-Phase tracking and gate validation for the Beads issue tracker. Adds lifecycle state management — discovery, planning, building, review, shipping — on top of the core beads workflow. Enforces gates between phases so work doesn't skip steps.
+Phase tracking and gate validation for the Beads issue tracker. Adds lifecycle state management: discovery, planning, building, review, shipping: on top of the core beads workflow. Enforces gates between phases so work doesn't skip steps.
 
 ```bash
 /plugin install interphase
@@ -98,7 +98,7 @@ Documentation freshness monitoring. Runs drift detection across product artifact
 
 ### interline
 
-Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads to give you a persistent awareness of what's happening without checking manually.
+Dynamic statusline for Claude Code: shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads to give you a persistent awareness of what's happening without checking manually.
 
 ```bash
 /plugin install interline
@@ -114,7 +114,7 @@ Multi-agent file coordination via MCP. Reserve files before editing, detect conf
 
 ### intermux
 
-Agent activity visibility — monitors tmux sessions, provides activity feeds, detects health issues. 7 MCP tools for cross-agent observability. When you have multiple agents running in tmux panes, intermux tells you what each one is doing without switching panes.
+Agent activity visibility: monitors tmux sessions, provides activity feeds, detects health issues. 7 MCP tools for cross-agent observability. When you have multiple agents running in tmux panes, intermux tells you what each one is doing without switching panes.
 
 ```bash
 /plugin install intermux
@@ -146,7 +146,7 @@ Codex spark classifier and context compression. MCP server exposing `classify_se
 
 ### interkasten
 
-Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking integration, and 21 MCP tools for project lifecycle management. The bridge between your Notion workspace and your codebase — changes flow both directions.
+Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking integration, and 21 MCP tools for project lifecycle management. The bridge between your Notion workspace and your codebase: changes flow both directions.
 
 ```bash
 /plugin install interkasten
@@ -170,7 +170,7 @@ Token efficiency benchmarking. PostToolUse hooks capture real-time events to SQL
 
 ### internext
 
-Work prioritization and next-task analysis. Reads beads state and project context, scores candidates on impact/effort/risk, identifies dependency leverage (a P2 that unblocks three P1s beats a standalone P1), and gives an opinionated recommendation — not a menu.
+Work prioritization and next-task analysis. Reads beads state and project context, scores candidates on impact/effort/risk, identifies dependency leverage (a P2 that unblocks three P1s beats a standalone P1), and gives an opinionated recommendation: not a menu.
 
 ```bash
 /plugin install internext
@@ -178,7 +178,7 @@ Work prioritization and next-task analysis. Reads beads state and project contex
 
 ### intermem
 
-Memory synthesis — graduates stable auto-memory facts to AGENTS.md and CLAUDE.md. Detects stability (a fact confirmed across multiple sessions), deduplicates against existing docs, presents changes for interactive approval, and prunes the source. Prevents the memory directory from growing without bound while preserving what matters.
+Memory synthesis: graduates stable auto-memory facts to AGENTS.md and CLAUDE.md. Detects stability (a fact confirmed across multiple sessions), deduplicates against existing docs, presents changes for interactive approval, and prunes the source. Prevents the memory directory from growing without bound while preserving what matters.
 
 ```bash
 /plugin install intermem
@@ -194,7 +194,7 @@ Safe plugin publishing. Bumps all version locations (plugin.json, package.json, 
 
 ### interdev
 
-Developer tooling for Claude Code — MCP CLI interaction, skill authoring, plugin development scaffolding, and Claude Code reference docs. The meta-plugin for building plugins.
+Developer tooling for Claude Code: MCP CLI interaction, skill authoring, plugin development scaffolding, and Claude Code reference docs. The meta-plugin for building plugins.
 
 ```bash
 /plugin install interdev
@@ -202,7 +202,7 @@ Developer tooling for Claude Code — MCP CLI interaction, skill authoring, plug
 
 ### intercraft
 
-Agent-native architecture patterns. Design, review, and audit applications where agents are first-class citizens — ensuring that any action a user can take, an agent can also take. Includes a scored audit skill for evaluating agent-native parity.
+Agent-native architecture patterns. Design, review, and audit applications where agents are first-class citizens: ensuring that any action a user can take, an agent can also take. Includes a scored audit skill for evaluating agent-native parity.
 
 ```bash
 /plugin install intercraft
@@ -226,7 +226,7 @@ Slack integration for Claude Code. Send messages, read channels, test webhook in
 
 ### interlens
 
-288 FLUX cognitive lenses for structured thinking. MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis. When you want to examine a problem through a specific analytical frame — systems dynamics, game theory, cognitive biases — this gives you the vocabulary.
+288 FLUX cognitive lenses for structured thinking. MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis. When you want to examine a problem through a specific analytical frame: systems dynamics, game theory, cognitive biases: this gives you the vocabulary.
 
 ```bash
 /plugin install interlens
@@ -234,7 +234,7 @@ Slack integration for Claude Code. Send messages, read channels, test webhook in
 
 ### interleave
 
-Deterministic Skeleton with LLM Islands — a token-efficient document generation pattern where scripts render the predictable parts and LLM subagents fill only the semantic sections. Spec + library plugin with a reference implementation (roadmap generation from beads data). Inspired by Skeleton-of-Thought (ICLR 2024) and Astro's Islands Architecture.
+Deterministic Skeleton with LLM Islands: a token-efficient document generation pattern where scripts render the predictable parts and LLM subagents fill only the semantic sections. Spec + library plugin with a reference implementation (roadmap generation from beads data). Inspired by Skeleton-of-Thought (ICLR 2024) and Astro's Islands Architecture.
 
 ```bash
 /plugin install interleave
@@ -258,7 +258,7 @@ Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% toke
 
 ### tuivision
 
-TUI automation and visual testing — Playwright for terminal applications. Spawn TUI apps in virtual terminals, send keystrokes, capture screenshots as PNG/SVG, and manage multiple concurrent sessions. MCP server with xterm.js headless rendering. Requires Node.js 20+ and Cairo/Pango.
+TUI automation and visual testing: Playwright for terminal applications. Spawn TUI apps in virtual terminals, send keystrokes, capture screenshots as PNG/SVG, and manage multiple concurrent sessions. MCP server with xterm.js headless rendering. Requires Node.js 20+ and Cairo/Pango.
 
 ```bash
 /plugin install tuivision
@@ -274,7 +274,7 @@ Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hoo
 
 ---
 
-## Adding Plugins
+## Adding plugins
 
 To add a plugin to this marketplace:
 
