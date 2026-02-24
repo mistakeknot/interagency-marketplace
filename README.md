@@ -274,7 +274,7 @@ Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hoo
 
 ### intership
 
-Culture ship names as Claude Code spinner verbs. Replaces "Thinking..." with *Sleeper Service*, *Experiencing A Significant Gravitas Shortfall*, and 172 others from Iain M. Banks' Culture novels. Canonical Banks names display in \*asterisks\*, Banksian originals unmarked. Session-start hook keeps it fresh; `/intership:setup` lets you filter by book or add your own.
+Culture ship names as Claude Code spinner verbs. 237 curated names — 56 canonical Banks originals (*Sleeper Service*, *Experiencing A Significant Gravitas Shortfall*) marked with \*asterisks\*, plus 181 generated Banksian originals (Mildly Thermonuclear, I Was Told There Would Be Cake). Toggle between canonical-only, generated-only, or both. `/intership:setup` for customization.
 
 ```bash
 /plugin install intership
