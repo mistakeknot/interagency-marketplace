@@ -1,6 +1,6 @@
 # Interagency Marketplace
 
-A Claude Code plugin marketplace: 32 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+A Claude Code plugin marketplace: 33 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
 
 ## Installation
 
@@ -270,6 +270,14 @@ Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hoo
 
 ```bash
 /plugin install tool-time
+```
+
+### intership
+
+Culture ship names as Claude Code spinner verbs. Replaces "Thinking..." with *Sleeper Service*, *Experiencing A Significant Gravitas Shortfall*, and 172 others from Iain M. Banks' Culture novels. Canonical Banks names display in \*asterisks\*, Banksian originals unmarked. Session-start hook keeps it fresh; `/intership:setup` lets you filter by book or add your own.
+
+```bash
+/plugin install intership
 ```
 
 ---

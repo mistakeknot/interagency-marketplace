@@ -619,6 +619,24 @@
         "islands"
       ],
       "strict": true
+    },
+    {
+      "name": "intership",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intership.git"
+      },
+      "description": "Culture ship names as Claude Code spinner verbs. Replaces default spinners with 174 names from Iain M. Banks' Culture novels — canonical names marked with *asterisks*, generated Banksian originals unmarked.",
+      "version": "0.1.0",
+      "keywords": [
+        "spinner",
+        "culture",
+        "banks",
+        "ships",
+        "fun",
+        "customization"
+      ],
+      "strict": true
     }
   ]
 }
