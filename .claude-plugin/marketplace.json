@@ -319,7 +319,7 @@
         "url": "https://github.com/mistakeknot/intercraft.git"
       },
       "description": "Agent-native architecture patterns — design, review, and audit for agent-first applications.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "keywords": [
         "agent-native",
         "architecture",
