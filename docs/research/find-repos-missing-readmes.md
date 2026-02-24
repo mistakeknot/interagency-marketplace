@@ -1,7 +1,7 @@
 # README.md Coverage Audit — Interverse Monorepo
 
 **Date:** 2026-02-18
-**Scope:** `/root/projects/Interverse/plugins/*`, `hub/clavain/`, `services/intermute/`, `infra/marketplace/`
+**Scope:** `/root/projects/Interverse/plugins/*`, `os/clavain/`, `services/intermute/`, `infra/marketplace/`
 
 ---
 
@@ -57,7 +57,7 @@ All missing entries are plugin subdirectories. Hub, services, and infra director
 | tldr-swinton | `/root/projects/Interverse/plugins/tldr-swinton` |
 | tool-time | `/root/projects/Interverse/plugins/tool-time` |
 | tuivision | `/root/projects/Interverse/plugins/tuivision` |
-| clavain | `/root/projects/Interverse/hub/clavain` |
+| clavain | `/root/projects/Interverse/os/clavain` |
 | intermute | `/root/projects/Interverse/services/intermute` |
 | marketplace | `/root/projects/Interverse/infra/marketplace` |
 
