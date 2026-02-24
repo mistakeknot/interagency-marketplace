@@ -245,7 +245,7 @@
         "url": "https://github.com/mistakeknot/interwatch.git"
       },
       "description": "Doc freshness monitoring — drift detection, confidence scoring, and auto-refresh orchestration across product artifacts and code docs. Companion plugin for Clavain.",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "keywords": [
         "documentation",
         "drift-detection",
