@@ -1,10 +1,10 @@
 # marketplace Philosophy
 
 ## Purpose
-A Claude Code plugin marketplace — 32 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+A Claude Code plugin marketplace — 33 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
 
 ## North Star
-Advance marketplace through small, testable changes aligned to its core mission: A Claude Code plugin marketplace — 32 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+Advance marketplace through small, testable changes aligned to its core mission: A Claude Code plugin marketplace — 33 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
 
 ## Working Priorities
 - Print
