@@ -60,7 +60,7 @@
         "url": "https://github.com/mistakeknot/tuivision.git"
       },
       "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "keywords": [
         "tui",
         "terminal",
