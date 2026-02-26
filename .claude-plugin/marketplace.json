@@ -734,6 +734,42 @@
         "threshold-warnings"
       ],
       "strict": true
+    },
+    {
+      "name": "intertrust",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertrust.git"
+      },
+      "description": "Agent trust scoring — severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
+      "version": "0.1.0",
+      "keywords": [
+        "trust",
+        "reputation",
+        "scoring",
+        "feedback",
+        "agents",
+        "review-quality"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intername",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intername.git"
+      },
+      "description": "Agent and agency naming for legible orchestration — deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
+      "version": "0.1.0",
+      "keywords": [
+        "naming",
+        "identity",
+        "legibility",
+        "orchestration",
+        "agents",
+        "themes"
+      ],
+      "strict": true
     }
   ]
 }
