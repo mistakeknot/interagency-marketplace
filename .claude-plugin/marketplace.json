@@ -726,7 +726,7 @@
         "url": "https://github.com/mistakeknot/interpulse.git"
       },
       "description": "Session context monitoring — pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "keywords": [
         "context-pressure",
         "session-monitoring",
