@@ -203,13 +203,12 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interflux.git"
       },
-      "description": "Multi-agent review and research with scored triage, domain detection, content slicing, intermediate finding sharing, and knowledge injection. 17 agents (12 review + 5 research), 4 commands, 2 skills, 2 MCP servers. Companion plugin for Clavain.",
+      "description": "Multi-agent review and research with scored triage, content slicing, and intermediate finding sharing. 17 agents (12 review + 5 research), 4 commands, 1 skill, 1 MCP server. Domain detection via intersense, knowledge via interknow.",
       "version": "0.2.29",
       "keywords": [
         "review",
         "multi-agent",
         "flux-drive",
-        "domain-detection",
         "triage",
         "code-review",
         "document-review",
@@ -335,15 +334,13 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdev.git"
       },
-      "description": "Developer tooling for Claude Code — MCP CLI interaction, skill authoring, plugin development, and Claude Code reference.",
+      "description": "Developer tooling for Claude Code — MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
       "version": "0.2.0",
       "keywords": [
         "mcp",
         "cli",
         "developer-tools",
-        "tool-discovery",
-        "skill-authoring",
-        "plugin-dev"
+        "tool-discovery"
       ],
       "strict": true
     },
@@ -410,15 +407,13 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/intercheck.git"
       },
-      "description": "Code quality guards and session health monitoring — context pressure tracking with time-decay, syntax validation for 8 languages, and auto-formatting via ruff/shfmt/gofmt/jq/prettier.",
+      "description": "Code quality guards — syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
       "version": "0.2.0",
       "keywords": [
         "quality",
         "syntax",
         "formatting",
-        "hooks",
-        "session-health",
-        "context-monitor"
+        "hooks"
       ],
       "strict": true
     },
@@ -502,14 +497,17 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/intersearch.git"
       },
-      "description": "Shared embedding and search infrastructure — sentence-transformer embeddings and Exa web search, used by interject and interflux.",
-      "version": "0.1.1",
+      "description": "Shared embedding and search infrastructure — nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
+      "version": "0.2.0",
       "keywords": [
         "embeddings",
         "search",
         "exa",
         "sentence-transformers",
-        "shared-library"
+        "semantic-search",
+        "vector-store",
+        "shared-library",
+        "mcp"
       ],
       "strict": true
     },
@@ -635,6 +633,105 @@
         "ships",
         "fun",
         "customization"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intersense",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intersense.git"
+      },
+      "description": "Domain detection — classifies projects by signals (directories, manifests, dependencies, keywords) into domains for review and research targeting.",
+      "version": "0.1.0",
+      "keywords": [
+        "domain-detection",
+        "classification",
+        "project-analysis",
+        "signals"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interknow",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interknow.git"
+      },
+      "description": "Knowledge compounding — durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
+      "version": "0.1.0",
+      "keywords": [
+        "knowledge",
+        "compounding",
+        "patterns",
+        "semantic-search",
+        "qmd",
+        "mcp"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intertree",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertree.git"
+      },
+      "description": "Project hierarchy management — filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
+      "version": "0.1.0",
+      "keywords": [
+        "hierarchy",
+        "project-discovery",
+        "layout",
+        "organization"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interskill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interskill.git"
+      },
+      "description": "Skill authoring toolkit — unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
+      "version": "0.1.0",
+      "keywords": [
+        "skill-authoring",
+        "skill-creation",
+        "skill-audit",
+        "skill-testing",
+        "tdd"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interplug",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interplug.git"
+      },
+      "description": "Plugin development toolkit — lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
+      "version": "0.1.0",
+      "keywords": [
+        "plugin-development",
+        "validation",
+        "troubleshooting",
+        "claude-code"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interpulse",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpulse.git"
+      },
+      "description": "Session context monitoring — pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
+      "version": "0.1.0",
+      "keywords": [
+        "context-pressure",
+        "session-monitoring",
+        "token-estimation",
+        "threshold-warnings"
       ],
       "strict": true
     }
