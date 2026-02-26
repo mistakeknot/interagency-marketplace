@@ -95,13 +95,7 @@
       "strict": true
     },
     {
-      "name": "clavain",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/Clavain.git"
-      },
       "description": "Self-improving agent rig — codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
-      "version": "0.6.99",
       "keywords": [
         "engineering",
         "discipline",
@@ -120,7 +114,13 @@
         "oracle",
         "council"
       ],
-      "strict": true
+      "name": "clavain",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/Clavain.git"
+      },
+      "strict": true,
+      "version": "0.6.100"
     },
     {
       "name": "interpub",
