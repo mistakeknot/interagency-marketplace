@@ -198,13 +198,7 @@
       "version": "0.3.7"
     },
     {
-      "name": "interflux",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interflux.git"
-      },
       "description": "Multi-agent review and research with scored triage, content slicing, and intermediate finding sharing. 17 agents (12 review + 5 research), 4 commands, 1 skill, 1 MCP server. Domain detection via intersense, knowledge via interknow.",
-      "version": "0.2.29",
       "keywords": [
         "review",
         "multi-agent",
@@ -214,7 +208,13 @@
         "document-review",
         "interflux"
       ],
-      "strict": true
+      "name": "interflux",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interflux.git"
+      },
+      "strict": true,
+      "version": "0.2.30"
     },
     {
       "name": "interpath",
