@@ -140,13 +140,7 @@
       "strict": true
     },
     {
-      "name": "interfluence",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interfluence.git"
-      },
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
-      "version": "0.2.7",
       "keywords": [
         "writing-style",
         "voice-profile",
@@ -156,7 +150,13 @@
         "style-transfer",
         "corpus-analysis"
       ],
-      "strict": true
+      "name": "interfluence",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interfluence.git"
+      },
+      "strict": true,
+      "version": "0.2.8"
     },
     {
       "name": "interline",
