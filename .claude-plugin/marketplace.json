@@ -32,13 +32,7 @@
       "strict": true
     },
     {
-      "name": "tldr-swinton",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/tldr-swinton.git"
-      },
       "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis. Includes MCP server for direct tool integration.",
-      "version": "0.7.15",
       "keywords": [
         "tldrs",
         "tldr-swinton",
@@ -51,7 +45,13 @@
         "embeddings",
         "llm-tools"
       ],
-      "strict": true
+      "name": "tldr-swinton",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/tldr-swinton.git"
+      },
+      "strict": true,
+      "version": "0.7.14"
     },
     {
       "name": "tuivision",
@@ -123,13 +123,7 @@
       "version": "0.6.106"
     },
     {
-      "name": "interpub",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpub.git"
-      },
       "description": "Safe plugin publishing — bumps all version locations, validates sync, commits and pushes with confirmation.",
-      "version": "0.1.4",
       "keywords": [
         "publishing",
         "versioning",
@@ -137,7 +131,13 @@
         "plugin-dev",
         "release"
       ],
-      "strict": true
+      "name": "interpub",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpub.git"
+      },
+      "strict": true,
+      "version": "0.1.3"
     },
     {
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
@@ -736,13 +736,7 @@
       "strict": true
     },
     {
-      "name": "intertrust",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intertrust.git"
-      },
       "description": "Agent trust scoring — severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
-      "version": "0.1.0",
       "keywords": [
         "trust",
         "reputation",
@@ -751,16 +745,16 @@
         "agents",
         "review-quality"
       ],
-      "strict": true
-    },
-    {
-      "name": "intername",
+      "name": "intertrust",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/intername.git"
+        "url": "https://github.com/mistakeknot/intertrust.git"
       },
+      "strict": true,
+      "version": "0.1.2"
+    },
+    {
       "description": "Agent and agency naming for legible orchestration — deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
-      "version": "0.1.0",
       "keywords": [
         "naming",
         "identity",
@@ -769,26 +763,24 @@
         "agents",
         "themes"
       ],
-      "strict": true
+      "name": "intername",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intername.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
+      "description": "",
+      "keywords": [],
       "name": "interspect",
       "source": {
         "source": "url",
         "url": "https://github.com/mistakeknot/interspect.git"
       },
-      "description": "Agent performance profiler and routing optimizer — collects evidence about flux-drive agent accuracy, proposes routing overrides, and monitors canary periods. Companion plugin for Clavain.",
-      "version": "0.1.4",
-      "keywords": [
-        "profiler",
-        "agent-routing",
-        "evidence",
-        "canary-monitoring",
-        "performance",
-        "optimization",
-        "interspect"
-      ],
-      "strict": true
+      "strict": true,
+      "version": "0.1.3"
     }
   ]
 }
