@@ -858,6 +858,22 @@
       },
       "strict": true,
       "version": "0.1.0"
+    },
+    {
+      "description": "Cross-module integration gap tracer — traces data flows from shipped features to find unverified consumer edges.",
+      "keywords": [
+        "integration",
+        "tracing",
+        "data-flow",
+        "gap-detection"
+      ],
+      "name": "intertrace",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertrace.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
