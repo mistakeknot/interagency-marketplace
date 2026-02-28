@@ -564,13 +564,7 @@
       "strict": true
     },
     {
-      "name": "intertest",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intertest.git"
-      },
       "description": "Engineering quality disciplines — systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
-      "version": "0.1.1",
       "keywords": [
         "testing",
         "tdd",
@@ -579,7 +573,13 @@
         "quality",
         "disciplines"
       ],
-      "strict": true
+      "name": "intertest",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertest.git"
+      },
+      "strict": true,
+      "version": "0.1.2"
     },
     {
       "name": "intermem",
