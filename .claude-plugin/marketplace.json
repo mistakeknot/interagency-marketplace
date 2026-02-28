@@ -733,7 +733,7 @@
         "url": "https://github.com/mistakeknot/interpulse.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Agent trust scoring — severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
