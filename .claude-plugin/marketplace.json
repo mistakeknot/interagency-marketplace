@@ -836,6 +836,17 @@
       },
       "strict": true,
       "version": "0.1.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interlearn",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlearn.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
