@@ -720,20 +720,20 @@
       "strict": true
     },
     {
-      "name": "interpulse",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpulse.git"
-      },
       "description": "Session context monitoring — pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
-      "version": "0.1.1",
       "keywords": [
         "context-pressure",
         "session-monitoring",
         "token-estimation",
         "threshold-warnings"
       ],
-      "strict": true
+      "name": "interpulse",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpulse.git"
+      },
+      "strict": true,
+      "version": "0.1.2"
     },
     {
       "description": "Agent trust scoring — severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
