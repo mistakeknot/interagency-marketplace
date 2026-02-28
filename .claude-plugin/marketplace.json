@@ -799,6 +799,17 @@
       },
       "strict": true,
       "version": "0.1.5"
+    },
+    {
+      "description": "Feature-level success metric tracking for Demarch",
+      "keywords": ["metrics", "tracking", "instrumentation"],
+      "name": "intertrack",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertrack.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
