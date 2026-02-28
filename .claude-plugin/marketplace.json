@@ -802,7 +802,11 @@
     },
     {
       "description": "Feature-level success metric tracking for Demarch",
-      "keywords": ["metrics", "tracking", "instrumentation"],
+      "keywords": [
+        "metrics",
+        "tracking",
+        "instrumentation"
+      ],
       "name": "intertrack",
       "source": {
         "source": "url",
@@ -810,6 +814,17 @@
       },
       "strict": true,
       "version": "0.1.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "intercache",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intercache.git"
+      },
+      "strict": true,
+      "version": "0.2.0"
     }
   ]
 }
