@@ -772,6 +772,24 @@
       "version": "0.1.1"
     },
     {
+      "description": "Documentation quality toolkit — enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
+      "keywords": [
+        "documentation",
+        "claude-md",
+        "agents-md",
+        "progressive-disclosure",
+        "doc-quality",
+        "refactoring"
+      ],
+      "name": "interscribe",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interscribe.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
       "description": "",
       "keywords": [],
       "name": "interspect",
