@@ -825,6 +825,17 @@
       },
       "strict": true,
       "version": "0.2.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interchart",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interchart.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
