@@ -847,6 +847,17 @@
       },
       "strict": true,
       "version": "0.1.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interrank",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interrank.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
