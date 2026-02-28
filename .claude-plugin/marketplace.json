@@ -653,13 +653,7 @@
       "strict": true
     },
     {
-      "name": "interknow",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interknow.git"
-      },
       "description": "Knowledge compounding — durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
-      "version": "0.1.0",
       "keywords": [
         "knowledge",
         "compounding",
@@ -668,7 +662,13 @@
         "qmd",
         "mcp"
       ],
-      "strict": true
+      "name": "interknow",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interknow.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
       "name": "intertree",
