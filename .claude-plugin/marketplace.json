@@ -254,7 +254,7 @@
         "url": "https://github.com/mistakeknot/interwatch.git"
       },
       "strict": true,
-      "version": "0.1.11"
+      "version": "0.1.12"
     },
     {
       "name": "interlock",
