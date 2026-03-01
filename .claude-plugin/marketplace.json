@@ -526,7 +526,7 @@
         "url": "https://github.com/mistakeknot/intermap.git"
       },
       "strict": true,
-      "version": "0.1.4"
+      "version": "0.1.5"
     },
     {
       "name": "interpeer",
