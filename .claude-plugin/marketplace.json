@@ -564,13 +564,7 @@
       "version": "0.1.2"
     },
     {
-      "name": "intermem",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intermem.git"
-      },
       "description": "Memory synthesis \u2014 graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
-      "version": "0.2.2",
       "keywords": [
         "memory",
         "synthesis",
@@ -580,7 +574,13 @@
         "stability",
         "dedup"
       ],
-      "strict": true
+      "name": "intermem",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intermem.git"
+      },
+      "strict": true,
+      "version": "0.2.3"
     },
     {
       "name": "interleave",
