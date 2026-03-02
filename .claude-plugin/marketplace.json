@@ -433,7 +433,7 @@
         "url": "https://github.com/mistakeknot/interstat.git"
       },
       "strict": true,
-      "version": "0.2.12"
+      "version": "0.2.13"
     },
     {
       "name": "interlens",
