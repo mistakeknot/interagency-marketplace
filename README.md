@@ -136,14 +136,6 @@ Ambient discovery and research engine. Scans arXiv, Hacker News, GitHub, Anthrop
 /plugin install interject
 ```
 
-### interserve
-
-Codex spark classifier and context compression. MCP server exposing `classify_sections`, `extract_sections`, and `codex_query` tools for token-efficient document handling. Useful when you need to route large documents to the right processing pipeline without reading everything.
-
-```bash
-/plugin install interserve
-```
-
 ### interkasten
 
 Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking integration, and 21 MCP tools for project lifecycle management. The bridge between your Notion workspace and your codebase: changes flow both directions.
