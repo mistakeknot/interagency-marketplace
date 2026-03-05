@@ -866,7 +866,7 @@
         "url": "https://github.com/mistakeknot/interdeep.git"
       },
       "strict": true,
-      "version": "0.1.5"
+      "version": "0.1.6"
     },
     {
       "description": "Automated UI/UX design analysis — extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
