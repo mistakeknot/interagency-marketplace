@@ -217,13 +217,7 @@
       "version": "0.2.36"
     },
     {
-      "name": "interpath",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpath.git"
-      },
       "description": "Product artifact generator — roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
-      "version": "0.2.3",
       "keywords": [
         "roadmap",
         "prd",
@@ -235,7 +229,13 @@
         "beads",
         "interpath"
       ],
-      "strict": true
+      "name": "interpath",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpath.git"
+      },
+      "strict": true,
+      "version": "0.3.0"
     },
     {
       "description": "Doc freshness monitoring — drift detection, confidence scoring, and auto-refresh orchestration across product artifacts and code docs. Companion plugin for Clavain.",
