@@ -120,7 +120,7 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "strict": true,
-      "version": "0.6.155"
+      "version": "0.6.156"
     },
     {
       "description": "Safe plugin publishing — bumps all version locations, validates sync, commits and pushes with confirmation.",
