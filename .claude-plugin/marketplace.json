@@ -454,13 +454,7 @@
       "strict": true
     },
     {
-      "name": "intermux",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intermux.git"
-      },
       "description": "Agent activity visibility — tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
-      "version": "0.1.2",
       "keywords": [
         "tmux",
         "monitoring",
@@ -471,7 +465,13 @@
         "multi-agent",
         "observability"
       ],
-      "strict": true
+      "name": "intermux",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intermux.git"
+      },
+      "strict": true,
+      "version": "0.1.4"
     },
     {
       "name": "intersearch",
