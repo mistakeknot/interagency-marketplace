@@ -653,20 +653,20 @@
       "version": "0.1.2"
     },
     {
-      "name": "intertree",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intertree.git"
-      },
       "description": "Project hierarchy management — filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
-      "version": "0.1.0",
       "keywords": [
         "hierarchy",
         "project-discovery",
         "layout",
         "organization"
       ],
-      "strict": true
+      "name": "intertree",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertree.git"
+      },
+      "strict": true,
+      "version": "0.1.2"
     },
     {
       "description": "Skill authoring toolkit — unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
