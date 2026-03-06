@@ -686,20 +686,20 @@
       "version": "0.1.1"
     },
     {
-      "name": "interplug",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interplug.git"
-      },
       "description": "Plugin development toolkit — lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
-      "version": "0.1.0",
       "keywords": [
         "plugin-development",
         "validation",
         "troubleshooting",
         "claude-code"
       ],
-      "strict": true
+      "name": "interplug",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interplug.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
       "description": "Session context monitoring — pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
