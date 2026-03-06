@@ -29,7 +29,7 @@
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
       "strict": true,
-      "version": "5.1.2"
+      "version": "5.2.0"
     },
     {
       "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis. Includes MCP server for direct tool integration.",
