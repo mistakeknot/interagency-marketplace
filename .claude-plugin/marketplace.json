@@ -683,7 +683,7 @@
         "url": "https://github.com/mistakeknot/interskill.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Plugin development toolkit — lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
