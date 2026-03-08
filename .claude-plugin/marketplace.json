@@ -257,13 +257,7 @@
       "version": "0.3.0"
     },
     {
-      "name": "interlock",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interlock.git"
-      },
       "description": "Multi-agent file coordination \u2014 reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
-      "version": "0.2.7",
       "keywords": [
         "coordination",
         "multi-agent",
@@ -276,7 +270,13 @@
         "git-hooks",
         "interlock"
       ],
-      "strict": true
+      "name": "interlock",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlock.git"
+      },
+      "strict": true,
+      "version": "0.2.8"
     },
     {
       "name": "interslack",
