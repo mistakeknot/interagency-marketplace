@@ -362,13 +362,7 @@
       "version": "0.1.4"
     },
     {
-      "name": "interject",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interject.git"
-      },
       "description": "Ambient discovery and research engine \u2014 scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
-      "version": "0.1.9",
       "keywords": [
         "research",
         "discovery",
@@ -379,7 +373,13 @@
         "mcp",
         "embeddings"
       ],
-      "strict": true
+      "name": "interject",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interject.git"
+      },
+      "strict": true,
+      "version": "0.1.10"
     },
     {
       "description": "Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking, and 21 MCP tools for project lifecycle and sync control.",
