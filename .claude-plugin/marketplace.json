@@ -650,7 +650,7 @@
         "url": "https://github.com/mistakeknot/interknow.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Project hierarchy management \u2014 filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
