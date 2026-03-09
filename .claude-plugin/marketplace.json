@@ -787,7 +787,7 @@
         "url": "https://github.com/mistakeknot/interspect.git"
       },
       "strict": true,
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
       "description": "Feature-level success metric tracking for Demarch",
