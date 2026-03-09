@@ -583,13 +583,7 @@
       "version": "0.2.3"
     },
     {
-      "name": "interleave",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interleave.git"
-      },
       "description": "Deterministic Skeleton with LLM Islands \u2014 token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
-      "version": "0.1.1",
       "keywords": [
         "interleave",
         "token-efficiency",
@@ -598,7 +592,13 @@
         "deterministic",
         "islands"
       ],
-      "strict": true
+      "name": "interleave",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interleave.git"
+      },
+      "strict": true,
+      "version": "0.1.2"
     },
     {
       "name": "intership",
