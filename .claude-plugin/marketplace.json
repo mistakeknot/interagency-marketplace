@@ -156,7 +156,7 @@
         "url": "https://github.com/mistakeknot/interfluence.git"
       },
       "strict": true,
-      "version": "0.2.9"
+      "version": "0.2.10"
     },
     {
       "description": "Dynamic statusline for Claude Code \u2014 shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
