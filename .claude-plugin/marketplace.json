@@ -379,7 +379,7 @@
         "url": "https://github.com/mistakeknot/interject.git"
       },
       "strict": true,
-      "version": "0.1.11"
+      "version": "0.1.12"
     },
     {
       "description": "Bidirectional Notion sync for Claude Code. Three-way merge conflict resolution, beads issue tracking, and 21 MCP tools for project lifecycle and sync control.",
