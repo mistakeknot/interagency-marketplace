@@ -699,7 +699,7 @@
         "url": "https://github.com/mistakeknot/interplug.git"
       },
       "strict": true,
-      "version": "0.1.4"
+      "version": "0.1.5"
     },
     {
       "description": "Session context monitoring \u2014 pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
