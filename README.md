@@ -1,6 +1,6 @@
 # Interagency Marketplace
 
-A Claude Code plugin marketplace: 33 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+A Claude Code plugin marketplace: 34 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
 
 ## Installation
 
@@ -262,6 +262,14 @@ Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hoo
 
 ```bash
 /plugin install tool-time
+```
+
+### interhelm
+
+Agent-as-operator runtime diagnostics. Teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools, replacing screenshot-based debugging with structured JSON queries. Includes Rust templates for both server and CLI, 3 PostToolUse hooks that auto-detect native app projects, and a reviewer agent for operational completeness. Designed for Tauri, Electron, and similar native apps where browser DevTools aren't available.
+
+```bash
+/plugin install interhelm
 ```
 
 ### intership

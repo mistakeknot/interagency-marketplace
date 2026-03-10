@@ -905,6 +905,28 @@
       "version": "0.1.3"
     },
     {
+      "description": "Agent-as-operator runtime diagnostics \u2014 teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
+      "keywords": [
+        "runtime",
+        "diagnostics",
+        "observability",
+        "health-check",
+        "operator",
+        "native-apps",
+        "tauri",
+        "electron",
+        "smoke-test",
+        "hooks"
+      ],
+      "name": "interhelm",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interhelm.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
       "description": "",
       "keywords": [],
       "name": "intermonk",
