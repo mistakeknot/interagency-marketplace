@@ -902,7 +902,7 @@
         "url": "https://github.com/mistakeknot/intersight.git"
       },
       "strict": true,
-      "version": "0.1.3"
+      "version": "0.1.4"
     },
     {
       "description": "Agent-as-operator runtime diagnostics \u2014 teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
