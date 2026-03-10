@@ -399,7 +399,7 @@
         "url": "https://github.com/mistakeknot/interkasten.git"
       },
       "strict": true,
-      "version": "0.4.22"
+      "version": "0.4.23"
     },
     {
       "description": "Code quality guards \u2014 syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
