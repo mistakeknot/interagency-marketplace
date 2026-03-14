@@ -936,6 +936,17 @@
       },
       "strict": true,
       "version": "0.1.1"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interlab",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlab.git"
+      },
+      "strict": true,
+      "version": "0.2.0"
     }
   ]
 }
