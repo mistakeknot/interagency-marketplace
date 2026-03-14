@@ -10,6 +10,91 @@
   },
   "plugins": [
     {
+      "description": "Recursive AGENTS.md generator with structural auto-fix, CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
+      "keywords": [
+        "documentation",
+        "automation",
+        "subagents",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "cross-AI",
+        "incremental",
+        "diff-preview",
+        "harmonization",
+        "robustness"
+      ],
+      "name": "interdoc",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interdoc.git"
+      },
+      "strict": true,
+      "version": "5.2.1"
+    },
+    {
+      "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis. Includes MCP server for direct tool integration.",
+      "keywords": [
+        "tldrs",
+        "tldr-swinton",
+        "context",
+        "diff-context",
+        "semantic-search",
+        "structural-search",
+        "tokens",
+        "code-analysis",
+        "embeddings",
+        "llm-tools"
+      ],
+      "name": "tldr-swinton",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/tldr-swinton.git"
+      },
+      "strict": true,
+      "version": "0.7.17"
+    },
+    {
+      "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
+      "keywords": [
+        "tui",
+        "terminal",
+        "automation",
+        "testing",
+        "screenshot",
+        "pty",
+        "xterm",
+        "mcp"
+      ],
+      "name": "tuivision",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/tuivision.git"
+      },
+      "strict": true,
+      "version": "0.2.0"
+    },
+    {
+      "description": "Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hooks, detects inefficiencies, and offers opt-in community comparison with anonymized data.",
+      "keywords": [
+        "tools",
+        "analytics",
+        "community",
+        "patterns",
+        "usage",
+        "hooks",
+        "anonymized",
+        "skills",
+        "playbooks"
+      ],
+      "name": "tool-time",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/tool-time.git"
+      },
+      "strict": true,
+      "version": "0.3.9"
+    },
+    {
       "description": "Self-improving agent rig \u2014 codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
       "keywords": [
         "engineering",
@@ -38,113 +123,21 @@
       "version": "0.6.190"
     },
     {
-      "description": "",
-      "keywords": [],
-      "name": "intercache",
+      "description": "Safe plugin publishing \u2014 bumps all version locations, validates sync, commits and pushes with confirmation.",
+      "keywords": [
+        "publishing",
+        "versioning",
+        "marketplace",
+        "plugin-dev",
+        "release"
+      ],
+      "name": "interpub",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/intercache.git"
-      },
-      "strict": true,
-      "version": "0.2.0"
-    },
-    {
-      "description": "",
-      "keywords": [],
-      "name": "interchart",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interchart.git"
+        "url": "https://github.com/mistakeknot/interpub.git"
       },
       "strict": true,
       "version": "0.1.8"
-    },
-    {
-      "description": "Code quality guards \u2014 syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
-      "keywords": [
-        "quality",
-        "syntax",
-        "formatting",
-        "hooks"
-      ],
-      "name": "intercheck",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intercheck.git"
-      },
-      "strict": true,
-      "version": "0.2.2"
-    },
-    {
-      "name": "intercraft",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intercraft.git"
-      },
-      "description": "Agent-native architecture patterns \u2014 design, review, and audit for agent-first applications.",
-      "version": "0.1.2",
-      "keywords": [
-        "agent-native",
-        "architecture",
-        "mcp",
-        "design-patterns",
-        "agents"
-      ],
-      "strict": true
-    },
-    {
-      "description": "Deep research plugin \u2014 content extraction and research orchestration via MCP tools.",
-      "keywords": [
-        "research",
-        "extraction",
-        "deep-research",
-        "trafilatura"
-      ],
-      "name": "interdeep",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interdeep.git"
-      },
-      "strict": true,
-      "version": "0.1.6"
-    },
-    {
-      "name": "interdev",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interdev.git"
-      },
-      "description": "Developer tooling for Claude Code \u2014 MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
-      "version": "0.2.0",
-      "keywords": [
-        "mcp",
-        "cli",
-        "developer-tools",
-        "tool-discovery"
-      ],
-      "strict": true
-    },
-    {
-      "description": "Recursive AGENTS.md generator with structural auto-fix, CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
-      "keywords": [
-        "documentation",
-        "automation",
-        "subagents",
-        "AGENTS.md",
-        "CLAUDE.md",
-        "cross-AI",
-        "incremental",
-        "diff-preview",
-        "harmonization",
-        "robustness"
-      ],
-      "name": "interdoc",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interdoc.git"
-      },
-      "strict": true,
-      "version": "5.2.1"
     },
     {
       "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
@@ -166,6 +159,45 @@
       "version": "0.2.10"
     },
     {
+      "description": "Dynamic statusline for Claude Code \u2014 shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
+      "keywords": [
+        "statusline",
+        "status",
+        "workflow",
+        "display",
+        "context",
+        "beads"
+      ],
+      "name": "interline",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interline.git"
+      },
+      "strict": true,
+      "version": "0.2.12"
+    },
+    {
+      "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain \u2014 adds lifecycle state management on top of the core beads plugin.",
+      "keywords": [
+        "beads",
+        "lifecycle",
+        "phase-tracking",
+        "gates",
+        "discovery",
+        "workflow",
+        "issue-tracking",
+        "interphase",
+        "enforcement"
+      ],
+      "name": "interphase",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interphase.git"
+      },
+      "strict": true,
+      "version": "0.3.15"
+    },
+    {
       "description": "Multi-agent review and research with scored triage, content slicing, and intermediate finding sharing. 17 agents (12 review + 5 research), 4 commands, 1 skill, 1 MCP server. Domain detection via intersense, knowledge via interknow.",
       "keywords": [
         "review",
@@ -185,6 +217,84 @@
       "version": "0.2.37"
     },
     {
+      "description": "Product artifact generator \u2014 roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
+      "keywords": [
+        "roadmap",
+        "prd",
+        "vision",
+        "changelog",
+        "status-report",
+        "documentation",
+        "product-artifacts",
+        "beads",
+        "interpath"
+      ],
+      "name": "interpath",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpath.git"
+      },
+      "strict": true,
+      "version": "0.3.1"
+    },
+    {
+      "description": "Doc freshness and correctness monitoring \u2014 auto-discovers watchable docs, detects drift via 17 signal types, scores confidence, dispatches generators for auto-refresh, and runs stranger-perspective correctness audits with cross-document consistency checking. Companion plugin for Clavain.",
+      "keywords": [
+        "documentation",
+        "drift-detection",
+        "freshness",
+        "maintenance",
+        "auto-refresh",
+        "monitoring",
+        "interwatch"
+      ],
+      "name": "interwatch",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interwatch.git"
+      },
+      "strict": true,
+      "version": "0.3.0"
+    },
+    {
+      "description": "Multi-agent file coordination \u2014 reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
+      "keywords": [
+        "coordination",
+        "multi-agent",
+        "file-reservation",
+        "conflict-detection",
+        "messaging",
+        "mcp",
+        "intermute",
+        "hooks",
+        "git-hooks",
+        "interlock"
+      ],
+      "name": "interlock",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlock.git"
+      },
+      "strict": true,
+      "version": "0.2.8"
+    },
+    {
+      "name": "interslack",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interslack.git"
+      },
+      "description": "Slack integration for Claude Code \u2014 send messages, read channels, test integrations.",
+      "version": "0.1.0",
+      "keywords": [
+        "slack",
+        "messaging",
+        "integration",
+        "communication"
+      ],
+      "strict": true
+    },
+    {
       "name": "interform",
       "source": {
         "source": "url",
@@ -202,26 +312,54 @@
       "strict": true
     },
     {
-      "description": "Agent-as-operator runtime diagnostics \u2014 teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
-      "keywords": [
-        "runtime",
-        "diagnostics",
-        "observability",
-        "health-check",
-        "operator",
-        "native-apps",
-        "tauri",
-        "electron",
-        "smoke-test",
-        "hooks"
-      ],
-      "name": "interhelm",
+      "name": "intercraft",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/interhelm.git"
+        "url": "https://github.com/mistakeknot/intercraft.git"
+      },
+      "description": "Agent-native architecture patterns \u2014 design, review, and audit for agent-first applications.",
+      "version": "0.1.2",
+      "keywords": [
+        "agent-native",
+        "architecture",
+        "mcp",
+        "design-patterns",
+        "agents"
+      ],
+      "strict": true
+    },
+    {
+      "name": "interdev",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interdev.git"
+      },
+      "description": "Developer tooling for Claude Code \u2014 MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
+      "version": "0.2.0",
+      "keywords": [
+        "mcp",
+        "cli",
+        "developer-tools",
+        "tool-discovery"
+      ],
+      "strict": true
+    },
+    {
+      "description": "Work prioritization and next-task analysis \u2014 tradeoff-aware recommendations from beads state and project context.",
+      "keywords": [
+        "prioritization",
+        "planning",
+        "tradeoffs",
+        "beads",
+        "backlog"
+      ],
+      "name": "internext",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/internext.git"
       },
       "strict": true,
-      "version": "0.2.0"
+      "version": "0.1.5"
     },
     {
       "description": "Ambient discovery and research engine \u2014 scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
@@ -264,71 +402,38 @@
       "version": "0.4.24"
     },
     {
-      "description": "Knowledge compounding \u2014 durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
+      "description": "Code quality guards \u2014 syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
       "keywords": [
-        "knowledge",
-        "compounding",
-        "patterns",
-        "semantic-search",
-        "qmd",
-        "mcp"
+        "quality",
+        "syntax",
+        "formatting",
+        "hooks"
       ],
-      "name": "interknow",
+      "name": "intercheck",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/interknow.git"
+        "url": "https://github.com/mistakeknot/intercheck.git"
       },
       "strict": true,
-      "version": "0.1.5"
+      "version": "0.2.2"
     },
     {
-      "description": "Autonomous experiment loop \u2014 init, run, log experiments with JSONL persistence, git isolation, circuit breaker guards, and ic events bridge.",
+      "description": "Token efficiency benchmarking for agent workflows \u2014 PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
       "keywords": [
-        "experiment",
-        "optimization",
-        "autoresearch",
-        "benchmark",
-        "mcp",
-        "jsonl",
-        "circuit-breaker",
-        "interlab"
+        "tokens",
+        "benchmarking",
+        "analytics",
+        "hooks",
+        "sqlite",
+        "metrics"
       ],
-      "name": "interlab",
+      "name": "interstat",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/interlab.git"
+        "url": "https://github.com/mistakeknot/interstat.git"
       },
       "strict": true,
-      "version": "0.1.0"
-    },
-    {
-      "description": "",
-      "keywords": [],
-      "name": "interlearn",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interlearn.git"
-      },
-      "strict": true,
-      "version": "0.1.0"
-    },
-    {
-      "description": "Deterministic Skeleton with LLM Islands \u2014 token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
-      "keywords": [
-        "interleave",
-        "token-efficiency",
-        "template",
-        "skeleton",
-        "deterministic",
-        "islands"
-      ],
-      "name": "interleave",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interleave.git"
-      },
-      "strict": true,
-      "version": "0.1.2"
+      "version": "0.2.26"
     },
     {
       "name": "interlens",
@@ -347,93 +452,6 @@
         "systems-thinking"
       ],
       "strict": true
-    },
-    {
-      "description": "Dynamic statusline for Claude Code \u2014 shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
-      "keywords": [
-        "statusline",
-        "status",
-        "workflow",
-        "display",
-        "context",
-        "beads"
-      ],
-      "name": "interline",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interline.git"
-      },
-      "strict": true,
-      "version": "0.2.12"
-    },
-    {
-      "description": "Multi-agent file coordination \u2014 reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
-      "keywords": [
-        "coordination",
-        "multi-agent",
-        "file-reservation",
-        "conflict-detection",
-        "messaging",
-        "mcp",
-        "intermute",
-        "hooks",
-        "git-hooks",
-        "interlock"
-      ],
-      "name": "interlock",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interlock.git"
-      },
-      "strict": true,
-      "version": "0.2.8"
-    },
-    {
-      "description": "Project-level code mapping MCP server: project registry, call graphs, impact analysis, agent overlay. Go + Python bridge.",
-      "keywords": [
-        "code-mapping",
-        "project-registry",
-        "call-graph",
-        "impact-analysis",
-        "mcp"
-      ],
-      "name": "intermap",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intermap.git"
-      },
-      "strict": true,
-      "version": "0.1.6"
-    },
-    {
-      "description": "Memory synthesis \u2014 graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
-      "keywords": [
-        "memory",
-        "synthesis",
-        "auto-memory",
-        "promotion",
-        "pruning",
-        "stability",
-        "dedup"
-      ],
-      "name": "intermem",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intermem.git"
-      },
-      "strict": true,
-      "version": "0.2.3"
-    },
-    {
-      "description": "",
-      "keywords": [],
-      "name": "intermonk",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intermonk.git"
-      },
-      "strict": true,
-      "version": "0.1.1"
     },
     {
       "description": "Agent activity visibility \u2014 tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
@@ -456,185 +474,6 @@
       "version": "0.1.5"
     },
     {
-      "description": "Agent and agency naming for legible orchestration \u2014 deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
-      "keywords": [
-        "naming",
-        "identity",
-        "legibility",
-        "orchestration",
-        "agents",
-        "themes"
-      ],
-      "name": "intername",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intername.git"
-      },
-      "strict": true,
-      "version": "0.1.1"
-    },
-    {
-      "description": "Work prioritization and next-task analysis \u2014 tradeoff-aware recommendations from beads state and project context.",
-      "keywords": [
-        "prioritization",
-        "planning",
-        "tradeoffs",
-        "beads",
-        "backlog"
-      ],
-      "name": "internext",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/internext.git"
-      },
-      "strict": true,
-      "version": "0.1.5"
-    },
-    {
-      "description": "Product artifact generator \u2014 roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
-      "keywords": [
-        "roadmap",
-        "prd",
-        "vision",
-        "changelog",
-        "status-report",
-        "documentation",
-        "product-artifacts",
-        "beads",
-        "interpath"
-      ],
-      "name": "interpath",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpath.git"
-      },
-      "strict": true,
-      "version": "0.3.1"
-    },
-    {
-      "name": "interpeer",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpeer.git"
-      },
-      "description": "Cross-AI peer review with 4 escalation modes \u2014 quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
-      "version": "0.1.0",
-      "keywords": [
-        "peer-review",
-        "cross-ai",
-        "oracle",
-        "codex",
-        "council",
-        "multi-model"
-      ],
-      "strict": true
-    },
-    {
-      "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain \u2014 adds lifecycle state management on top of the core beads plugin.",
-      "keywords": [
-        "beads",
-        "lifecycle",
-        "phase-tracking",
-        "gates",
-        "discovery",
-        "workflow",
-        "issue-tracking",
-        "interphase",
-        "enforcement"
-      ],
-      "name": "interphase",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interphase.git"
-      },
-      "strict": true,
-      "version": "0.3.14"
-    },
-    {
-      "description": "Plugin development toolkit \u2014 lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
-      "keywords": [
-        "plugin-development",
-        "validation",
-        "troubleshooting",
-        "claude-code"
-      ],
-      "name": "interplug",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interplug.git"
-      },
-      "strict": true,
-      "version": "0.1.5"
-    },
-    {
-      "description": "Safe plugin publishing \u2014 bumps all version locations, validates sync, commits and pushes with confirmation.",
-      "keywords": [
-        "publishing",
-        "versioning",
-        "marketplace",
-        "plugin-dev",
-        "release"
-      ],
-      "name": "interpub",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpub.git"
-      },
-      "strict": true,
-      "version": "0.1.8"
-    },
-    {
-      "description": "Session context monitoring \u2014 pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
-      "keywords": [
-        "context-pressure",
-        "session-monitoring",
-        "token-estimation",
-        "threshold-warnings"
-      ],
-      "name": "interpulse",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpulse.git"
-      },
-      "strict": true,
-      "version": "0.1.5"
-    },
-    {
-      "description": "Snapshot-backed model/benchmark ranking MCP server for AgMoDB",
-      "keywords": [
-        "mcp",
-        "benchmarks",
-        "leaderboard",
-        "agmodb",
-        "snapshot"
-      ],
-      "name": "interrank",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interrank.git"
-      },
-      "strict": true,
-      "version": "0.1.0"
-    },
-    {
-      "description": "Documentation quality toolkit \u2014 enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
-      "keywords": [
-        "documentation",
-        "claude-md",
-        "agents-md",
-        "progressive-disclosure",
-        "doc-quality",
-        "refactoring"
-      ],
-      "name": "interscribe",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interscribe.git"
-      },
-      "strict": true,
-      "version": "0.1.1"
-    },
-    {
       "description": "Shared embedding and search infrastructure \u2014 nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
       "keywords": [
         "embeddings",
@@ -655,125 +494,39 @@
       "version": "0.2.1"
     },
     {
-      "name": "intersense",
+      "description": "Project-level code mapping MCP server: project registry, call graphs, impact analysis, agent overlay. Go + Python bridge.",
+      "keywords": [
+        "code-mapping",
+        "project-registry",
+        "call-graph",
+        "impact-analysis",
+        "mcp"
+      ],
+      "name": "intermap",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/intersense.git"
+        "url": "https://github.com/mistakeknot/intermap.git"
       },
-      "description": "Domain detection \u2014 classifies projects by signals (directories, manifests, dependencies, keywords) into domains for review and research targeting.",
+      "strict": true,
+      "version": "0.1.6"
+    },
+    {
+      "name": "interpeer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpeer.git"
+      },
+      "description": "Cross-AI peer review with 4 escalation modes \u2014 quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
       "version": "0.1.0",
       "keywords": [
-        "domain-detection",
-        "classification",
-        "project-analysis",
-        "signals"
+        "peer-review",
+        "cross-ai",
+        "oracle",
+        "codex",
+        "council",
+        "multi-model"
       ],
       "strict": true
-    },
-    {
-      "name": "intership",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intership.git"
-      },
-      "description": "Culture ship names as Claude Code spinner verbs. 237 curated names -- 56 canonical Banks originals marked with *asterisks*, 181 generated Banksian originals. Toggle canonical/generated sets via config. Includes v6 generator prompt for creating more.",
-      "version": "0.3.0",
-      "keywords": [
-        "spinner",
-        "culture",
-        "banks",
-        "ships",
-        "fun",
-        "customization"
-      ],
-      "strict": true
-    },
-    {
-      "description": "Automated UI/UX design analysis \u2014 extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
-      "keywords": [
-        "design-tokens",
-        "ui-analysis",
-        "dtcg",
-        "playwright",
-        "design-system",
-        "extraction"
-      ],
-      "name": "intersight",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intersight.git"
-      },
-      "strict": true,
-      "version": "0.1.5"
-    },
-    {
-      "description": "Skill authoring toolkit \u2014 unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
-      "keywords": [
-        "skill-authoring",
-        "skill-creation",
-        "skill-audit",
-        "skill-testing",
-        "tdd"
-      ],
-      "name": "interskill",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interskill.git"
-      },
-      "strict": true,
-      "version": "0.1.3"
-    },
-    {
-      "name": "interslack",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interslack.git"
-      },
-      "description": "Slack integration for Claude Code \u2014 send messages, read channels, test integrations.",
-      "version": "0.1.0",
-      "keywords": [
-        "slack",
-        "messaging",
-        "integration",
-        "communication"
-      ],
-      "strict": true
-    },
-    {
-      "description": "Agent performance profiler and routing optimizer. Collects evidence about flux-drive agent accuracy, proposes routing overrides for underperforming agents, and monitors canary periods. Companion plugin for Clavain.",
-      "keywords": [
-        "profiler",
-        "agent-routing",
-        "evidence",
-        "canary-monitoring",
-        "performance",
-        "optimization"
-      ],
-      "name": "interspect",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interspect.git"
-      },
-      "strict": true,
-      "version": "0.1.8"
-    },
-    {
-      "description": "Token efficiency benchmarking for agent workflows \u2014 PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
-      "keywords": [
-        "tokens",
-        "benchmarking",
-        "analytics",
-        "hooks",
-        "sqlite",
-        "metrics"
-      ],
-      "name": "interstat",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interstat.git"
-      },
-      "strict": true,
-      "version": "0.2.26"
     },
     {
       "description": "Multi-agent synthesis engine \u2014 collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
@@ -811,35 +564,93 @@
       "version": "0.1.2"
     },
     {
-      "description": "Cross-module integration gap tracer \u2014 traces data flows from shipped features to find unverified consumer edges.",
+      "description": "Memory synthesis \u2014 graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
       "keywords": [
-        "integration",
-        "tracing",
-        "data-flow",
-        "gap-detection"
+        "memory",
+        "synthesis",
+        "auto-memory",
+        "promotion",
+        "pruning",
+        "stability",
+        "dedup"
       ],
-      "name": "intertrace",
+      "name": "intermem",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/intertrace.git"
+        "url": "https://github.com/mistakeknot/intermem.git"
+      },
+      "strict": true,
+      "version": "0.2.3"
+    },
+    {
+      "description": "Deterministic Skeleton with LLM Islands \u2014 token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
+      "keywords": [
+        "interleave",
+        "token-efficiency",
+        "template",
+        "skeleton",
+        "deterministic",
+        "islands"
+      ],
+      "name": "interleave",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interleave.git"
       },
       "strict": true,
       "version": "0.1.2"
     },
     {
-      "description": "Feature-level success metric tracking for Demarch",
-      "keywords": [
-        "metrics",
-        "tracking",
-        "instrumentation"
-      ],
-      "name": "intertrack",
+      "name": "intership",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/intertrack.git"
+        "url": "https://github.com/mistakeknot/intership.git"
+      },
+      "description": "Culture ship names as Claude Code spinner verbs. 237 curated names -- 56 canonical Banks originals marked with *asterisks*, 181 generated Banksian originals. Toggle canonical/generated sets via config. Includes v6 generator prompt for creating more.",
+      "version": "0.3.0",
+      "keywords": [
+        "spinner",
+        "culture",
+        "banks",
+        "ships",
+        "fun",
+        "customization"
+      ],
+      "strict": true
+    },
+    {
+      "name": "intersense",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intersense.git"
+      },
+      "description": "Domain detection \u2014 classifies projects by signals (directories, manifests, dependencies, keywords) into domains for review and research targeting.",
+      "version": "0.1.0",
+      "keywords": [
+        "domain-detection",
+        "classification",
+        "project-analysis",
+        "signals"
+      ],
+      "strict": true
+    },
+    {
+      "description": "Knowledge compounding \u2014 durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
+      "keywords": [
+        "knowledge",
+        "compounding",
+        "patterns",
+        "semantic-search",
+        "qmd",
+        "mcp"
+      ],
+      "name": "interknow",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interknow.git"
       },
       "strict": true,
-      "version": "0.1.4"
+      "version": "0.1.5"
     },
     {
       "description": "Project hierarchy management \u2014 filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
@@ -856,6 +667,55 @@
       },
       "strict": true,
       "version": "0.1.2"
+    },
+    {
+      "description": "Skill authoring toolkit \u2014 unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
+      "keywords": [
+        "skill-authoring",
+        "skill-creation",
+        "skill-audit",
+        "skill-testing",
+        "tdd"
+      ],
+      "name": "interskill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interskill.git"
+      },
+      "strict": true,
+      "version": "0.1.3"
+    },
+    {
+      "description": "Plugin development toolkit \u2014 lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
+      "keywords": [
+        "plugin-development",
+        "validation",
+        "troubleshooting",
+        "claude-code"
+      ],
+      "name": "interplug",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interplug.git"
+      },
+      "strict": true,
+      "version": "0.1.5"
+    },
+    {
+      "description": "Session context monitoring \u2014 pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
+      "keywords": [
+        "context-pressure",
+        "session-monitoring",
+        "token-estimation",
+        "threshold-warnings"
+      ],
+      "name": "interpulse",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpulse.git"
+      },
+      "strict": true,
+      "version": "0.1.5"
     },
     {
       "description": "Agent trust scoring \u2014 severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
@@ -876,86 +736,206 @@
       "version": "0.1.2"
     },
     {
-      "description": "Doc freshness and correctness monitoring \u2014 auto-discovers watchable docs, detects drift via 17 signal types, scores confidence, dispatches generators for auto-refresh, and runs stranger-perspective correctness audits with cross-document consistency checking. Companion plugin for Clavain.",
+      "description": "Agent and agency naming for legible orchestration \u2014 deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
+      "keywords": [
+        "naming",
+        "identity",
+        "legibility",
+        "orchestration",
+        "agents",
+        "themes"
+      ],
+      "name": "intername",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intername.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
+    },
+    {
+      "description": "Documentation quality toolkit \u2014 enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
       "keywords": [
         "documentation",
-        "drift-detection",
-        "freshness",
-        "maintenance",
-        "auto-refresh",
-        "monitoring",
-        "interwatch"
+        "claude-md",
+        "agents-md",
+        "progressive-disclosure",
+        "doc-quality",
+        "refactoring"
       ],
-      "name": "interwatch",
+      "name": "interscribe",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/interwatch.git"
+        "url": "https://github.com/mistakeknot/interscribe.git"
       },
       "strict": true,
-      "version": "0.3.0"
+      "version": "0.1.1"
     },
     {
-      "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis. Includes MCP server for direct tool integration.",
+      "description": "Agent performance profiler and routing optimizer. Collects evidence about flux-drive agent accuracy, proposes routing overrides for underperforming agents, and monitors canary periods. Companion plugin for Clavain.",
       "keywords": [
-        "tldrs",
-        "tldr-swinton",
-        "context",
-        "diff-context",
-        "semantic-search",
-        "structural-search",
-        "tokens",
-        "code-analysis",
-        "embeddings",
-        "llm-tools"
+        "profiler",
+        "agent-routing",
+        "evidence",
+        "canary-monitoring",
+        "performance",
+        "optimization"
       ],
-      "name": "tldr-swinton",
+      "name": "interspect",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/tldr-swinton.git"
+        "url": "https://github.com/mistakeknot/interspect.git"
       },
       "strict": true,
-      "version": "0.7.17"
+      "version": "0.1.8"
     },
     {
-      "description": "Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hooks, detects inefficiencies, and offers opt-in community comparison with anonymized data.",
+      "description": "Feature-level success metric tracking for Demarch",
       "keywords": [
-        "tools",
-        "analytics",
-        "community",
-        "patterns",
-        "usage",
-        "hooks",
-        "anonymized",
-        "skills",
-        "playbooks"
+        "metrics",
+        "tracking",
+        "instrumentation"
       ],
-      "name": "tool-time",
+      "name": "intertrack",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/tool-time.git"
+        "url": "https://github.com/mistakeknot/intertrack.git"
       },
       "strict": true,
-      "version": "0.3.9"
+      "version": "0.1.4"
     },
     {
-      "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
-      "keywords": [
-        "tui",
-        "terminal",
-        "automation",
-        "testing",
-        "screenshot",
-        "pty",
-        "xterm",
-        "mcp"
-      ],
-      "name": "tuivision",
+      "description": "",
+      "keywords": [],
+      "name": "intercache",
       "source": {
         "source": "url",
-        "url": "https://github.com/mistakeknot/tuivision.git"
+        "url": "https://github.com/mistakeknot/intercache.git"
       },
       "strict": true,
       "version": "0.2.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interchart",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interchart.git"
+      },
+      "strict": true,
+      "version": "0.1.8"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "interlearn",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlearn.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
+      "description": "Snapshot-backed model/benchmark ranking MCP server for AgMoDB",
+      "keywords": [
+        "mcp",
+        "benchmarks",
+        "leaderboard",
+        "agmodb",
+        "snapshot"
+      ],
+      "name": "interrank",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interrank.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
+      "description": "Cross-module integration gap tracer \u2014 traces data flows from shipped features to find unverified consumer edges.",
+      "keywords": [
+        "integration",
+        "tracing",
+        "data-flow",
+        "gap-detection"
+      ],
+      "name": "intertrace",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intertrace.git"
+      },
+      "strict": true,
+      "version": "0.1.2"
+    },
+    {
+      "description": "Deep research plugin \u2014 content extraction and research orchestration via MCP tools.",
+      "keywords": [
+        "research",
+        "extraction",
+        "deep-research",
+        "trafilatura"
+      ],
+      "name": "interdeep",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interdeep.git"
+      },
+      "strict": true,
+      "version": "0.1.6"
+    },
+    {
+      "description": "Automated UI/UX design analysis \u2014 extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
+      "keywords": [
+        "design-tokens",
+        "ui-analysis",
+        "dtcg",
+        "playwright",
+        "design-system",
+        "extraction"
+      ],
+      "name": "intersight",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intersight.git"
+      },
+      "strict": true,
+      "version": "0.1.5"
+    },
+    {
+      "description": "Agent-as-operator runtime diagnostics \u2014 teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
+      "keywords": [
+        "runtime",
+        "diagnostics",
+        "observability",
+        "health-check",
+        "operator",
+        "native-apps",
+        "tauri",
+        "electron",
+        "smoke-test",
+        "hooks"
+      ],
+      "name": "interhelm",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interhelm.git"
+      },
+      "strict": true,
+      "version": "0.2.0"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "intermonk",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intermonk.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     }
   ]
 }
