@@ -733,7 +733,7 @@
         "url": "https://github.com/mistakeknot/intertrust.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Agent and agency naming for legible orchestration \u2014 deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
