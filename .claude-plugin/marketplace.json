@@ -174,7 +174,7 @@
         "url": "https://github.com/mistakeknot/interline.git"
       },
       "strict": true,
-      "version": "0.2.12"
+      "version": "0.2.13"
     },
     {
       "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain \u2014 adds lifecycle state management on top of the core beads plugin.",
