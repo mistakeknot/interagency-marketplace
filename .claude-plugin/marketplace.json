@@ -235,7 +235,7 @@
         "url": "https://github.com/mistakeknot/interpath.git"
       },
       "strict": true,
-      "version": "0.3.1"
+      "version": "0.3.2"
     },
     {
       "description": "Doc freshness and correctness monitoring \u2014 auto-discovers watchable docs, detects drift via 17 signal types, scores confidence, dispatches generators for auto-refresh, and runs stranger-perspective correctness audits with cross-document consistency checking. Companion plugin for Clavain.",
