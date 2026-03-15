@@ -751,7 +751,7 @@
         "url": "https://github.com/mistakeknot/intername.git"
       },
       "strict": true,
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "description": "Documentation quality toolkit \u2014 enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
