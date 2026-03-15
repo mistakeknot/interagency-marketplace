@@ -580,7 +580,7 @@
         "url": "https://github.com/mistakeknot/intermem.git"
       },
       "strict": true,
-      "version": "0.2.3"
+      "version": "0.2.4"
     },
     {
       "description": "Deterministic Skeleton with LLM Islands \u2014 token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
