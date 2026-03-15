@@ -92,7 +92,7 @@
         "url": "https://github.com/mistakeknot/tool-time.git"
       },
       "strict": true,
-      "version": "0.3.9"
+      "version": "0.3.10"
     },
     {
       "description": "Self-improving agent rig \u2014 codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
