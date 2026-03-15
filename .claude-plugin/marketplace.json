@@ -543,7 +543,7 @@
         "url": "https://github.com/mistakeknot/intersynth.git"
       },
       "strict": true,
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
       "description": "Engineering quality disciplines \u2014 systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
