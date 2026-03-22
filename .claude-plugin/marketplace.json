@@ -95,7 +95,7 @@
       "version": "0.3.10"
     },
     {
-      "description": "Self-improving agent rig \u2014 codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
+      "description": "Self-improving agent rig — codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
       "keywords": [
         "engineering",
         "discipline",
@@ -120,10 +120,10 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "strict": true,
-      "version": "0.6.228"
+      "version": "0.6.229"
     },
     {
-      "description": "Safe plugin publishing \u2014 bumps all version locations, validates sync, commits and pushes with confirmation.",
+      "description": "Safe plugin publishing — bumps all version locations, validates sync, commits and pushes with confirmation.",
       "keywords": [
         "publishing",
         "versioning",
@@ -159,7 +159,7 @@
       "version": "0.2.10"
     },
     {
-      "description": "Dynamic statusline for Claude Code \u2014 shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
+      "description": "Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
       "keywords": [
         "statusline",
         "status",
@@ -177,7 +177,7 @@
       "version": "0.2.13"
     },
     {
-      "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain \u2014 adds lifecycle state management on top of the core beads plugin.",
+      "description": "Phase tracking, gate validation, and work discovery for the Beads issue tracker. Companion plugin for Clavain — adds lifecycle state management on top of the core beads plugin.",
       "keywords": [
         "beads",
         "lifecycle",
@@ -217,7 +217,7 @@
       "version": "0.2.43"
     },
     {
-      "description": "Product artifact generator \u2014 roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
+      "description": "Product artifact generator — roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
       "keywords": [
         "roadmap",
         "prd",
@@ -238,7 +238,7 @@
       "version": "0.3.2"
     },
     {
-      "description": "Doc freshness and correctness monitoring \u2014 auto-discovers watchable docs, detects drift via 17 signal types, scores confidence, dispatches generators for auto-refresh, and runs stranger-perspective correctness audits with cross-document consistency checking. Companion plugin for Clavain.",
+      "description": "Doc freshness and correctness monitoring — auto-discovers watchable docs, detects drift via 17 signal types, scores confidence, dispatches generators for auto-refresh, and runs stranger-perspective correctness audits with cross-document consistency checking. Companion plugin for Clavain.",
       "keywords": [
         "documentation",
         "drift-detection",
@@ -257,7 +257,7 @@
       "version": "0.3.3"
     },
     {
-      "description": "Multi-agent file coordination \u2014 reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
+      "description": "Multi-agent file coordination — reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
       "keywords": [
         "coordination",
         "multi-agent",
@@ -284,7 +284,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interslack.git"
       },
-      "description": "Slack integration for Claude Code \u2014 send messages, read channels, test integrations.",
+      "description": "Slack integration for Claude Code — send messages, read channels, test integrations.",
       "version": "0.1.0",
       "keywords": [
         "slack",
@@ -300,7 +300,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interform.git"
       },
-      "description": "Design patterns and visual quality for Claude Code \u2014 distinctive, production-grade interfaces.",
+      "description": "Design patterns and visual quality for Claude Code — distinctive, production-grade interfaces.",
       "version": "0.1.0",
       "keywords": [
         "design",
@@ -317,7 +317,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/intercraft.git"
       },
-      "description": "Agent-native architecture patterns \u2014 design, review, and audit for agent-first applications.",
+      "description": "Agent-native architecture patterns — design, review, and audit for agent-first applications.",
       "version": "0.1.2",
       "keywords": [
         "agent-native",
@@ -334,7 +334,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interdev.git"
       },
-      "description": "Developer tooling for Claude Code \u2014 MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
+      "description": "Developer tooling for Claude Code — MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
       "version": "0.2.0",
       "keywords": [
         "mcp",
@@ -345,7 +345,7 @@
       "strict": true
     },
     {
-      "description": "Work prioritization and next-task analysis \u2014 tradeoff-aware recommendations from beads state and project context.",
+      "description": "Work prioritization and next-task analysis — tradeoff-aware recommendations from beads state and project context.",
       "keywords": [
         "prioritization",
         "planning",
@@ -362,7 +362,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Ambient discovery and research engine \u2014 scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
+      "description": "Ambient discovery and research engine — scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
       "keywords": [
         "research",
         "discovery",
@@ -402,7 +402,7 @@
       "version": "0.4.25"
     },
     {
-      "description": "Code quality guards \u2014 syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
+      "description": "Code quality guards — syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
       "keywords": [
         "quality",
         "syntax",
@@ -418,7 +418,7 @@
       "version": "0.2.2"
     },
     {
-      "description": "Token efficiency benchmarking for agent workflows \u2014 PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
+      "description": "Token efficiency benchmarking for agent workflows — PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
       "keywords": [
         "tokens",
         "benchmarking",
@@ -441,7 +441,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interlens.git"
       },
-      "description": "288 FLUX cognitive lenses for structured thinking \u2014 MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
+      "description": "288 FLUX cognitive lenses for structured thinking — MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
       "version": "2.2.4",
       "keywords": [
         "flux",
@@ -454,7 +454,7 @@
       "strict": true
     },
     {
-      "description": "Agent activity visibility \u2014 tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
+      "description": "Agent activity visibility — tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
       "keywords": [
         "tmux",
         "monitoring",
@@ -474,7 +474,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Shared embedding and search infrastructure \u2014 nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
+      "description": "Shared embedding and search infrastructure — nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
       "keywords": [
         "embeddings",
         "search",
@@ -516,7 +516,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/interpeer.git"
       },
-      "description": "Cross-AI peer review with 4 escalation modes \u2014 quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
+      "description": "Cross-AI peer review with 4 escalation modes — quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
       "version": "0.1.0",
       "keywords": [
         "peer-review",
@@ -529,7 +529,7 @@
       "strict": true
     },
     {
-      "description": "Multi-agent synthesis engine \u2014 collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
+      "description": "Multi-agent synthesis engine — collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
       "keywords": [
         "synthesis",
         "multi-agent",
@@ -546,7 +546,7 @@
       "version": "0.1.9"
     },
     {
-      "description": "Engineering quality disciplines \u2014 systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
+      "description": "Engineering quality disciplines — systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
       "keywords": [
         "testing",
         "tdd",
@@ -564,7 +564,7 @@
       "version": "0.1.2"
     },
     {
-      "description": "Memory synthesis \u2014 graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
+      "description": "Memory synthesis — graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
       "keywords": [
         "memory",
         "synthesis",
@@ -583,7 +583,7 @@
       "version": "0.2.4"
     },
     {
-      "description": "Deterministic Skeleton with LLM Islands \u2014 token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
+      "description": "Deterministic Skeleton with LLM Islands — token-efficient document generation via template-then-fill, where scripts render predictable sections and LLM subagents fill semantic placeholders.",
       "keywords": [
         "interleave",
         "token-efficiency",
@@ -607,7 +607,7 @@
         "url": "https://github.com/mistakeknot/intership.git"
       },
       "description": "Culture ship names as Claude Code spinner verbs. 237 curated names -- 56 canonical Banks originals marked with *asterisks*, 181 generated Banksian originals. Toggle canonical/generated sets via config. Includes v6 generator prompt for creating more.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "keywords": [
         "spinner",
         "culture",
@@ -624,7 +624,7 @@
         "source": "url",
         "url": "https://github.com/mistakeknot/intersense.git"
       },
-      "description": "Domain detection \u2014 classifies projects by signals (directories, manifests, dependencies, keywords) into domains for review and research targeting.",
+      "description": "Domain detection — classifies projects by signals (directories, manifests, dependencies, keywords) into domains for review and research targeting.",
       "version": "0.1.0",
       "keywords": [
         "domain-detection",
@@ -635,7 +635,7 @@
       "strict": true
     },
     {
-      "description": "Knowledge compounding \u2014 durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
+      "description": "Knowledge compounding — durable pattern repository with provenance tracking, temporal decay, and semantic retrieval via qmd MCP server.",
       "keywords": [
         "knowledge",
         "compounding",
@@ -653,7 +653,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Project hierarchy management \u2014 filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
+      "description": "Project hierarchy management — filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
       "keywords": [
         "hierarchy",
         "project-discovery",
@@ -669,7 +669,7 @@
       "version": "0.1.2"
     },
     {
-      "description": "Skill authoring toolkit \u2014 unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
+      "description": "Skill authoring toolkit — unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
       "keywords": [
         "skill-authoring",
         "skill-creation",
@@ -686,7 +686,7 @@
       "version": "0.1.3"
     },
     {
-      "description": "Plugin development toolkit \u2014 lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
+      "description": "Plugin development toolkit — lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
       "keywords": [
         "plugin-development",
         "validation",
@@ -702,7 +702,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Session context monitoring \u2014 pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
+      "description": "Session context monitoring — pressure tracking with time-decay, token estimation, and threshold warnings. Extracted from intercheck.",
       "keywords": [
         "context-pressure",
         "session-monitoring",
@@ -718,7 +718,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Agent trust scoring \u2014 severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
+      "description": "Agent trust scoring — severity-weighted time-decayed reputation tracking. Records finding acceptance/rejection, computes blended project/global trust scores, identifies suppression candidates.",
       "keywords": [
         "trust",
         "reputation",
@@ -736,7 +736,7 @@
       "version": "0.1.3"
     },
     {
-      "description": "Agent and agency naming for legible orchestration \u2014 deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
+      "description": "Agent and agency naming for legible orchestration — deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Demarch (diplomatic), NATO (phonetic), custom.",
       "keywords": [
         "naming",
         "identity",
@@ -754,7 +754,7 @@
       "version": "0.1.2"
     },
     {
-      "description": "Documentation quality toolkit \u2014 enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
+      "description": "Documentation quality toolkit — enforces CLAUDE.md/AGENTS.md boundaries, applies progressive disclosure, deduplicates across doc hierarchy. 1 skill with audit, refactor, and consolidate modes.",
       "keywords": [
         "documentation",
         "claude-md",
@@ -855,7 +855,7 @@
       "version": "0.3.0"
     },
     {
-      "description": "Cross-module integration gap tracer \u2014 traces data flows from shipped features to find unverified consumer edges.",
+      "description": "Cross-module integration gap tracer — traces data flows from shipped features to find unverified consumer edges.",
       "keywords": [
         "integration",
         "tracing",
@@ -871,7 +871,7 @@
       "version": "0.1.2"
     },
     {
-      "description": "Deep research plugin \u2014 content extraction and research orchestration via MCP tools.",
+      "description": "Deep research plugin — content extraction and research orchestration via MCP tools.",
       "keywords": [
         "research",
         "extraction",
@@ -887,7 +887,7 @@
       "version": "0.1.6"
     },
     {
-      "description": "Automated UI/UX design analysis \u2014 extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
+      "description": "Automated UI/UX design analysis — extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
       "keywords": [
         "design-tokens",
         "ui-analysis",
@@ -905,7 +905,7 @@
       "version": "0.1.5"
     },
     {
-      "description": "Agent-as-operator runtime diagnostics \u2014 teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
+      "description": "Agent-as-operator runtime diagnostics — teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
       "keywords": [
         "runtime",
         "diagnostics",
