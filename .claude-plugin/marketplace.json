@@ -214,7 +214,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "strict": true,
-      "version": "0.2.45"
+      "version": "0.2.46"
     },
     {
       "description": "Product artifact generator — roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
