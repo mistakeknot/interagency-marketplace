@@ -126,7 +126,7 @@ python3 /tmp/update-readmes.py              # Apply changes
 ```
 
 **Approach:**
-1. Globs all `README.md` files in `/home/mk/projects/Demarch/interverse/*/README.md`
+1. Globs all `README.md` files in `/home/mk/projects/Sylveste/interverse/*/README.md`
 2. Skips files that already contain `marketplace add`
 3. Skips files without any `/plugin install` or `claude plugins install` line
 4. Routes to the correct handler based on plugin name and content patterns
@@ -147,4 +147,4 @@ Spot-checked four representative files after modification:
 
 ## Files Not Committed
 
-No git commits or pushes were made. The 31 modified README files are sitting as uncommitted changes across their respective plugin directories in the monorepo at `/home/mk/projects/Demarch/interverse/`.
+No git commits or pushes were made. The 31 modified README files are sitting as uncommitted changes across their respective plugin directories in the monorepo at `/home/mk/projects/Sylveste/interverse/`.
