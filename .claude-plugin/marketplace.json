@@ -214,7 +214,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "strict": true,
-      "version": "0.2.54"
+      "version": "0.2.56"
     },
     {
       "description": "Product artifact generator — roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
@@ -543,7 +543,7 @@
         "url": "https://github.com/mistakeknot/intersynth.git"
       },
       "strict": true,
-      "version": "0.1.9"
+      "version": "0.1.11"
     },
     {
       "description": "Engineering quality disciplines — systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
