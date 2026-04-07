@@ -986,7 +986,7 @@
     },
     {
       "name": "interbrowse",
-      "description": "Browser automation for AI agents via agent-browser CLI. UX teardowns, competitive analysis, content extraction, and general web interaction without chrome extension dependencies.",
+      "description": "Browser automation and competitive research for AI agents. UX teardowns, docs crawls, cross-cutting synthesis, and CUJ generation \u2014 the full research-to-design pipeline via agent-browser CLI.",
       "keywords": [
         "browser",
         "automation",
@@ -1002,7 +1002,7 @@
         "url": "https://github.com/mistakeknot/interbrowse.git"
       },
       "strict": true,
-      "version": "0.2.0"
+      "version": "0.4.0"
     }
   ]
 }
