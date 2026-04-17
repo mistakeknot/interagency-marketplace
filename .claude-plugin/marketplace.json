@@ -71,7 +71,7 @@
         "url": "https://github.com/mistakeknot/tuivision.git"
       },
       "strict": true,
-      "version": "0.2.0"
+      "version": "0.2.1"
     },
     {
       "description": "Tool usage analytics for Claude Code and Codex CLI. Tracks tool patterns via hooks, detects inefficiencies, and offers opt-in community comparison with anonymized data.",
@@ -214,7 +214,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "strict": true,
-      "version": "0.2.56"
+      "version": "0.2.59"
     },
     {
       "description": "Product artifact generator \u2014 roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
@@ -433,7 +433,7 @@
         "url": "https://github.com/mistakeknot/interstat.git"
       },
       "strict": true,
-      "version": "0.2.27"
+      "version": "0.3.0"
     },
     {
       "name": "interlens",
@@ -543,7 +543,7 @@
         "url": "https://github.com/mistakeknot/intersynth.git"
       },
       "strict": true,
-      "version": "0.1.11"
+      "version": "0.1.12"
     },
     {
       "description": "Engineering quality disciplines \u2014 systematic debugging (4-phase root-cause investigation), test-driven development (strict RED-GREEN-REFACTOR), and verification gates (iron-law evidence checks).",
@@ -787,7 +787,7 @@
         "url": "https://github.com/mistakeknot/interspect.git"
       },
       "strict": true,
-      "version": "0.1.19"
+      "version": "0.1.20"
     },
     {
       "description": "Feature-level success metric tracking for Sylveste",
