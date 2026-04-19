@@ -852,7 +852,7 @@
         "url": "https://github.com/mistakeknot/interrank.git"
       },
       "strict": true,
-      "version": "0.3.0"
+      "version": "0.3.1"
     },
     {
       "description": "Cross-module integration gap tracer \u2014 traces data flows from shipped features to find unverified consumer edges.",
