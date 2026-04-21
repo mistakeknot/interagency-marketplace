@@ -312,13 +312,7 @@
       "strict": true
     },
     {
-      "name": "intercraft",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intercraft.git"
-      },
       "description": "Agent-native architecture patterns \u2014 design, review, and audit for agent-first applications.",
-      "version": "0.1.2",
       "keywords": [
         "agent-native",
         "architecture",
@@ -326,7 +320,13 @@
         "design-patterns",
         "agents"
       ],
-      "strict": true
+      "name": "intercraft",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intercraft.git"
+      },
+      "strict": true,
+      "version": "0.1.3"
     },
     {
       "name": "interdev",
