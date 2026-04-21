@@ -561,7 +561,7 @@
         "url": "https://github.com/mistakeknot/intertest.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Memory synthesis \u2014 graduates stable auto-memory facts to AGENTS.md/CLAUDE.md with stability detection, deduplication, interactive approval, and atomic pruning.",
