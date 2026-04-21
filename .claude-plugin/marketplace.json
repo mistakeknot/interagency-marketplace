@@ -491,7 +491,7 @@
         "url": "https://github.com/mistakeknot/intersearch.git"
       },
       "strict": true,
-      "version": "0.2.1"
+      "version": "0.2.2"
     },
     {
       "description": "Project-level code mapping MCP server: project registry, call graphs, impact analysis, agent overlay. Go + Python bridge.",
