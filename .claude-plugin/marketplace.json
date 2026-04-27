@@ -511,13 +511,7 @@
       "version": "0.1.7"
     },
     {
-      "name": "interpeer",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interpeer.git"
-      },
       "description": "Cross-AI peer review with 4 escalation modes \u2014 quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
-      "version": "0.1.0",
       "keywords": [
         "peer-review",
         "cross-ai",
@@ -526,7 +520,13 @@
         "council",
         "multi-model"
       ],
-      "strict": true
+      "name": "interpeer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interpeer.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
       "description": "Multi-agent synthesis engine \u2014 collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
