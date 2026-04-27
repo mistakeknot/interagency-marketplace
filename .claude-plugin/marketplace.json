@@ -254,7 +254,7 @@
         "url": "https://github.com/mistakeknot/interwatch.git"
       },
       "strict": true,
-      "version": "0.4.1"
+      "version": "0.4.2"
     },
     {
       "description": "Multi-agent file coordination \u2014 reserve files before editing, detect conflicts, exchange messages between agents. MCP server wrapping intermute with hooks, commands, skills, and git pre-commit enforcement. Companion plugin for Clavain.",
