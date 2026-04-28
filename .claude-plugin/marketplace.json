@@ -471,7 +471,7 @@
         "url": "https://github.com/mistakeknot/intermux.git"
       },
       "strict": true,
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
       "description": "Shared embedding and search infrastructure \u2014 nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
