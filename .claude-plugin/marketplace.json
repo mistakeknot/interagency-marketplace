@@ -601,13 +601,7 @@
       "version": "0.1.2"
     },
     {
-      "name": "intership",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intership.git"
-      },
       "description": "Culture ship names as Claude Code spinner verbs. 237 curated names -- 56 canonical Banks originals marked with *asterisks*, 181 generated Banksian originals. Toggle canonical/generated sets via config. Includes v6 generator prompt for creating more.",
-      "version": "0.3.1",
       "keywords": [
         "spinner",
         "culture",
@@ -616,7 +610,13 @@
         "fun",
         "customization"
       ],
-      "strict": true
+      "name": "intership",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intership.git"
+      },
+      "strict": true,
+      "version": "0.3.2"
     },
     {
       "name": "intersense",
