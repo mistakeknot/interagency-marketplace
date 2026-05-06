@@ -51,7 +51,7 @@
         "url": "https://github.com/mistakeknot/tldr-swinton.git"
       },
       "strict": true,
-      "version": "0.7.17"
+      "version": "0.7.18"
     },
     {
       "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
