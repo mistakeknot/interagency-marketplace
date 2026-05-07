@@ -436,13 +436,7 @@
       "version": "0.3.0"
     },
     {
-      "name": "interlens",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interlens.git"
-      },
       "description": "288 FLUX cognitive lenses for structured thinking \u2014 MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
-      "version": "2.2.4",
       "keywords": [
         "flux",
         "lenses",
@@ -451,7 +445,13 @@
         "thinking-modes",
         "systems-thinking"
       ],
-      "strict": true
+      "name": "interlens",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interlens.git"
+      },
+      "strict": true,
+      "version": "2.2.5"
     },
     {
       "description": "Agent activity visibility \u2014 tmux monitoring, activity feeds, health detection. Enriches intermute with live context. 7 MCP tools for cross-agent observability.",
