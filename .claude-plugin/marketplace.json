@@ -450,7 +450,7 @@
         "url": "https://github.com/mistakeknot/interlock.git"
       },
       "strict": true,
-      "version": "0.2.15"
+      "version": "0.2.17"
     },
     {
       "description": "Proof-oriented agent loops for multi-project solo-lab work. Selects demo, release, repo hygiene, installer, eval, runtime, and handoff loops with explicit evidence and stop conditions.",
@@ -870,7 +870,7 @@
         "url": "https://github.com/mistakeknot/interspect.git"
       },
       "strict": true,
-      "version": "0.1.20"
+      "version": "0.1.21"
     },
     {
       "description": "Token efficiency benchmarking for agent workflows \u2014 PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
