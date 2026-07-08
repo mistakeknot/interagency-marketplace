@@ -770,6 +770,23 @@
       "version": "0.2.2"
     },
     {
+      "description": "Idea garden: capture, refine, and graduate ideas from rough seeds to actionable plans.",
+      "keywords": [
+        "ideas",
+        "brainstorming",
+        "planning",
+        "mcp",
+        "idea-garden"
+      ],
+      "name": "interseed",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interseed.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
       "name": "intersense",
       "source": {
         "source": "url",
