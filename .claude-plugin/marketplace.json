@@ -1106,6 +1106,17 @@
       },
       "strict": true,
       "version": "0.2.2"
+    },
+    {
+      "description": "",
+      "keywords": [],
+      "name": "intercut",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intercut.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
     }
   ]
 }
