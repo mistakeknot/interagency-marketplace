@@ -887,7 +887,7 @@
         "url": "https://github.com/mistakeknot/interspect.git"
       },
       "strict": true,
-      "version": "0.1.21"
+      "version": "0.1.22"
     },
     {
       "description": "Token efficiency benchmarking for agent workflows — PostToolUse:Task hook captures real-time events to SQLite, SessionEnd hook backfills token data from JSONL, report shows percentiles and decision gate.",
