@@ -35,7 +35,7 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "strict": true,
-      "version": "0.6.258"
+      "version": "0.6.259"
     },
     {
       "description": "Browser automation and competitive research for AI agents. UX teardowns, docs crawls, cross-cutting synthesis, and CUJ generation — the full research-to-design pipeline via agent-browser CLI.",
