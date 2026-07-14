@@ -240,7 +240,7 @@
       "version": "0.1.0"
     },
     {
-      "description": "Analyze your writing style and adapt Claude's output to sound like you. Ingest writing samples, build a voice profile, and apply it to any human-facing documentation or copy.",
+      "description": "[DEPRECATED \u2014 use intervox] Analyze your writing style and adapt Claude's output to sound like you. Superseded by intervox's measured closed loop.",
       "keywords": [
         "writing-style",
         "voice-profile",
@@ -256,7 +256,7 @@
         "url": "https://github.com/mistakeknot/interfluence.git"
       },
       "strict": true,
-      "version": "0.2.12"
+      "version": "0.2.13"
     },
     {
       "description": "Multi-agent review and research with scored triage, content slicing, and intermediate finding sharing. 17 agents (12 review + 5 research), 4 commands, 1 skill, 1 MCP server. Domain detection via intersense, knowledge via interknow.",
@@ -1046,7 +1046,7 @@
       "version": "0.1.3"
     },
     {
-      "description": "Generate and edit prose in your voice from a global multi-register profile. Apply the right register (Team/Internal/Public) per audience.",
+      "description": "[DEPRECATED \u2014 use intervox] Global multi-register voice profile, prose-only. intervox keeps the profile format and adds fingerprint, linter, and verified apply.",
       "keywords": [
         "voice",
         "writing",
@@ -1059,6 +1059,26 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mistakeknot/intervoice.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
+    },
+    {
+      "description": "Voice engine with a closed loop: generate and edit prose in your voice, then verify it against your measured stylometric fingerprint. Register-aware profile, LLMism linter, exemplar retrieval, critique-revise apply. Successor to interfluence and intervoice.",
+      "keywords": [
+        "voice",
+        "writing",
+        "style",
+        "stylometry",
+        "fingerprint",
+        "llmisms",
+        "registers",
+        "prose"
+      ],
+      "name": "intervox",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/intervox.git"
       },
       "strict": true,
       "version": "0.1.0"
