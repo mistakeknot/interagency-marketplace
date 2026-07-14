@@ -23,7 +23,9 @@
       "name": "canongraph",
       "source": {
         "source": "url",
-        "url": "https://github.com/jvattimo1/canongraph.git"
+        "url": "https://github.com/jvattimo1/canongraph.git",
+        "ref": "main",
+        "sha": "6e1362f3b0a43c3016b848bd766718d000c5d0c2"
       },
       "strict": true,
       "version": "0.1.0"
