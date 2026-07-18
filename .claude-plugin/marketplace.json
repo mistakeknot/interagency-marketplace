@@ -59,6 +59,25 @@
       "version": "0.6.277"
     },
     {
+      "description": "CUJ design system: discover → teardown → provoke → capture → derive → consume; evidence-first schema; agent-consumable specs for coding agents to build from with minimal drift.",
+      "keywords": [
+        "cuj",
+        "ux-research",
+        "provocation",
+        "spec",
+        "metis",
+        "design-system",
+        "evidence"
+      ],
+      "name": "cujgel",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/cujgel.git"
+      },
+      "strict": true,
+      "version": "0.1.0"
+    },
+    {
       "description": "Browser automation and competitive research for AI agents. UX teardowns, docs crawls, cross-cutting synthesis, and CUJ generation \u2014 the full research-to-design pipeline via agent-browser CLI.",
       "keywords": [
         "browser",
