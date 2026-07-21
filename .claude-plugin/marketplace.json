@@ -769,7 +769,7 @@
         "url": "https://github.com/mistakeknot/interpulse.git"
       },
       "strict": true,
-      "version": "0.1.6"
+      "version": "0.1.7"
     },
     {
       "description": "Snapshot-backed model/benchmark ranking MCP server for AgMoDB",
