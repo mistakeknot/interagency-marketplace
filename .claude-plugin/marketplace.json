@@ -578,7 +578,7 @@
         "url": "https://github.com/mistakeknot/intermem.git"
       },
       "strict": true,
-      "version": "0.2.4"
+      "version": "0.2.5"
     },
     {
       "description": "Cross-repo matrix evaluation harness \u2014 run Skaffen against unfamiliar codebases, classify outcomes, track failure modes.",
