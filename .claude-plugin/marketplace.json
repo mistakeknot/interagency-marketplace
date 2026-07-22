@@ -875,7 +875,7 @@
         "url": "https://github.com/mistakeknot/intership.git"
       },
       "strict": true,
-      "version": "0.3.5"
+      "version": "0.3.6"
     },
     {
       "description": "Automated UI/UX design analysis \u2014 extracts W3C DTCG tokens, component inventory, and layout analysis from any URL using Dembrandt + Playwright MCP + Claude vision.",
