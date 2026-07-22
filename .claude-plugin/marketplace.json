@@ -507,7 +507,7 @@
         "url": "https://github.com/mistakeknot/interlock.git"
       },
       "strict": true,
-      "version": "0.2.17"
+      "version": "0.2.18"
     },
     {
       "description": "Proof-oriented agent loops for multi-project solo-lab work. Selects demo, release, repo hygiene, installer, eval, runtime, and handoff loops with explicit evidence and stop conditions.",
