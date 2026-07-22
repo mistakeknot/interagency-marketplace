@@ -720,7 +720,7 @@
         "url": "https://github.com/mistakeknot/interphase.git"
       },
       "strict": true,
-      "version": "0.3.19"
+      "version": "0.3.20"
     },
     {
       "description": "Plugin development toolkit \u2014 lifecycle management, structure validation, and troubleshooting for Claude Code plugins. Extracted from interdev.",
