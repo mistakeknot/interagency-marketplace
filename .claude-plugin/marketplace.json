@@ -1028,7 +1028,7 @@
         "url": "https://github.com/mistakeknot/intertrack.git"
       },
       "strict": true,
-      "version": "0.1.4"
+      "version": "0.1.5"
     },
     {
       "description": "Project hierarchy management \u2014 filesystem discovery, parent-child relationships, tagging, and layout orchestration. Extracted from interkasten.",
