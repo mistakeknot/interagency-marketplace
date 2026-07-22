@@ -1119,7 +1119,7 @@
         "url": "https://github.com/mistakeknot/interwatch.git"
       },
       "strict": true,
-      "version": "0.6.0"
+      "version": "0.6.1"
     },
     {
       "description": "Token-efficient code reconnaissance for LLMs. Autonomous skills save 48-85% tokens via diff-context, semantic search, structural patterns, and symbol analysis. Includes MCP server for direct tool integration.",
