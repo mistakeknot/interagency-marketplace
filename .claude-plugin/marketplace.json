@@ -625,7 +625,7 @@
         "url": "https://github.com/mistakeknot/intermux.git"
       },
       "strict": true,
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     {
       "description": "Agent and agency naming for legible orchestration \u2014 deterministic, memorable identities across all surfaces. 4 themes: Culture (Banks-style), Sylveste (diplomatic), NATO (phonetic), custom.",
