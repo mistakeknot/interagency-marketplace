@@ -133,7 +133,7 @@
         "url": "https://github.com/mistakeknot/intercheck.git"
       },
       "strict": true,
-      "version": "0.2.2"
+      "version": "0.2.3"
     },
     {
       "description": "Agent-native architecture patterns \u2014 design, review, and audit for agent-first applications.",
