@@ -1162,7 +1162,7 @@
         "url": "https://github.com/mistakeknot/tool-time.git"
       },
       "strict": true,
-      "version": "0.4.0"
+      "version": "0.4.1"
     },
     {
       "description": "TUI automation and visual testing - Playwright for terminal applications. Spawn, interact with, and screenshot TUI apps via MCP.",
