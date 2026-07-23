@@ -167,7 +167,7 @@
         "url": "https://github.com/mistakeknot/intercut.git"
       },
       "strict": true,
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "description": "Deep research plugin \u2014 content extraction and research orchestration via MCP tools.",
