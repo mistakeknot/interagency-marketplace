@@ -56,7 +56,7 @@
         "url": "https://github.com/mistakeknot/Clavain.git"
       },
       "strict": true,
-      "version": "0.6.286"
+      "version": "0.6.287"
     },
     {
       "description": "CUJ design system: discover → teardown → provoke → capture → derive → consume; evidence-first schema; agent-consumable specs for coding agents to build from with minimal drift.",
