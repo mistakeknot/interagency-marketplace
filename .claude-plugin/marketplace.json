@@ -297,13 +297,7 @@
       "version": "0.2.85"
     },
     {
-      "name": "interform",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interform.git"
-      },
       "description": "Design patterns and visual quality for Claude Code — distinctive, production-grade interfaces.",
-      "version": "0.1.0",
       "keywords": [
         "design",
         "ui",
@@ -311,7 +305,13 @@
         "visual",
         "interface"
       ],
-      "strict": true
+      "name": "interform",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interform.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
       "description": "Agent-as-operator runtime diagnostics — teaches agents to observe and control running applications via diagnostic HTTP servers and CLI tools. 3 skills, 1 reviewer agent, 3 PostToolUse hooks, Rust templates.",
