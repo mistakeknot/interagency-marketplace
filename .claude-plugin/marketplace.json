@@ -681,7 +681,7 @@
         "url": "https://github.com/mistakeknot/interpath.git"
       },
       "strict": true,
-      "version": "0.3.3"
+      "version": "0.3.4"
     },
     {
       "description": "Cross-AI peer review with 4 escalation modes — quick (Claude/Codex), deep (Oracle/GPT), council (multi-model consensus), mine (disagreement extraction into tests and specs).",
