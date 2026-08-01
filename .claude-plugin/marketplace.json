@@ -204,20 +204,20 @@
       "version": "0.1.0"
     },
     {
-      "name": "interdev",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interdev.git"
-      },
       "description": "Developer tooling for Claude Code — MCP CLI interaction and Claude Code reference. Skill authoring moved to interskill, plugin development moved to interplug.",
-      "version": "0.2.0",
       "keywords": [
         "mcp",
         "cli",
         "developer-tools",
         "tool-discovery"
       ],
-      "strict": true
+      "name": "interdev",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interdev.git"
+      },
+      "strict": true,
+      "version": "0.2.1"
     },
     {
       "description": "Recursive AGENTS.md generator with structural auto-fix, CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
