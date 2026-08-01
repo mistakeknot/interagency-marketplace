@@ -913,20 +913,20 @@
       "version": "0.1.4"
     },
     {
-      "name": "interslack",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interslack.git"
-      },
       "description": "Slack integration for Claude Code — send messages, read channels, test integrations.",
-      "version": "0.1.0",
       "keywords": [
         "slack",
         "messaging",
         "integration",
         "communication"
       ],
-      "strict": true
+      "name": "interslack",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mistakeknot/interslack.git"
+      },
+      "strict": true,
+      "version": "0.1.1"
     },
     {
       "description": "Agent performance profiler and routing optimizer. Collects evidence about flux-drive agent accuracy, proposes routing overrides for underperforming agents, and monitors canary periods. Companion plugin for Clavain.",
