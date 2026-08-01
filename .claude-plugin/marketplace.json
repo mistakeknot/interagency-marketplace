@@ -256,7 +256,7 @@
         "url": "https://github.com/mistakeknot/interfer.git"
       },
       "strict": true,
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "description": "[DEPRECATED — use intervox] Analyze your writing style and adapt Claude's output to sound like you. Superseded by intervox's measured closed loop.",
