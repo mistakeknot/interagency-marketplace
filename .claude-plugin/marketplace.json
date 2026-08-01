@@ -117,7 +117,7 @@
         "url": "https://github.com/mistakeknot/interchart.git"
       },
       "strict": true,
-      "version": "0.1.9"
+      "version": "0.1.10"
     },
     {
       "description": "Code quality guards — syntax validation for 8 languages and auto-formatting via ruff/shfmt/gofmt/jq/prettier. Session monitoring extracted to interpulse.",
