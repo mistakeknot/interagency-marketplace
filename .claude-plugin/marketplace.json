@@ -542,7 +542,7 @@
         "url": "https://github.com/mistakeknot/interlore.git"
       },
       "strict": true,
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "description": "Project-level code mapping MCP server: project registry, call graphs, impact analysis, agent overlay. Go + Python bridge.",
