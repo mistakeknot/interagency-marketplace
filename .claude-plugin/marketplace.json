@@ -660,7 +660,7 @@
         "url": "https://github.com/mistakeknot/internext.git"
       },
       "strict": true,
-      "version": "0.1.5"
+      "version": "0.1.6"
     },
     {
       "description": "Product artifact generator — roadmaps, PRDs, vision docs, changelogs, and status reports from beads state, brainstorms, and project context. Companion plugin for Clavain.",
