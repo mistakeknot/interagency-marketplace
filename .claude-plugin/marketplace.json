@@ -946,7 +946,7 @@
         "url": "https://github.com/mistakeknot/interstat.git"
       },
       "strict": true,
-      "version": "0.3.2"
+      "version": "0.3.3"
     },
     {
       "description": "Multi-agent synthesis engine — collects findings from parallel review/research agents, deduplicates, writes structured verdicts, produces compact summaries.",
