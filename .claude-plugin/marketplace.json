@@ -259,25 +259,6 @@
       "version": "0.1.1"
     },
     {
-      "description": "[DEPRECATED — use intervox] Analyze your writing style and adapt Claude's output to sound like you. Superseded by intervox's measured closed loop.",
-      "keywords": [
-        "writing-style",
-        "voice-profile",
-        "documentation",
-        "tone-adaptation",
-        "mcp",
-        "style-transfer",
-        "corpus-analysis"
-      ],
-      "name": "interfluence",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interfluence.git"
-      },
-      "strict": true,
-      "version": "0.2.13"
-    },
-    {
       "description": "Multi-agent review and research with scored triage, content slicing, and intermediate finding sharing. 17 agents (12 review + 5 research), 4 commands, 1 skill, 1 MCP server. Domain detection via intersense, knowledge via interknow.",
       "keywords": [
         "review",
