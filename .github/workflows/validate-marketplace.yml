@@ -17,11 +17,19 @@
 #               anyone touching this manifest.
 name: Validate Marketplace
 
+# The candidate refs matter as much as main. `main` refuses a push whose
+# `structural` check has not already passed, and a check can only exist on a SHA
+# the workflow has actually run against -- so the publish path lands the SHA on
+# publish-candidate/<id> first, waits for the check there, then advances main to
+# that identical SHA. Leave those refs out of this trigger and the two-step push
+# deadlocks: main will not take an unchecked commit, and nothing ever checks it.
 on:
   pull_request:
   push:
     branches:
       - main
+      - publish-candidate
+      - "publish-candidate/**"
   schedule:
     - cron: "41 6 * * *"
   workflow_dispatch:
@@ -46,6 +54,10 @@ jobs:
 
   sources:
     name: sources
+    # Skipped on candidate refs. Every publish waits on `structural`, so adding a
+    # minute of API calls to that wait taxes each of 65 plugins' releases for a
+    # job that is not required and cannot see a sixth of the catalog anyway.
+    if: github.event_name != 'push' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

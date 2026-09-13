@@ -98,6 +98,34 @@ Automatic CLAUDE.md maintenance plugin:
 
 **Critical:** Source must be object with `source: "url"` and `url` fields, not simple string.
 
+## Writing to main
+
+`main` rejects a direct push whose `structural` check has not already passed. This is deliberate and it binds administrators too, so there is no bypass to lean on (mk-0y69).
+
+`.claude-plugin/marketplace.json` is read by every `claude plugin install` across the fleet. Before this gate, main's only rule demanded an approving review from a pool containing exactly one person: unsatisfiable by construction, bypassed on every publish, and printing `Bypassed rule violations` often enough that a genuine warning would not have stood out.
+
+Validate locally first — it is the same script CI runs:
+
+```bash
+python3 scripts/validate-marketplace.py                      # offline, the required check
+python3 scripts/validate-marketplace.py --check-sources      # resolve every plugin source
+```
+
+Add `--require-visible` when your token can see all 65 sources; it turns any entry the run could not resolve into an error rather than a warning. A run that could not look at something must not report that it looked.
+
+### The two-step push
+
+A fresh commit has no checks yet, so pushing it straight at `main` is refused. Land the SHA on a candidate ref, let the check run there, then advance `main` to that same SHA:
+
+```bash
+git push origin HEAD:refs/heads/publish-candidate
+gh run watch "$(gh run list --branch publish-candidate --limit 1 --json databaseId --jq '.[0].databaseId')"
+git push origin HEAD:main          # the SHA already passed; accepted without a PR
+git push origin --delete publish-candidate
+```
+
+No pull request is involved. GitHub permits a direct push of a commit whose required checks have already succeeded, and the SHA must be **identical** — rebasing or amending between the two steps produces a new SHA with no checks, and the push is refused again.
+
 ## Adding a New Plugin
 
 1. Create plugin directory: `plugins/plugin-name/`
