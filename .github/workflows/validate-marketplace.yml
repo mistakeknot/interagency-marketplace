@@ -1,0 +1,61 @@
+# Gate on marketplace.json, the file every `claude plugin install` reads.
+#
+# Two jobs on purpose, because only one of them can honestly be required:
+#
+#   structural  offline, deterministic, no network, no token. Catches the ways
+#               this file actually breaks -- a truncated atomic write, a
+#               duplicate plugin name, a missing source, a non-semver version.
+#               THIS is the job to register as a required status check.
+#
+#   sources     networked. Resolves every plugin source and reads its upstream
+#               plugin.json. Cannot be required: 11 of the catalog's sources are
+#               private and 2 belong to another owner, and a workflow's default
+#               GITHUB_TOKEN is scoped to this repository alone, so it 404s on a
+#               sixth of the list. The script reports those as unverified rather
+#               than broken (see its docstring). Runs daily, where it earns its
+#               keep by noticing a source repository that disappeared without
+#               anyone touching this manifest.
+name: Validate Marketplace
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "41 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural:
+    name: structural
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate manifest shape
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/validate-marketplace.py .claude-plugin/marketplace.json
+
+  sources:
+    name: sources
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve every plugin source
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 scripts/validate-marketplace.py .claude-plugin/marketplace.json --check-sources
