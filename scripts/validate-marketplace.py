@@ -17,11 +17,9 @@ TWO PHASES, DELIBERATELY SEPARATE
 
   sources      networked. Confirms each plugin's source actually resolves and
                carries a plugin manifest. Costs one API call per plugin, so it
-               is opt-in via --check-sources and degrades to a warning when the
-               network or the token is unavailable -- an unreachable API is an
-               unknown, not a failure of the manifest.
+               is opt-in via --check-sources.
 
-WHY 404 IS A WARNING AND NOT AN ERROR
+UNRESOLVED IS NOT A PASS
 
 GitHub returns 404 both for "this repository does not exist" and for "your
 token cannot see this repository", deliberately, so that private repositories
@@ -31,9 +29,14 @@ do not leak their existence. The two cannot be told apart from the response.
 a workflow's default GITHUB_TOKEN -- scoped to this repository alone -- 404s on
 a good sixth of the catalog. Treating that as an error would paint the gate red
 forever and teach everyone to ignore it, which is the exact failure mk-0y69 is
-about. So 404 is "unknown, not verified" unless --require-visible says the
-running token is expected to see everything.
+about.
 
+So an entry the run could not resolve is recorded as UNRESOLVED, and the caller
+decides what that means. By default unresolved is a warning: genuinely unknown.
+Under --require-visible the caller asserts its token sees the whole catalog, and
+then every unresolved entry is an error -- 404, rate limit, 5xx, dead socket and
+unparseable manifest alike. A run that could not look at something must never
+report that it looked and found it fine.
 
 VERSION DRIFT IS A WARNING, NOT AN ERROR
 
@@ -179,6 +182,7 @@ def check_structure(data: dict[str, Any], f: Findings) -> list[dict[str, Any]]:
 
 
 def _api_get(url: str, token: str | None) -> tuple[int, bytes]:
+    """Return (status, body). Status 0 means the request never reached the API."""
     req = urllib.request.Request(url)
     req.add_header("Accept", "application/vnd.github+json")
     req.add_header("User-Agent", "validate-marketplace")
@@ -189,6 +193,23 @@ def _api_get(url: str, token: str | None) -> tuple[int, bytes]:
             return resp.status, resp.read()
     except urllib.error.HTTPError as exc:
         return exc.code, b""
+    except (urllib.error.URLError, TimeoutError, OSError):
+        # A dead network is not a verdict about the manifest, but it must never
+        # read as a pass either -- the caller turns this into "unresolved".
+        return 0, b""
+
+
+def _why(status: int, what: str) -> str:
+    """Explain a non-200 in terms of what it does and does not prove."""
+    if status == 0:
+        return f"could not reach the API for {what}"
+    if status == 404:
+        return f"{what} is absent, or invisible to this token -- GitHub returns 404 for both and will not say which"
+    if status == 403:
+        return f"rate-limited or forbidden checking {what}"
+    if status == 401:
+        return f"credentials rejected checking {what}"
+    return f"HTTP {status} checking {what}"
 
 
 def check_sources(
@@ -198,10 +219,19 @@ def check_sources(
     if not token:
         f.warn("no GITHUB_TOKEN/GH_TOKEN in the environment; source checks run unauthenticated and may be rate-limited")
 
-    # 404 means "absent or invisible" and the API will not say which. Only a
-    # caller who knows its token sees the whole catalog may read it as absent.
-    missing = f.error if require_visible else f.warn
-    invisible = "does not exist" if require_visible else "is not visible to this token (private, or gone) -- unknown, not verified"
+    # An entry the run could not resolve is UNRESOLVED, and unresolved is not a
+    # pass. Under --require-visible the caller asserts its token sees the whole
+    # catalog, so every unresolved entry -- 404, rate limit, 5xx, dead socket,
+    # unparseable manifest alike -- is an error. Without that assertion the same
+    # outcomes are warnings, because they are genuinely unknown.
+    #
+    # Recording only 404 here was the earlier bug: a rate-limited run resolved
+    # nothing and still exited 0.
+    unresolved_names: list[str] = []
+
+    def unresolved(name: str, why: str) -> None:
+        unresolved_names.append(name)
+        (f.error if require_visible else f.warn)(f"{name}: unresolved -- {why}")
 
     for entry in entries:
         name = entry["name"]
@@ -214,29 +244,20 @@ def check_sources(
 
         m = GITHUB_URL_RE.match(url)
         if not m:
-            f.warn(f"{name}: source.url is not a github.com repository; not checked")
+            unresolved(name, f"source.url {url!r} is not a github.com repository; not checked")
             continue
         owner, repo = m.group(1), m.group(2)
 
         status, _ = _api_get(f"https://api.github.com/repos/{owner}/{repo}", token)
-        if status == 404:
-            missing(f"{name}: source repository {owner}/{repo} {invisible}")
-            continue
-        if status == 403:
-            f.warn(f"{name}: rate-limited checking {owner}/{repo}; unknown, not verified")
-            continue
         if status != 200:
-            f.warn(f"{name}: unexpected HTTP {status} checking {owner}/{repo}; unknown, not verified")
+            unresolved(name, _why(status, f"{owner}/{repo}"))
             continue
 
         status, body = _api_get(
             f"https://api.github.com/repos/{owner}/{repo}/contents/.claude-plugin/plugin.json", token
         )
-        if status == 404:
-            missing(f"{name}: {owner}/{repo} .claude-plugin/plugin.json {invisible}")
-            continue
         if status != 200:
-            f.warn(f"{name}: could not read plugin.json from {owner}/{repo} (HTTP {status}); unknown, not verified")
+            unresolved(name, _why(status, f"{owner}/{repo} .claude-plugin/plugin.json"))
             continue
 
         try:
@@ -246,6 +267,7 @@ def check_sources(
             upstream = json.loads(base64.b64decode(payload["content"]))
         except Exception as exc:  # noqa: BLE001 - any parse failure is the same finding
             f.error(f"{name}: {owner}/{repo} plugin.json is unreadable: {exc}")
+            unresolved_names.append(name)
             continue
 
         upstream_name = upstream.get("name")
@@ -263,6 +285,11 @@ def check_sources(
             else:
                 f.warn(msg + " (drift; interpub:sweep reconciles this)")
 
+    resolved = len(entries) - len(unresolved_names)
+    print(f"sources: resolved {resolved}/{len(entries)}, unresolved {len(unresolved_names)}")
+    if unresolved_names and not require_visible:
+        print("         unresolved entries were NOT verified; rerun with a token that sees them, plus --require-visible")
+
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -272,7 +299,7 @@ def main() -> int:
     ap.add_argument(
         "--require-visible",
         action="store_true",
-        help="the running token is expected to see every source; read 404 as absent rather than invisible",
+        help="assert this token sees every source, making any unresolved entry an error rather than a warning",
     )
     args = ap.parse_args()
 
