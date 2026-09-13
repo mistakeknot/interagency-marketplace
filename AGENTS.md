@@ -100,7 +100,17 @@ Automatic CLAUDE.md maintenance plugin:
 
 ## Writing to main
 
-`main` rejects a direct push whose `structural` check has not already passed. This is deliberate and it binds administrators too, so there is no bypass to lean on (mk-0y69).
+**Current state: the gate is staged, not yet binding.** `structural` runs on every push and PR to this repository and on every `publish-candidate` ref, but it is not registered as a required check, so nothing refuses a bad push yet. That last turn of the screw waits on the producer side: `ic publish` pushes straight at `main`, and a fresh commit has no checks, so binding the gate today would fail every publish. See mk-0y69.
+
+The binding configuration is proven, not theoretical. It was installed, exercised end to end and then stood down:
+
+| step | result |
+|---|---|
+| fresh unchecked commit pushed at `main` | `GH006 ... Required status check "structural" is expected` -- rejected |
+| same SHA pushed to `publish-candidate` | `structural` ran there and passed |
+| same SHA pushed at `main` | accepted, no bypass line, no pull request |
+
+Re-arming it is one API call: `required_status_checks: {strict: false, contexts: ["structural"]}` with `enforce_admins: true`. Do that only once the publish path can produce a checked SHA.
 
 `.claude-plugin/marketplace.json` is read by every `claude plugin install` across the fleet. Before this gate, main's only rule demanded an approving review from a pool containing exactly one person: unsatisfiable by construction, bypassed on every publish, and printing `Bypassed rule violations` often enough that a genuine warning would not have stood out.
 
