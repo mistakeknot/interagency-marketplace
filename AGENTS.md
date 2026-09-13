@@ -112,6 +112,8 @@ The binding configuration is proven, not theoretical. It was installed, exercise
 
 Re-arming it is one API call: `required_status_checks: {strict: false, contexts: ["structural"]}` with `enforce_admins: true`. Do that only once the publish path can produce a checked SHA.
 
+`ic publish` learns the two-step in intercore's `GitPushGated` (mk-1e9o). Both canaries were run against this repository with the gate armed: a manifest carrying a duplicate plugin name was refused by the check and never reached `main`, leaving no candidate ref behind, and a clean commit landed through the candidate ref with no bypass line. Set `IC_PUBLISH_GATE=off` to bypass the two-step deliberately; a missing GitHub token is a hard error rather than a silent unverified push.
+
 `.claude-plugin/marketplace.json` is read by every `claude plugin install` across the fleet. Before this gate, main's only rule demanded an approving review from a pool containing exactly one person: unsatisfiable by construction, bypassed on every publish, and printing `Bypassed rule violations` often enough that a genuine warning would not have stood out.
 
 Validate locally first — it is the same script CI runs:
