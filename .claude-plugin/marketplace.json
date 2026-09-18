@@ -1030,24 +1030,6 @@
       "version": "0.1.3"
     },
     {
-      "description": "[DEPRECATED — use intervox] Global multi-register voice profile, prose-only. intervox keeps the profile format and adds fingerprint, linter, and verified apply.",
-      "keywords": [
-        "voice",
-        "writing",
-        "prose",
-        "documentation",
-        "style",
-        "registers"
-      ],
-      "name": "intervoice",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/intervoice.git"
-      },
-      "strict": true,
-      "version": "0.1.1"
-    },
-    {
       "description": "Voice engine with a closed loop: generate and edit prose in your voice, then verify it against your measured stylometric fingerprint. Register-aware profile, LLMism linter, exemplar retrieval, critique-revise apply. Successor to interfluence and intervoice.",
       "keywords": [
         "voice",

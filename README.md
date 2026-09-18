@@ -1,6 +1,6 @@
 # Interagency Marketplace
 
-A Claude Code plugin marketplace: 34 plugins for building software with agents, across coordination, review, documentation, observability, and workflow.
+A Claude Code plugin marketplace for building software with agents across coordination, review, documentation, observability, and workflow.
 
 ## Installation
 
@@ -32,12 +32,12 @@ Recursive AGENTS.md generator with parallel subagents. Point it at a project and
 /plugin install interdoc
 ```
 
-### interfluence
+### intervox
 
-Analyze your writing style and get Claude to actually sound like you. Ingest writing samples, build a prose voice profile, and apply it to any human-facing documentation or copy. The profile is natural language (not numeric scores) because Claude follows prose instructions better than parameter tuning.
+Analyze your writing style and get Claude to sound like you with a measured feedback loop. Ingest writing samples, build a register-aware voice profile and stylometric fingerprint, then generate or rewrite prose with exemplar retrieval, LLMism linting, and verification.
 
 ```bash
-/plugin install interfluence
+/plugin install intervox
 ```
 
 ### interflux
