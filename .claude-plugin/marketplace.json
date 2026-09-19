@@ -275,7 +275,7 @@
         "url": "https://github.com/mistakeknot/interflux.git"
       },
       "strict": true,
-      "version": "0.2.88"
+      "version": "0.3.0"
     },
     {
       "description": "Design patterns and visual quality for Claude Code — distinctive, production-grade interfaces.",
