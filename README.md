@@ -216,14 +216,6 @@ Slack integration for Claude Code. Send messages, read channels, test webhook in
 /plugin install interslack
 ```
 
-### interlens
-
-288 FLUX cognitive lenses for structured thinking. MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis. When you want to examine a problem through a specific analytical frame: systems dynamics, game theory, cognitive biases: this gives you the vocabulary.
-
-```bash
-/plugin install interlens
-```
-
 ### interleave
 
 Deterministic Skeleton with LLM Islands: a token-efficient document generation pattern where scripts render the predictable parts and LLM subagents fill only the semantic sections. Spec + library plugin with a reference implementation (roadmap generation from beads data). Inspired by Skeleton-of-Thought (ICLR 2024) and Astro's Islands Architecture.

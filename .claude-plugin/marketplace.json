@@ -10,27 +10,6 @@
   },
   "plugins": [
     {
-      "description": "Persistent entity-graph memory for Claude — event-sourced context graph with MCP server, topology schemas, entity resolution, provenance, and redaction. External upstream by jvattimo1; adopted as the Sylveste entity/decision memory lane (see Sylveste/ops/canongraph/memory-lanes.md).",
-      "keywords": [
-        "memory",
-        "knowledge-graph",
-        "mcp",
-        "context",
-        "provenance",
-        "event-sourcing",
-        "external-upstream"
-      ],
-      "name": "canongraph",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/jvattimo1/canongraph.git",
-        "ref": "main",
-        "sha": "6e1362f3b0a43c3016b848bd766718d000c5d0c2"
-      },
-      "strict": true,
-      "version": "0.1.0"
-    },
-    {
       "description": "Self-improving agent rig — codifies product and engineering discipline into composable workflows from brainstorm to ship. Compounds knowledge, generates domain agents, and monitors its own docs. Orchestrates Claude, Codex, and GPT-5.2 Pro through 4 agents, 54 commands, 16 skills, 1 MCP servers. Companions: interphase, interline, interflux, interpath, interwatch, interslack, interform, intercraft, interdev, interpeer, intertest.",
       "keywords": [
         "engineering",
@@ -317,24 +296,6 @@
       "version": "0.2.5"
     },
     {
-      "description": "Jawncloud catalog tools — add any product (clothing, tech, collectibles, etc.), search, and record measurements via conversation",
-      "keywords": [
-        "catalog",
-        "products",
-        "jawncloud",
-        "measurements",
-        "mcp",
-        "search"
-      ],
-      "name": "interjawn",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/gensysven/interjawn.git"
-      },
-      "strict": true,
-      "version": "0.7.0"
-    },
-    {
       "description": "Ambient discovery and research engine — scans arXiv, HN, GitHub, Anthropic docs, Exa for new capabilities. MCP server with embedding-based recommendation engine, confidence-tiered output pipeline, and learned interest profiles.",
       "keywords": [
         "research",
@@ -431,24 +392,6 @@
       },
       "strict": true,
       "version": "0.1.3"
-    },
-    {
-      "description": "288 FLUX cognitive lenses for structured thinking — MCP server with lens search, thinking mode workflows, belief statement generation, quality evaluation, and solution synthesis.",
-      "keywords": [
-        "flux",
-        "lenses",
-        "cognitive-augmentation",
-        "mcp",
-        "thinking-modes",
-        "systems-thinking"
-      ],
-      "name": "interlens",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interlens.git"
-      },
-      "strict": true,
-      "version": "2.2.5"
     },
     {
       "description": "Dynamic statusline for Claude Code — shows active beads with priority and title, workflow phase, coordination status, and Codex dispatch state. Integrates with Clavain, interphase, interlock, and beads.",
@@ -806,23 +749,6 @@
       },
       "strict": true,
       "version": "0.2.3"
-    },
-    {
-      "description": "Idea garden: capture, refine, and graduate ideas from rough seeds to actionable plans.",
-      "keywords": [
-        "ideas",
-        "brainstorming",
-        "planning",
-        "mcp",
-        "idea-garden"
-      ],
-      "name": "interseed",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mistakeknot/interseed.git"
-      },
-      "strict": true,
-      "version": "0.1.0"
     },
     {
       "description": "Culture ship names as Claude Code spinner verbs. 237 curated names -- 56 canonical Banks originals marked with *asterisks*, 181 generated Banksian originals. Toggle canonical/generated sets via config. Includes v6 generator prompt for creating more.",
