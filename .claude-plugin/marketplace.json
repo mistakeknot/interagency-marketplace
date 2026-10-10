@@ -239,7 +239,7 @@
         "url": "https://github.com/mistakeknot/interdoc.git"
       },
       "strict": true,
-      "version": "5.2.3"
+      "version": "5.2.4"
     },
     {
       "description": "Local MLX-LM inference server for Apple Silicon. Custom serving layer with priority queuing and thermal-aware scheduling.",
