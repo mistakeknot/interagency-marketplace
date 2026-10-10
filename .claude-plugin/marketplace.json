@@ -785,7 +785,7 @@
         "url": "https://github.com/mistakeknot/interscribe.git"
       },
       "strict": true,
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     {
       "description": "Shared embedding and search infrastructure — nomic-embed-text-v1.5 embeddings with persistent SQLite vector store, and Exa web search. MCP server for semantic indexing and querying.",
