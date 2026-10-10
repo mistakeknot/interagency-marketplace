@@ -858,7 +858,7 @@
         "url": "https://github.com/mistakeknot/intersight.git"
       },
       "strict": true,
-      "version": "0.1.5"
+      "version": "0.1.6"
     },
     {
       "description": "Skill authoring toolkit — unified skill creation with TDD-adapted testing and audit. Extracted from interdev.",
