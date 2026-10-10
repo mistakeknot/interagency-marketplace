@@ -217,7 +217,7 @@
         "url": "https://github.com/mistakeknot/interdev.git"
       },
       "strict": true,
-      "version": "0.2.1"
+      "version": "0.2.2"
     },
     {
       "description": "Recursive AGENTS.md generator with structural auto-fix, CLAUDE.md harmonization, incremental updates, diff previews, and smart monorepo scoping. Cross-AI compatible.",
