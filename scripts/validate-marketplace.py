@@ -25,9 +25,9 @@ GitHub returns 404 both for "this repository does not exist" and for "your
 token cannot see this repository", deliberately, so that private repositories
 do not leak their existence. The two cannot be told apart from the response.
 
-11 of this marketplace's sources are private and 2 belong to another owner, so
-a workflow's default GITHUB_TOKEN -- scoped to this repository alone -- 404s on
-a good sixth of the catalog. Treating that as an error would paint the gate red
+5 of this marketplace's sources are private, so a workflow's default
+GITHUB_TOKEN -- scoped to this repository alone -- 404s on a handful of the
+catalog's entries. Treating that as an error would paint the gate red
 forever and teach everyone to ignore it, which is the exact failure mk-0y69 is
 about.
 

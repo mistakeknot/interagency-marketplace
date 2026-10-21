@@ -8,11 +8,11 @@
 #               THIS is the job to register as a required status check.
 #
 #   sources     networked. Resolves every plugin source and reads its upstream
-#               plugin.json. Cannot be required: 11 of the catalog's sources are
-#               private and 2 belong to another owner, and a workflow's default
-#               GITHUB_TOKEN is scoped to this repository alone, so it 404s on a
-#               sixth of the list. The script reports those as unverified rather
-#               than broken (see its docstring). Runs daily, where it earns its
+#               plugin.json. Cannot be required: 5 of the catalog's sources are
+#               private, and a workflow's default GITHUB_TOKEN is scoped to this
+#               repository alone, so it 404s on those entries. The script
+#               reports those as unverified rather than broken (see its
+#               docstring). Runs daily, where it earns its
 #               keep by noticing a source repository that disappeared without
 #               anyone touching this manifest.
 name: Validate Marketplace
@@ -55,8 +55,8 @@ jobs:
   sources:
     name: sources
     # Skipped on candidate refs. Every publish waits on `structural`, so adding a
-    # minute of API calls to that wait taxes each of 65 plugins' releases for a
-    # job that is not required and cannot see a sixth of the catalog anyway.
+    # minute of API calls to that wait taxes every plugin's release for a
+    # job that is not required and cannot see the private entries anyway.
     if: github.event_name != 'push' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
